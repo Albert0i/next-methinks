@@ -24,7 +24,10 @@ const postSchema = new Schema(
   }
 );
 
+// Save time of deletion
 postSchema.plugin(MongooseDelete, { deletedAt : true });
+// Index only specific fields
+postSchema.plugin(MongooseDelete, { indexFields: ['deleted', 'deletedAt'] });
 
 const Post = mongoose.models.Post || mongoose.model("Post", postSchema);
 

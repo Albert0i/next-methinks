@@ -5,28 +5,28 @@ const TestPage = ( props ) => {
   console.log('props=', props)
   const { params, searchParams } = props   
 
-  // let posts = null; 
-  // getAllPosts()
-  //   .then(res => { 
-  //       posts = res
-  //       console.log('posts=', posts)
-  //     })
+  let posts = null; 
+  getAllPosts()
+    .then(res => { 
+        posts = res
+        console.log('posts=', posts)
+      })
 
   // let post = null
-  // getPostById('64cc6ea687409685b9d1f29a')
+  // getPostById('64ccb2b9cd7ed9a3915a9482')
   //   .then(res => {
   //     post = res
   //     console.log('post=', post)
   //   })
 
-  // updatePostById('64cc6ea687409685b9d1f29a',
+  // updatePostById('64ccb2b9cd7ed9a3915a9482',
   // "What is Lorem Ipsum?",
   // "What is Lorem Ipsum?",
   // "soandso",
   // "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.")
   // .then(res=> console.log('res=', res)) 
 
-  // deletePostById('64cc6e9e87409685b9d1f298')
+  // deletePostById('64ccb2b9cd7ed9a3915a9482')
   // .then( res => console.log(res))
 
   // addPost("Stars", 
