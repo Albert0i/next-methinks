@@ -9,7 +9,14 @@ export async function GET( req, { params} ) {
   
   await connectMongoDB();
   try {
-    const post = await Post.findOne({ _id: id }).lean();
+    // const post = await Post.findOne({ _id: id })
+    //                         .select({deleted:0, __v:0})
+    //                         .lean();
+    const post = await Post.findOne({
+                                    "id" : { "$eq": id },
+                                    "deleted" : { "$eq": false }})
+                            .select({deleted:0, __v:0})
+                            .lean();
     return NextResponse.json({ success: post!==null, post }, { status: 200 });
   } 
   catch (error) {
@@ -52,7 +59,12 @@ export async function DELETE(req, { params }) {
 
   await connectMongoDB();
   try { 
-    const result = await Post.findByIdAndDelete(id);
+    // Hard delete 
+    //const result = await Post.findByIdAndDelete(id);
+    // Soft delete
+    const post = await Post.findById(id)
+    const result = await post.delete()
+
     if (result)
       return NextResponse.json({ success: true, id: result._id }, { status: 200 });
     else 
@@ -75,4 +87,8 @@ export async function DELETE(req, { params }) {
     params.id
     searchParams.get('bldcod')
     searchParams.get('blocod')
+*/
+/*
+   MongoDB query with multiple conditions
+   https://stackoverflow.com/questions/39389823/mongodb-query-with-multiple-conditions
 */

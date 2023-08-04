@@ -7,7 +7,10 @@ export async function GET() {
   await connectMongoDB()
 
   try {
-    const posts = await Post.find().select({content:0}).sort({ createdAt: -1 }).lean()
+    const posts = await Post.find({deleted: false})
+                              .select({content:0, deleted:0, __v:0})
+                              .sort({ createdAt: -1 })
+                              .lean()
     return NextResponse.json({ success: true, posts }, { status: 200 });  
   } 
   catch (error) {

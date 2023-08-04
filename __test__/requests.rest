@@ -25,7 +25,7 @@ Content-Type: application/json
 }
 
 ### Get a post 
-GET http://localhost:3000/api/posts/64cc6b4f80eee1c6963c61f9
+GET http://localhost:3000/api/posts/64cc86fd2ef1b4ddcf49e137
 Content-Type: application/json
 
 
@@ -42,7 +42,7 @@ Content-Type: application/json
 
 
 ### Delete a topic  
-DELETE http://localhost:3000/api/posts/64cc6b4f80eee1c6963c61f9
+DELETE http://localhost:3000/api/posts/64cc86fd2ef1b4ddcf49e137
 
 
 # 

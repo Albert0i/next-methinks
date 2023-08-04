@@ -1,4 +1,5 @@
 import mongoose, { Schema } from "mongoose";
+import MongooseDelete from 'mongoose-delete'
 
 const postSchema = new Schema(
   {
@@ -22,6 +23,8 @@ const postSchema = new Schema(
     timestamps: true,
   }
 );
+
+postSchema.plugin(MongooseDelete, { deletedBy: true, deletedByType: String });
 
 const Post = mongoose.models.Post || mongoose.model("Post", postSchema);
 
