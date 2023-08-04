@@ -13,7 +13,7 @@ export async function GET( req, { params} ) {
     //                         .select({deleted:0, __v:0})
     //                         .lean();
     const post = await Post.findOne({
-                                    "id" : { "$eq": id },
+                                    "_id" : { "$eq": id },
                                     "deleted" : { "$eq": false }})
                             .select({deleted:0, __v:0})
                             .lean();
@@ -37,11 +37,17 @@ export async function PUT(req, { params }) {
   
   await connectMongoDB();
   try { 
-    const result = await Post.findByIdAndUpdate(id, { title, subtitle, author, content });
+    // Instead of 
+    //const result = await Post.findByIdAndUpdate(id, { title, subtitle, author, content });
+    // use 'mongoose-delete' to implement soft delete
+    const result = await Post.findOneAndUpdate({
+                            "_id" : { "$eq": id },
+                            "deleted" : { "$eq": false }}, 
+                            { title, subtitle, author, content })
     if (result)
       return NextResponse.json({ success:true, id: result._id }, { status: 200 });  
     else 
-      return NextResponse.json({ success:false, id: null }, { status: 200 });  
+     return NextResponse.json({ success:false, id: null }, { status: 200 });  
   }
   catch (error) {
     let errors = {}
@@ -59,16 +65,23 @@ export async function DELETE(req, { params }) {
 
   await connectMongoDB();
   try { 
-    // Hard delete 
+    // Instead of 
     //const result = await Post.findByIdAndDelete(id);
-    // Soft delete
-    const post = await Post.findById(id)
-    const result = await post.delete()
-
-    if (result)
-      return NextResponse.json({ success: true, id: result._id }, { status: 200 });
-    else 
+    // use 'mongoose-delete' to implement soft delete
+    const post = await Post.findOne({
+                          "_id" : { "$eq": id },
+                          "deleted" : { "$eq": false }})
+    if (post) {
+      const result = await post.delete()
+      
+      if (result)
+        return NextResponse.json({ success: true, id: result._id }, { status: 200 });
+      else 
+        return NextResponse.json({ success: false, id: null }, { status: 200 });
+    }
+    else {
       return NextResponse.json({ success: false, id: null }, { status: 200 });
+    }    
   }
   catch (error) {
     let errors = {}

@@ -24,8 +24,13 @@ const postSchema = new Schema(
   }
 );
 
-postSchema.plugin(MongooseDelete, { deletedBy: true, deletedByType: String });
+postSchema.plugin(MongooseDelete, { deletedAt : true });
 
 const Post = mongoose.models.Post || mongoose.model("Post", postSchema);
 
 export default Post;
+
+/*
+   mongoose-delete
+   https://www.npmjs.com/package/mongoose-delete
+*/

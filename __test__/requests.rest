@@ -25,12 +25,12 @@ Content-Type: application/json
 }
 
 ### Get a post 
-GET http://localhost:3000/api/posts/64cc86fd2ef1b4ddcf49e137
+GET http://localhost:3000/api/posts/64ccabb6d091cdb28b6af8cc
 Content-Type: application/json
 
 
 ### Update a topic 
-PUT http://localhost:3000/api/posts/64cc6b4f80eee1c6963c61f9
+PUT http://localhost:3000/api/posts/64ccabb6d091cdb28b6af8cc
 Content-Type: application/json
 
 {
@@ -42,7 +42,7 @@ Content-Type: application/json
 
 
 ### Delete a topic  
-DELETE http://localhost:3000/api/posts/64cc86fd2ef1b4ddcf49e137
+DELETE http://localhost:3000/api/posts/64ccabb6d091cdb28b6af8cc
 
 
 # 
