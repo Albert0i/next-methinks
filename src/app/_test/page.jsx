@@ -5,12 +5,12 @@ const TestPage = ( props ) => {
   console.log('props=', props)
   const { params, searchParams } = props   
 
-  let posts = null; 
-  getAllPosts()
-    .then(res => { 
-        posts = res
-        console.log('posts=', posts)
-      })
+  // let posts = null; 
+  // getAllPosts()
+  //   .then(res => { 
+  //       posts = res
+  //       console.log('posts=', posts)
+  //     })
 
   // let post = null
   // getPostById('64ccb2b9cd7ed9a3915a9482')

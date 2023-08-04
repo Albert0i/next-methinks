@@ -1,9 +1,11 @@
-import React from 'react'
+import PostsList from "@/components/PostsList"
 
-const PostsLists = () => {
+const AllPostsPage = async () => {
   return (
-    <div>PostsLists</div>
+    <>
+      <PostsList />
+    </>
   )
 }
 
-export default PostsLists
+export default AllPostsPage
