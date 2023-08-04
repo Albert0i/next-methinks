@@ -21,7 +21,8 @@ export async function GET() {
 
 // Create new post
 export async function POST(req) {
-  const { title, subtitle, author, content } = await req.json();    
+  const reqBody = await req.json()  
+  const { title, subtitle, author, content } = reqBody;
   await connectMongoDB();
 
   try {
