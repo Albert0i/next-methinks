@@ -1,0 +1,51 @@
+### Get all topics
+GET http://localhost:3000/api/posts
+Content-Type: application/json
+
+
+### Create new post
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+  "title": "Stars", 
+  "subtitle": "Stars", 
+  "author": "me",
+  "content": "Stars, staring and shinning on us over centries, can only be seen in dark nights. Those little silvery dots bear memories from the most remote era dating from the very creation of universe. \n\nIn secular and religious belief, there exists two kinds of stars. One that bring much fortune while the other fortell bad lucks, or presentiment of disasters."
+}
+###
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+  "title": "Souls", 
+  "subtitle": "Souls", 
+  "author": "me",
+  "content": "How soul outlives the body? This is perhaps the most fascinating question for human being. As a matter of fact, we don't even realize what is \"soul\". \n\nAssuming that body, which is a palpable and perceivable existence, has a invisible connexion with soul. If it is true. Is it possible to *disentangle* them? Or connect the soul with another body? Then what is the **identity** of man? By soul? By body? Or by both? \n\nDoes the soul eat? Does the soul feel? Does the soul sleep? We definitely not know. "
+}
+
+### Get a post 
+GET http://localhost:3000/api/posts/64cc6b4f80eee1c6963c61f9
+Content-Type: application/json
+
+
+### Update a topic 
+PUT http://localhost:3000/api/posts/64cc6b4f80eee1c6963c61f9
+Content-Type: application/json
+
+{
+  "title": "What is Lorem Ipsum?", 
+  "subtitle": "What is Lorem Ipsum?", 
+  "author": "soandso",
+  "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+}
+
+
+### Delete a topic  
+DELETE http://localhost:3000/api/posts/64cc6b4f80eee1c6963c61f9
+
+
+# 
+# REST Client for Visual Studio Code
+# https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+#
