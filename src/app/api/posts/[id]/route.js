@@ -9,9 +9,11 @@ export async function GET( req, { params} ) {
   
   await connectMongoDB();
   try {
+    // Instead of
     // const post = await Post.findOne({ _id: id })
     //                         .select({deleted:0, __v:0})
     //                         .lean();
+    // use 'mongoose-delete' to implement soft delete
     const post = await Post.findOne({
                                     "_id" : { "$eq": id },
                                     "deleted" : { "$eq": false }})
