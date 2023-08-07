@@ -3,7 +3,7 @@ import { getPostById, updatePostById } from '@/server-actions/postServerAction'
 import Link from 'next/link'
 import React, {useState, useEffect} from 'react'
 import toast, { Toaster } from 'react-hot-toast'
-import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation'
 
 const EditPost = (props) => {
   //const { post } = await getPostById(props.id)
