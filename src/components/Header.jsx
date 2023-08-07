@@ -3,15 +3,29 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header>
-      <div className="p-2 my-2 text-center rounded-md bg-slate-800">
-        <Link href="/posts">
-          <h1 className="mt-2 text-2xl font-bold text-white">Jack's Blog</h1>
+    <header className='h-[66px]'>
+      <div className="p-2 my-2 text-center rounded-md bg-slate-800 flex flex-row justify-between">
+
+        <Link href='/posts/create'>
+          <div className="mt-2 text-2xl font-bold text-white border border-white rounded px-2">+</div>
         </Link>
-        <p className="text-slate-300">🤟 Welcome to my tech blog. 💻</p>
+
+        <Link href="/posts">
+          <div className="mt-2 text-2xl font-bold text-white">All Posts</div>
+        </Link>
+
+        <Link href='/posts/create'>
+          <div className="mt-2 text-2xl font-bold text-white border border-white rounded px-2">+</div>
+        </Link>
+
       </div>
     </header>
   )
 }
 
 export default Header
+/*
+  <Link href='/posts/create'>
+    <h1 className='mt-2 text-2xl font-bold text-white'>Add</h1>
+  </Link>
+*/

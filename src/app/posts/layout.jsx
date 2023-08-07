@@ -4,10 +4,15 @@ import Footer from '@/components/Footer'
 
 export default function PostLayout({ children }) {
   return (
-        <div className="max-w-2xl px-2 mx-auto">
+        <div className="container max-w-4xl px-2 mx-auto">
           <Header />
-          { children }
-          <Footer />
+          <div className='h-[calc(100vh-66px)]'>
+            { children }
+            <Footer />
+          </div>          
         </div>
   )
 }
+/*
+   h-[66px] h-[calc(100vh-66px)]
+*/
