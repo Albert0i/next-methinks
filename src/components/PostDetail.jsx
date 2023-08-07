@@ -7,7 +7,7 @@ const PostDetail = async (props) => {
 
   return (
     <div>
-      <div className="my-12 text-center">
+      <div className="my-2 text-center">
         <h1 className="text-2xl text-slate-600 ">{post.title}</h1>
         <p className="mt-2 text-slate-400">{post.createdAt}</p>
       </div>
