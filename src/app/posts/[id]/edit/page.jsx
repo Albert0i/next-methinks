@@ -1,26 +1,7 @@
-import React from 'react'
+import EditPost from '@/components/EditPost'
 
-const EditPost = ({ params, searchParams }) => {
-  console.log('params=', params)
-  console.log('searchParams=', searchParams)
-
-  return (
-    <div>EditPost, id={params.id}, bldcod={searchParams.bldcod}, blocod={searchParams.blocod}</div>
-  )
+const EditPage = ( { params } ) => {
+  return <EditPost id={ params.id} />
 }
 
-export default EditPost
-
-/*
-    http://localhost:3000/posts/123456/edit?bldcod=LK&blocod=01
-
-    ( { params, searchParams } ) => 
-    req= {
-      params: { id: '123456' },
-      searchParams: { bldcod: 'LK', blocod: '01' }
-    }
-
-    params.id
-    searchParams.bldcod
-    searchParams.blocod
-*/
+export default EditPage

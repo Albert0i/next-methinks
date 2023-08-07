@@ -1,26 +1,7 @@
-import React from 'react'
+import PostDetail from '@/components/PostDetail'
 
-const ViewPost = ( { params, searchParams } ) => {
-  console.log('params=', params)
-  console.log('searchParams=', searchParams)
-
-  return (
-    <div>ViewPost, id={params.id}, bldcod={searchParams.bldcod}, blocod={searchParams.blocod}</div>
-  )
+const PostPage = ( { params } ) => {
+  return <PostDetail id={ params.id} />
 }
 
-export default ViewPost
-
-/*
-    http://localhost:3000/posts/123456?bldcod=LK&blocod=01
-
-    ( { params, searchParams } ) => 
-    req= {
-      params: { id: '123456' },
-      searchParams: { bldcod: 'LK', blocod: '01' }
-    }
-
-    params.id
-    searchParams.bldcod
-    searchParams.blocod
-*/
+export default PostPage

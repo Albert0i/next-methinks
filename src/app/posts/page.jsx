@@ -1,11 +1,7 @@
 import PostsList from "@/components/PostsList"
 
 const AllPostsPage = async () => {
-  return (
-    <>
-      <PostsList />
-    </>
-  )
+  return <PostsList />
 }
 
 export default AllPostsPage

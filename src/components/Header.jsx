@@ -1,14 +1,15 @@
-import Link from 'next/link'
-import React from 'react'
+import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className='text-center text-4xl font-bold text-white bg-black h-[66px] pt-4'>
-        <h1>
-            <Link href='/'>
-                meThinks
-            </Link>            
-        </h1>
+    <header>
+      <div className="p-2 my-2 text-center rounded-md bg-slate-800">
+        <Link href="/posts">
+          <h1 className="mt-2 text-2xl font-bold text-white">Jack's Blog</h1>
+        </Link>
+        <p className="text-slate-300">🤟 Welcome to my tech blog. 💻</p>
+      </div>
     </header>
   )
 }

@@ -1,4 +1,4 @@
-import { addPost, deletePostById, getAllPosts, getPostById, updatePostById } from '@/server-actions/postServerActions'
+import { addPost, deletePostById, getAllPosts, getPostById, updatePostById } from '@/server-actions/postServerAction'
 import React from 'react'
 
 const TestPage = ( props ) => {  

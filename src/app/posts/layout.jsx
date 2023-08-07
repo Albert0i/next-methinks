@@ -4,12 +4,10 @@ import Footer from '@/components/Footer'
 
 export default function PostLayout({ children }) {
   return (
-    <>
-        <Header />
-        <div className='h-[calc(100vh-66px)] container mx-auto border border-red-900'>
-        { children }
-        <Footer />
+        <div className="max-w-2xl px-2 mx-auto">
+          <Header />
+          { children }
+          <Footer />
         </div>
-    </>
   )
 }
