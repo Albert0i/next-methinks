@@ -3,10 +3,12 @@ import { getPostById, updatePostById } from '@/server-actions/postServerAction'
 import Link from 'next/link'
 import React, {useState, useEffect} from 'react'
 import toast, { Toaster } from 'react-hot-toast'
+import { useRouter } from 'next/navigation';
 
 const EditPost = (props) => {
   //const { post } = await getPostById(props.id)
   const [post, setPost] = useState({})
+  const router = useRouter()
   
   useEffect(()=>{
     getPostById(props.id)
@@ -19,6 +21,7 @@ const EditPost = (props) => {
     .then(res => { 
       console.log(res) 
       toast.success('Saved')
+      router.push(`/posts/${props.id}`)
     })
     .catch(e => {
       console.log(e.message)
