@@ -7,7 +7,9 @@ const PostPreview = (props) => {
       <Link href={`/posts/${props._id}`}>
         <h2 className="m2-4 text-violet-900 hover:underline">{props.title}</h2>
       </Link>
-      <p className="text-slate-900">{props.subtitle}</p>
+      { props.subtitle!==''? (
+        <p className="text-slate-900">－{props.subtitle}</p>
+      ) : '' }      
       <p className="text-sm text-slate-900">{props.author}@{props.createdAt}</p>
     </div>
   );

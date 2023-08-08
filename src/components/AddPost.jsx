@@ -29,21 +29,23 @@ const AddPost = (props) => {
   }
   return (
     <form onSubmit={ handleSubmit }>
-      <div className='flex flex-col my-2'>                
-        <input className='p-2 border rounded border-slate-400' type='text' placeholder='title'
-        value={post.title} onChange={e => setPost({...post, title: e.target.value}) } autoFocus />
-      </div>
+      <div className='flex flex-row justify-between'>
+        <div className='flex flex-col my-2'>
+          <input className='p-2 border rounded border-slate-400' type='text' placeholder='title'
+          value={post.title} onChange={e => setPost({...post, title: e.target.value}) } autoFocus />
+        </div>
 
-      <div className='flex flex-col my-2 '>
-        <input className='p-2 border rounded border-slate-400' type='text' placeholder='subtitle'
-        value={post.subtitle} onChange={e => setPost({...post, subtitle: e.target.value}) } />
-      </div>
+        <div className='flex flex-col my-2'>
+          <input className='p-2 border rounded border-slate-400' type='text' placeholder='subtitle'
+          value={post.subtitle} onChange={e => setPost({...post, subtitle: e.target.value}) } />
+        </div>
 
-      <div className='flex flex-col my-2 '>
-        <input className='p-2 border rounded border-slate-400' type='text' placeholder='author'
-        value={post.author} onChange={e => setPost({...post, author: e.target.value}) } />
+        <div className='flex flex-col my-2'>
+          <input className='p-2 border rounded border-slate-400' type='text' placeholder='author'
+          value={post.author} onChange={e => setPost({...post, author: e.target.value}) } />
+        </div>
       </div>
-
+      
       <div className='flex flex-col my-2'>
         <textarea rows={12} cols={120} className='p-2 border rounded border-slate-500' placeholder='content'
         defaultValue={post.content} onChange={e => setPost({...post, content: e.target.value})} >
