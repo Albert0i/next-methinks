@@ -29,7 +29,7 @@ const AddPost = (props) => {
   }
   return (
     <form onSubmit={ handleSubmit }>
-      <div className='flex flex-row justify-between'>
+      <div className='grid grid-flow-col justify-stretch'>
         <div className='flex flex-col my-2'>
           <input className='p-2 border rounded border-slate-400' type='text' placeholder='title'
           value={post.title} onChange={e => setPost({...post, title: e.target.value}) } autoFocus />
@@ -46,7 +46,7 @@ const AddPost = (props) => {
         </div>
       </div>
       
-      <div className='flex flex-col my-2'>
+      <div className='flex flex-col my-2 mx-auto'>
         <textarea rows={12} cols={120} className='p-2 border rounded border-slate-500' placeholder='content'
         defaultValue={post.content} onChange={e => setPost({...post, content: e.target.value})} >
         </textarea>
