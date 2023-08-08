@@ -6,7 +6,12 @@ import toast, { Toaster } from 'react-hot-toast'
 import { useRouter } from 'next/navigation'
 
 const AddPost = (props) => {
-  const [post, setPost] = useState({})
+  const [post, setPost] = useState({
+    title: '',
+    subtitle: '',
+    author: '',
+    content: ''
+  })
   const router = useRouter()
 
   const handleSubmit = (e) => {

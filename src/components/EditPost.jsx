@@ -6,13 +6,18 @@ import toast, { Toaster } from 'react-hot-toast'
 import { useRouter } from 'next/navigation'
 
 const EditPost = (props) => {
-  const [post, setPost] = useState({})
+  const [post, setPost] = useState({
+    title: '',
+    subtitle: '',
+    author: '',
+    content: ''
+  })
   const router = useRouter()
   
   useEffect(()=>{
     getPostById(props.id)
     .then(res => setPost(res.post))
-  }, [])
+  }, [props.id])
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -65,7 +70,7 @@ const EditPost = (props) => {
 
       <div className='flex flex-row justify-between mt-2'>
         <div>
-          <button type='submit' className='px-4 py-2 mr-2 font-bold text-white bg-blue-500 rounded' type='submit'>Save</button>
+          <button type='submit' className='px-4 py-2 mr-2 font-bold text-white bg-blue-500 rounded'>Save</button>
           <Link className='px-4 py-2 ml-2 font-bold text-white bg-green-500 rounded' href={`/posts/${props.id}`}>Back</Link>
         </div>
         <div>
