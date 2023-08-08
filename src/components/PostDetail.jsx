@@ -9,6 +9,9 @@ const PostDetail = async (props) => {
     <div>
       <div className="my-2 text-center">
         <h1 className="text-2xl text-slate-600 ">{post.title}</h1>
+        { post.subtitle!==''? (
+        <p className="text-slate-900">－{post.subtitle}</p>
+        ) : '' }
         <p className="text-slate-400">{post.createdAt}</p>
       </div>
       <article className="prose">

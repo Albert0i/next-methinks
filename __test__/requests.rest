@@ -1,4 +1,4 @@
-### Get all topics
+### Get all posts
 GET http://localhost:3000/api/posts
 Content-Type: application/json
 
@@ -29,7 +29,7 @@ GET http://localhost:3000/api/posts/64ccabb6d091cdb28b6af8cc
 Content-Type: application/json
 
 
-### Update a topic 
+### Update a post
 PUT http://localhost:3000/api/posts/64ccabb6d091cdb28b6af8cc
 Content-Type: application/json
 
@@ -41,7 +41,7 @@ Content-Type: application/json
 }
 
 
-### Delete a topic  
+### Delete a post
 DELETE http://localhost:3000/api/posts/64ccabb6d091cdb28b6af8cc
 
 
