@@ -8,17 +8,19 @@ import { nextResponse } from 'next/server'
 export async function middleware(req) {
    const response = nextResponse.next()   
    const token=req.cookies.get(process.env.AUTH_COOKIE_NAME)?.value
-      //const token=req.cookies.getAll()
-   console.log('token=', token)
 
+   console.log('middleware> req.nextUrl.href=', req.nextUrl.href)   
    if (token)
       return response
    else 
-      return nextResponse.redirect(new URL('/posts/login', req.url))
+   {
+      return nextResponse.redirect(new URL('/posts/login', req.url), 
+            { headers: { 'Set-Cookie': `req-url=${req.nextUrl.href}` }} )
+   }      
 }
 
 export const config = {
-  matcher: ['/posts/create', '/posts/:path/edit'],  
+  matcher: ['/posts/create', '/posts/:id/edit'],  
 }
   
 /*
@@ -30,5 +32,8 @@ export const config = {
   
    NextJS | Middleware
    https://nextjs.org/docs/app/building-your-application/routing/middleware/
+
+   How to set cookie using NextResponse at server side?
+   https://stackoverflow.com/questions/76546264/how-to-set-cookie-using-nextresponse-at-server-side
 */
   

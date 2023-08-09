@@ -12,7 +12,10 @@ export const login = async (username, password) => {
                     httpOnly: true,
                     secure: true
                     })
-      return { "success": true, message: 'cookie set' } 
+      const reqUrl = cookieStore.get('req-url')      
+      //cookieStore.delete('req-url')
+      console.log('server-action> req-url=', reqUrl?.value)
+      return { "success": true, message: 'cookie set', url: reqUrl?.value } 
   }
   else 
   {
