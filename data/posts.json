@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "64d1efdbc0a774df1d662432"
+  },
+  "title": "Debut ",
+  "subtitle": "start to write md here",
+  "author": "me",
+  "content": "\n![This is just the beginning](https://tsuzukusekai.files.wordpress.com/2010/05/f91_end.jpg)\n\n[Source code](https://github.com/Albert0i/next-methinks.git)\n\n.env\n\n```\nMONGODB_URI=<your mongodb uri>\n\nAPI_URL=http://localhost:3000/api\n\nAPP_ENV=localhost\n\nADMIN_USERNAME=myuser\n\nADMIN_PASSWORD=mypwd\n\nAUTH_COOKIE_NAME=my-auth-token \n```\n\n[Fullstack nextjs course with mongodb and appwrite](https://youtu.be/7ahDnxnXheU)\n\n[NextJS 13 Tutorial: Create a Static Blog from Markdown Files](https://youtu.be/Hiabp1GY8fA)\n\n### EOF (2023/08/08)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-08T07:33:47.331Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-09T09:30:10.738Z"
+  },
+  "__v": 0,
+  "deletedAt": {
+    "$date": "2023-08-08T09:24:09.341Z"
+  }
+},{
+  "_id": {
+    "$oid": "64d35a9c59446b1db590a4ac"
+  },
+  "title": "Temporary",
+  "subtitle": "Temporary post",
+  "author": "me",
+  "content": "This is a temporary post for storing misc data...\n\n# Really slow connection\n\n## After edit and save, please reload... \n\n\n",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-09T09:21:32.413Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-09T09:23:02.885Z"
+  },
+  "__v": 0
+}]
