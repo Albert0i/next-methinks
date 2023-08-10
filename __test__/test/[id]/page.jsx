@@ -1,7 +1,7 @@
 import React from 'react'
 
 const TestPage = ( props ) => {  
-  console.log('props=', props)
+  //console.log('props=', props)
   const { params, searchParams } = props   
 
   return (

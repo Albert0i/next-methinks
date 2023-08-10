@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { getAllPosts } from '@/server-actions/postServerAction'
 import PostPreview from "./PostPreview";
 

@@ -12,7 +12,7 @@ const Login = () => {
     const handleClick = () => {
         login(username, password)
         .then (res => {
-            console.log(res)
+            //console.log(res)
             if (res.success) {
                 toast.success('Login success')      
                 setTimeout(()=>{router.push( res.url ? res.url :'/posts/' ) }, 1000)

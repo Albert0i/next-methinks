@@ -17,9 +17,9 @@ export const login = async (username, password) => {
                     secure: true
                     })
       const reqUrl = cookieStore.get('req-url')
-      console.log('login> req-url', reqUrl)
+      //console.log('login> req-url', reqUrl)
       cookieStore.delete('req-url')      
-      console.log('server-action> req-url=', reqUrl?.value)
+      //console.log('server-action> req-url=', reqUrl?.value)
       return { "success": true, message: 'cookie set', url: reqUrl?.value } 
   }
   else 
@@ -27,6 +27,13 @@ export const login = async (username, password) => {
     return { "success": false, message: 'username or password not correct'} 
   }
 };
+
+export const isLogin = async() => {
+  const cookieStore = cookies()
+  const token=cookieStore.get(process.env.AUTH_COOKIE_NAME)
+
+  return (token!==undefined)
+}
 
 export const logout = async () => {
   const cookieStore = cookies()

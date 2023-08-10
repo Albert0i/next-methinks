@@ -53,7 +53,6 @@ export const addPost = async (title, subtitle, author, content) => {
         return res.json()
       } 
       catch (error) {
-        console.log(error);
         console.log("Error in 'addPost': ", error);
       }
 }

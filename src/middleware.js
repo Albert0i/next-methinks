@@ -10,7 +10,7 @@ export async function middleware(req) {
    const response = nextResponse.next()   
    const token=req.cookies.get(process.env.AUTH_COOKIE_NAME)?.value
 
-   console.log('middleware> req.nextUrl.href=', req.nextUrl.href)
+   //console.log('middleware> req.nextUrl.href=', req.nextUrl.href)
    if (token && bcryptjs.compareSync(process.env.ADMIN_PASSWORD, token))
       return response
    else 

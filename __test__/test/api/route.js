@@ -3,8 +3,8 @@ import { NextResponse } from "next/server";
 export async function GET(req, { params }) {
   const searchParams = req.nextUrl.searchParams  
 
-  console.log('params=', params)
-  console.log('searchParams=', searchParams)
+  //console.log('params=', params)
+  //console.log('searchParams=', searchParams)
 
   return NextResponse.json({success: true}, { status: 200 }) 
 }
