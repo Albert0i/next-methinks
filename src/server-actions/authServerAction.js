@@ -43,7 +43,7 @@ export const logout = async () => {
     return { "success": true, message: 'cookie cleared'} 
   }    
   else 
-  return { "success": true, "message": 'cookie not found'} 
+    return { "success": true, "message": 'cookie not found'} 
 };
 
 /*
@@ -58,4 +58,7 @@ export const logout = async () => {
 
    Next.js: How to Get and Set Cookies (2023)
    https://maxschmitt.me/posts/next-js-cookies
+
+   NextJS | cookies
+   https://nextjs.org/docs/app/api-reference/functions/cookies
 */
