@@ -32,13 +32,15 @@ const PostDetail = async (props) => {
      https://code-boxx.com/get-html-content-javascript-fetch/
   */
     if (validURL(removeLineBreak(post.content))) {
-    const res = await fetch(post.content)
-    //const md = await res.json()
-    const md = await res.text()
-    //console.log('md=', md.payload.blob.richText)
-    //post.content = `[content link](${removeLineBreak(post.content)})<br />` + md 
-    post.content = md 
-  }
+      const res = await fetch(post.content)
+      try {
+        const md = await res.json()
+        post.content = md.payload.blob.richText
+      } catch (e) {
+        const md = await res.text()
+        post.content = md
+      }    
+    }
 
   return (
     <div>
