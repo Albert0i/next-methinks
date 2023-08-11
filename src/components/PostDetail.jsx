@@ -36,7 +36,8 @@ const PostDetail = async (props) => {
     //const md = await res.json()
     const md = await res.text()
     //console.log('md=', md.payload.blob.richText)
-    post.content = `[content link](${removeLineBreak(post.content)})<br />` + md 
+    //post.content = `[content link](${removeLineBreak(post.content)})<br />` + md 
+    post.content = md 
   }
 
   return (
