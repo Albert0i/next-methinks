@@ -33,12 +33,13 @@ const PostDetail = async (props) => {
   */
     if (validURL(removeLineBreak(post.content))) {
       const res = await fetch(post.content)
-      try {
+
+      try {        
         const md = await res.json()
-        post.content = md.payload.blob.richText
+        if (md?.payload?.blob?.richText)
+          post.content = md?.payload?.blob?.richText          
       } catch (e) {
-        const md = await res.text()
-        post.content = md
+        console.log(e)
       }    
     }
 
