@@ -46,8 +46,8 @@ const AddPost = (props) => {
         </div>
       </div>
       
-      <div className='flex flex-col my-2 mx-auto'>
-        <textarea rows={12} cols={120} className='p-2 border rounded border-slate-500' placeholder='content'
+      <div className='flex flex-col mx-auto my-2'>
+        <textarea rows={12} cols={120} className='p-2 border rounded border-slate-500' placeholder='Write your own content or paste url of md here...'
         defaultValue={post.content} onChange={e => setPost({...post, content: e.target.value})} >
         </textarea>
       </div>  
