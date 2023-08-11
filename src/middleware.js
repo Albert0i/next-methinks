@@ -7,16 +7,26 @@ import { nextResponse } from 'next/server'
 import bcryptjs from 'bcryptjs'
 
 export async function middleware(req) {
-   const response = nextResponse.next()   
+   //const response = nextResponse.next()   
    const token=req.cookies.get(process.env.AUTH_COOKIE_NAME)?.value
 
    //console.log('middleware> req.nextUrl.href=', req.nextUrl.href)
    if (token && bcryptjs.compareSync(process.env.ADMIN_PASSWORD, token))
-      return response
+   {
+      const res = nextResponse.next()   
+      return res
+   }
    else 
    {
-      return nextResponse.redirect(new URL('/posts/login', req.url), 
-            { headers: { 'Set-Cookie': `req-url=${req.nextUrl.href}` }} )
+      /*
+         Unable to set cookie before redirect #32424
+         https://github.com/vercel/next.js/issues/32424
+      */
+      // return nextResponse.redirect(new URL('/posts/login', req.url), 
+      //       { headers: { 'Set-Cookie': `req-url=${req.nextUrl.href}` }} )
+      const res = nextResponse.redirect(new URL('/posts/login', req.url)) // creates an actual instance
+      res.cookies.set("req-url", req.nextUrl.href) // can be called on an instsance
+      return res
    }      
 }
 

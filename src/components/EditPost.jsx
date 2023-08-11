@@ -34,16 +34,19 @@ const EditPost = (props) => {
   }
 
   const handleDelete = () => {
-    deletePostById(props.id)
-    .then(res => { 
-      //console.log(res) 
-      toast.success('Deleted')      
-      setTimeout(()=>{router.push('/posts')}, 1000)
-    })
-    .catch(e => {
-      console.log(e.message)
-      toast.error(e.message)
-     })
+    if (confirm('Are you sure?'))
+    {
+      deletePostById(props.id)
+      .then(res => { 
+        //console.log(res) 
+        toast.success('Deleted')      
+        setTimeout(()=>{router.push('/posts')}, 1000)
+      })
+      .catch(e => {
+        console.log(e.message)
+        toast.error(e.message)
+       })
+    }    
   }
   return (
     <form onSubmit={ handleSubmit }>
