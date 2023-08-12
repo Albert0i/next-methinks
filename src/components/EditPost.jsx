@@ -76,7 +76,7 @@ const EditPost = (props) => {
       <div className='flex flex-row justify-between mt-2'>
         <div>
           <button type='submit' className='px-4 py-2 mr-2 font-bold text-white bg-blue-500 rounded'>Save</button>
-          <Link className='px-4 py-2 ml-2 font-bold text-white bg-green-500 rounded' href={`/posts/${props.id}`}>Back</Link>
+          <Link className='px-4 py-2 ml-2 font-bold text-white bg-green-500 rounded' href={`/posts/${props.id}?_rebaseimg=true`}>Back</Link>
         </div>
         <div>
           <button type='button' className='px-4 py-2 font-bold text-white bg-red-500 rounded' onClick={ handleDelete }>Delete</button>
