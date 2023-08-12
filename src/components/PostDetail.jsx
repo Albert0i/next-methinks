@@ -1,55 +1,24 @@
 import { getPostById } from '@/server-actions/postServerAction'
 import Markdown from 'markdown-to-jsx'
 import Link from 'next/link'
+import { validURL, removeLineBreak, reBaseImageUrl } from '@/lib/helper' 
 
 const PostDetail = async (props) => {
-  let { post } = await getPostById(props.id)
+    let { post } = await getPostById(props.id) 
 
-  /*
-     Check if a JavaScript string is a URL
-     https://stackoverflow.com/questions/5717093/check-if-a-javascript-string-is-a-url
-  */
-  function validURL(str) {
-    
-    const pattern = new RegExp('^(https?:\\/\\/)?'+ // protocol
-      '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|'+ // domain name
-      '((\\d{1,3}\\.){3}\\d{1,3}))'+ // OR ip (v4) address
-      '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // port and path
-      '(\\?[;&a-z\\d%_.~+=-]*)?'+ // query string
-      '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
-    return !!pattern.test(str);
-  }
-  /*
-     Remove line breaks from start and end of string
-     https://stackoverflow.com/questions/14572413/remove-line-breaks-from-start-and-end-of-string
-  */
-  function removeLineBreak(str) {
-    return str.replace(/^\s+|\s+$/g, '');
-  }
-
-  /* 
-     remove last directory in URL
-     https://stackoverflow.com/questions/16750524/remove-last-directory-in-url
-  */
-  function rebaseImageUrl(url) {
-    return url.substring(0, url.lastIndexOf('/')) + "/img/" 
-  }
-
-  /*
-     Get HTML Content With Javascript Fetch (Simple Example)
-     https://code-boxx.com/get-html-content-javascript-fetch/
-  */
     if (validURL(removeLineBreak(post.content))) {
       const res = await fetch(post.content)
 
       try {        
         const md = await res.json()
-        let imageBase = rebaseImageUrl(post.content)
-        console.log('imageBase=', imageBase)
 
         if (md?.payload?.blob?.richText) {
-          post.content = md?.payload?.blob?.richText
-          //post.content = post.content.replace(/img\//, baseImage)
+          post.content = md.payload.blob.richText
+
+          // Rebase image !!!
+          if (Boolean(props.rebaseimg==='true')) 
+            post.content = reBaseImageUrl(post.content)
+          
         }
       } catch (e) {
         console.log(e)
