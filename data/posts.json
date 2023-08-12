@@ -17,23 +17,25 @@
   "deletedAt": {
     "$date": "2023-08-08T09:24:09.341Z"
   }
-},{
+},
+{
   "_id": {
     "$oid": "64d35a9c59446b1db590a4ac"
   },
   "title": "Temporary",
   "subtitle": "Temporary post",
   "author": "me",
-  "content": "This is a temporary post for storing misc data...\n\n# Really slow connection\n\n## After edit and save, please reload... \n\n\n",
+  "content": "###cookies\n\nThe `cookies` function allows you\n\n- to read the HTTP incoming request cookies from a Server Component or \n\n- write outgoing request cookies in a Server Action or Route Handler.\n\nThis is a temporary post for storing misc data...\n\n# Really slow connection\n\n## After edit and save, please reload... \n\n\n",
   "deleted": false,
   "createdAt": {
     "$date": "2023-08-09T09:21:32.413Z"
   },
   "updatedAt": {
-    "$date": "2023-08-09T09:23:02.885Z"
+    "$date": "2023-08-10T09:10:29.244Z"
   },
   "__v": 0
-},{
+},
+{
   "_id": {
     "$oid": "64d464fe3cfd3b33868e7fa3"
   },
@@ -49,7 +51,8 @@
     "$date": "2023-08-10T04:18:45.518Z"
   },
   "__v": 0
-},{
+},
+{
   "_id": {
     "$oid": "64d4653f3cfd3b33868e7fab"
   },
@@ -65,7 +68,8 @@
     "$date": "2023-08-10T04:19:11.879Z"
   },
   "__v": 0
-},{
+},
+{
   "_id": {
     "$oid": "64d465923cfd3b33868e7faf"
   },
@@ -79,6 +83,397 @@
   },
   "updatedAt": {
     "$date": "2023-08-10T04:20:34.944Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d5a9c68a76845f790c0649"
+  },
+  "title": "Notes from parameters",
+  "subtitle": "",
+  "author": "me",
+  "content": "page.jsx\n\n```\nconst TestPage = ( props ) => {  \n  console.log('props=', props)\n  const { params, searchParams } = props   \n\n  return (\n    <>\n        <div>TestPage</div>\n        <p>params={JSON.stringify(params)}</p>\n        <p>searchParams={JSON.stringify(searchParams)}</p>\n    </>    \n  )\n}\n\nexport default TestPage\n```\n\nroute.js\n\n```\nexport async function GET(req, { params }) {\n  const searchParams = req.nextUrl.searchParams  \n\n  console.log('params=', params)\n  console.log('searchParams=', searchParams)\n\n  return NextResponse.json({success: true}, { status: 200 }) \n}\n```\n\nmiddleware.js\n\n```\nimport { NextResponse } from 'next/server'\n \n// This function can be marked `async` if using `await` inside\nexport function middleware(request) {\n  return NextResponse.redirect(new URL('/home', request.url))\n}\n \n// See \"Matching Paths\" below to learn more\nexport const config = {\n  matcher: '/about/:path*',\n}\n```\nSee [Middleware](https://nextjs.org/docs/app/building-your-application/routing/middleware)\n\n### EOF (2023/08/11)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-11T03:23:50.582Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-11T04:20:19.538Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d5b116edcdc3eb7c839068"
+  },
+  "title": "Notes from cookies",
+  "subtitle": "https://nextjs.org/docs/app/api-reference/functions/cookies",
+  "author": "me",
+  "content": "The *cookies* function allows you to read the HTTP incoming request cookies from a **Server Component** or write outgoing request cookies in a **Server Action** or **Route Handler**.\n\npage.jsx\n\n```\nimport { cookies } from 'next/headers'\n \nexport default function Page() {\n  const cookieStore = cookies()\n  return cookieStore.getAll().map((cookie) => (\n    <div key={cookie.name}>\n      <p>Name: {cookie.name}</p>\n      <p>Value: {cookie.value}</p>\n    </div>\n  ))\n}\n```\n\naction.js\n\n```\n'use server'\n \nimport { cookies } from 'next/headers'\n \nasync function create(data) {\n  cookies().set('name', 'lee')\n  // or\n  cookies().set('name', 'lee', { secure: true })\n  // or\n  cookies().set({\n    name: 'name',\n    value: 'lee',\n    httpOnly: true,\n    path: '/',\n  })\n}\n```\n\nmiddleware.js\n\n```\nimport { NextResponse } from \"next/server\"\n\nexport function middleware(req) {\n  const res = NextResponse.redirect(\"/\") // creates an actual instance\n  res.cookie(\"hello\", \"world\") // can be called on an instance\n  return res\n}\n```\n[link](https://github.com/vercel/next.js/issues/32424)\n\n",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-11T03:55:02.336Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-11T09:20:17.547Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d5f383b302e686f50d2556"
+  },
+  "title": "Getting Started",
+  "subtitle": "nextjs",
+  "author": "me",
+  "content": "https://github.com/Albert0i/next-methinks/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-11T08:38:27.451Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-11T08:38:27.451Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d5f3e919cea7ab6546f40b"
+  },
+  "title": "SSG and ISR",
+  "subtitle": "NextJS SSG demo",
+  "author": "me",
+  "content": "https://github.com/Albert0i/next-ssg/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-11T08:40:09.766Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:14:00.695Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d7405350d0f62cb795a601"
+  },
+  "title": "NEXT to Node",
+  "subtitle": "‘If you are right, I must be wrong!’",
+  "author": "me",
+  "content": "https://github.com/Albert0i/crud-mongodb/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:18:27.142Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:18:27.142Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d741ff20d2bb2d6a39b5d6"
+  },
+  "title": "NextJS",
+  "subtitle": "Dockerization on Windows container",
+  "author": "me",
+  "content": "https://github.com/Albert0i/crud-mongodb/blob/main/README.V2.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:25:35.880Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:37:33.093Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d7455842a7559bbf864512"
+  },
+  "title": "YRunner on Node",
+  "subtitle": "A generic API gateway to Oralce Database",
+  "author": "me",
+  "content": "https://github.com/Albert0i/yrunner-on-node/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:39:52.581Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:39:52.581Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d7461d2d2c85598a6093bc"
+  },
+  "title": "The sequel to YON",
+  "subtitle": "Caching code tables",
+  "author": "me",
+  "content": "https://github.com/Albert0i/yrunner-on-node/blob/main/README.V2.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:43:09.059Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:43:09.059Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d746762d2c85598a6093c2"
+  },
+  "title": "Another sequel to YON ",
+  "subtitle": "Dockerization",
+  "author": "me",
+  "content": "https://github.com/Albert0i/yrunner-on-node/blob/main/README.V3.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:44:38.769Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:44:38.769Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d74709c2b320f18f6851db"
+  },
+  "title": "SQLite Server ",
+  "subtitle": "JSON Server facsimile backed by SQLite.",
+  "author": "me",
+  "content": "https://github.com/Albert0i/sqlite-server/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:47:05.752Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:47:05.752Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d74806c2b320f18f6851df"
+  },
+  "title": "MERN stack course",
+  "subtitle": "To be a programmer is not easy; to be a full stack programmer is uneasy.",
+  "author": "me",
+  "content": "https://github.com/Albert0i/mern_stack_course/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:51:18.159Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:51:18.159Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d74852c2b320f18f6851e2"
+  },
+  "title": "React Redux",
+  "subtitle": "An extract from React Redux Quick Start for idiot",
+  "author": "me",
+  "content": "https://github.com/Albert0i/react_redux_tutorial/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:52:34.522Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:52:34.522Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d748a94b145122127501ef"
+  },
+  "title": "react-js-blog",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/react-js-blog/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:54:01.720Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:54:01.720Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d7490b4b145122127501f2"
+  },
+  "title": "json-server-tutorial",
+  "subtitle": "Simplicity but not simple",
+  "author": "me",
+  "content": "https://github.com/Albert0i/json-server-tutorial/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:55:39.535Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:55:39.535Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d749414b48c59375f63e0e"
+  },
+  "title": "The way of JWT",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/json-server-tutorial/blob/main/JWT.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:56:33.106Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:56:33.106Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d7498e4b145122127501f8"
+  },
+  "title": "node-express-jwt-auth",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/node-express-jwt-auth/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:57:50.382Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:57:50.382Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d749c34b145122127501fb"
+  },
+  "title": "dojo-blog",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/dojo-blog/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:58:43.578Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:58:43.578Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d74b9d4b14512212750200"
+  },
+  "title": "Node-tify TA project",
+  "subtitle": "Old soldiers never die--they just fade away.",
+  "author": "me",
+  "content": "https://github.com/Albert0i/na/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T09:06:37.229Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T09:06:37.229Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d74d277fbd78ee0f58f624"
+  },
+  "title": "node-docker",
+  "subtitle": "Notes from Underground",
+  "author": "me",
+  "content": "https://github.com/Albert0i/node-docker/blob/main/NFUD.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T09:13:11.789Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T09:13:11.789Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d74d9a7fbd78ee0f58f62d"
+  },
+  "title": "Docker swarm on Oracle Cloud (Free Tier)",
+  "subtitle": "窮L的後現代生活",
+  "author": "me",
+  "content": "https://github.com/Albert0i/node-docker/blob/main/swarm.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T09:15:06.153Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T09:15:06.153Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d74eafada3b35414a72a92"
+  },
+  "title": "Dockerize WebForm Application",
+  "subtitle": "最後一公里」之「行百里者半於九十」",
+  "author": "me",
+  "content": "https://github.com/Albert0i/misdoc/blob/main/DWFA.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T09:19:43.911Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T09:19:43.911Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d74ed4ada3b35414a72a95"
+  },
+  "title": "Caching SQL results with Redis, a strategic approach.",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/misdoc/blob/main/CSRWR.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T09:20:20.949Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T09:20:20.949Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d74f07ada3b35414a72a99"
+  },
+  "title": "YRunner",
+  "subtitle": "The Accidental HA",
+  "author": "me",
+  "content": "https://github.com/Albert0i/misdoc/blob/main/YRTAHA.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T09:21:11.775Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T09:21:11.775Z"
   },
   "__v": 0
 }]
