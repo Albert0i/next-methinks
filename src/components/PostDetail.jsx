@@ -27,6 +27,14 @@ const PostDetail = async (props) => {
     return str.replace(/^\s+|\s+$/g, '');
   }
 
+  /* 
+     remove last directory in URL
+     https://stackoverflow.com/questions/16750524/remove-last-directory-in-url
+  */
+  function rebaseImageUrl(url) {
+    return url.substring(0, url.lastIndexOf('/')) + "/img/" 
+  }
+
   /*
      Get HTML Content With Javascript Fetch (Simple Example)
      https://code-boxx.com/get-html-content-javascript-fetch/
@@ -36,8 +44,13 @@ const PostDetail = async (props) => {
 
       try {        
         const md = await res.json()
-        if (md?.payload?.blob?.richText)
-          post.content = md?.payload?.blob?.richText          
+        let imageBase = rebaseImageUrl(post.content)
+        console.log('imageBase=', imageBase)
+
+        if (md?.payload?.blob?.richText) {
+          post.content = md?.payload?.blob?.richText
+          //post.content = post.content.replace(/img\//, baseImage)
+        }
       } catch (e) {
         console.log(e)
       }    
