@@ -25,7 +25,7 @@ const EditPost = (props) => {
     .then(res => { 
       //console.log(res) 
       toast.success('Saved')      
-      setTimeout(()=>{router.push(`/posts/${props.id}`)}, 1000)
+      setTimeout(()=>{router.push(`/posts/${props.id}?_rebaseimg=true`)}, 1000)
     })
     .catch(e => {
       console.log(e.message)
