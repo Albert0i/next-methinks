@@ -31,6 +31,14 @@ export function removeLastDirectory(url) {
 /* 
    Rebase image url
    WARNING: Work only for github account, by reverse engineering !!!
+
+   original url from github:
+    /Albert0i/next-methinks/raw/main/img/building.JPG
+
+   rebased url: 
+    https://raw.githubusercontent.com/Albert0i/next-methinks/main/img/building.JPG
+    
+
 */
 export function reBaseImageUrl(content) {
     const gitName = 'Albert0i'
