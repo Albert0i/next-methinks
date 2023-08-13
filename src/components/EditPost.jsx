@@ -12,6 +12,7 @@ const EditPost = (props) => {
     author: '',
     content: ''
   })
+  const [disabled, setDisabled] = useState('')
   const router = useRouter()
   
   useEffect(()=>{
@@ -20,11 +21,12 @@ const EditPost = (props) => {
   }, [props.id])
 
   const handleSubmit = (e) => {
+    setDisabled('disabled')
     e.preventDefault()
     updatePostById(post._id, post.title, post.subtitle, post.author, post.content)
     .then(res => { 
       //console.log(res) 
-      toast.success('Saved')      
+      toast.success('Saved')
       setTimeout(()=>{router.push(`/posts/${props.id}?_rebaseimg=true`)}, 1000)
     })
     .catch(e => {
@@ -36,6 +38,7 @@ const EditPost = (props) => {
   const handleDelete = () => {
     if (confirm('Are you sure?'))
     {
+      setDisabled('disabled')
       deletePostById(props.id)
       .then(res => { 
         //console.log(res) 
@@ -48,6 +51,7 @@ const EditPost = (props) => {
        })
     }    
   }
+
   return (
     <form onSubmit={ handleSubmit }>
       <div className='grid grid-flow-col justify-stretch'>
@@ -75,11 +79,13 @@ const EditPost = (props) => {
 
       <div className='flex flex-row justify-between mt-2'>
         <div>
-          <button type='submit' className='px-4 py-2 mr-2 font-bold text-white bg-blue-500 rounded'>Save</button>
-          <Link className='px-4 py-2 ml-2 font-bold text-white bg-green-500 rounded' href={`/posts/${props.id}?_rebaseimg=true`}>Back</Link>
+          <button type='submit' className='px-4 py-2 mr-2 font-bold text-white bg-blue-600 hover:bg-blue-400 rounded disabled:bg-gray-400 disabled:cursor-not-allowed' disabled={disabled}>Save</button>
+
+          <Link className='px-4 py-2 ml-2 font-bold text-white bg-green-600 hover:bg-green-400 rounded disabled:bg-gray-400 disabled:cursor-not-allowed' href={`/posts/${props.id}?_rebaseimg=true`} disabled={disabled}>Back</Link>
         </div>
+
         <div>
-          <button type='button' className='px-4 py-2 font-bold text-white bg-red-500 rounded' onClick={ handleDelete }>Delete</button>
+          <button type='button' className='px-4 py-2 font-bold text-white bg-red-600 hover:bg-red-400 rounded disabled:bg-gray-400 disabled:cursor-not-allowed' onClick={ handleDelete } disabled={disabled}>Delete</button>
         </div>        
       </div>
       <div>

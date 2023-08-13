@@ -7,15 +7,15 @@ const Header = () => {
       <div className="p-2 my-2 text-center rounded-md bg-slate-800 flex flex-row justify-between">
 
         <Link href='/posts/create'>
-          <div className="mt-2 text-2xl font-bold text-white border border-white rounded px-2">+</div>
+          <div className="hover:bg-slate-600 mt-2 text-2xl font-bold text-white border border-white rounded px-2">+</div>
         </Link>
 
         <Link href="/posts">
-          <div className="mt-2 text-2xl font-bold text-white">All Posts</div>
+          <div className="hover:bg-slate-600 mt-2 text-2xl font-bold text-white">All Posts</div>
         </Link>
 
         <Link href='/posts/create'>
-          <div className="mt-2 text-2xl font-bold text-white border border-white rounded px-2">+</div>
+          <div className="hover:bg-slate-600 mt-2 text-2xl font-bold text-white border border-white rounded px-2">+</div>
         </Link>
 
       </div>

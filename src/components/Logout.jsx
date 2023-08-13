@@ -32,7 +32,7 @@ const Logout = () => {
                 <h1 className='text-2xl font-bold'>Are you sure to logout?</h1>
             </div>            
             <div className='m-4'>
-                <button className='px-4 py-2 mr-2 font-bold text-white bg-blue-500 rounded' onClick={handleClick}>Proceed</button>
+                <button className='px-4 py-2 mr-2 font-bold text-white bg-blue-600 hover:bg-blue-400 rounded' onClick={handleClick}>Proceed</button>
             </div>   
             <div>
                 <Toaster position="bottom-center" reverseOrder={true} />

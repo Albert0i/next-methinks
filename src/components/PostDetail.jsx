@@ -43,7 +43,7 @@ const PostDetail = async (props) => {
       </article>
 
       <div className='mt-2'>
-        <Link className='px-4 py-2 font-bold text-white bg-blue-500 rounded text-bold' href={`/posts/${props.id}/edit`}>Edit</Link>        
+        <Link className='px-4 py-2 font-bold text-white bg-blue-600 hover:bg-blue-400 rounded text-bold' href={`/posts/${props.id}/edit`}>Edit</Link>        
       </div>      
     </div>
   )

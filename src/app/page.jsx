@@ -8,7 +8,7 @@ export default function Home() {
       </Link>      
 
        <div className='text-black hover:text-gray-600'>
-           <Link href='/posts' className='px-4 py-2 mx-auto text-white bg-blue-600 rounded hover:bg-blue-300'>view all posts</Link>
+           <Link href='/posts' className='px-4 py-2 mx-auto text-white bg-blue-600 rounded hover:bg-blue-400'>view all posts</Link>
        </div>
     </div>
     );

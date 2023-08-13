@@ -42,7 +42,7 @@ const Login = () => {
                     value={password} onChange={e => setPassword(e.target.value) } /> 
             </div>
             <div className='m-4'>
-                <button className='px-4 py-2 mr-2 font-bold text-white bg-blue-500 rounded' onClick={handleClick}>Login</button>
+                <button className='px-4 py-2 mr-2 font-bold text-white bg-blue-600 hover:bg-blue-400 rounded' onClick={handleClick}>Login</button>
             </div>   
             <div>
                 <Toaster position="bottom-center" reverseOrder={true} />

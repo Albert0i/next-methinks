@@ -5,7 +5,7 @@ const PostPreview = (props) => {
     <div 
       className="p-4 bg-white border rounded-md shadow-sm border-slate-300">     
       <Link href={`/posts/${props._id}?_rebaseimg=true`}>
-        <h2 className="m2-4 text-violet-900 hover:underline">{props.title}</h2>
+        <h2 className="m2-4 text-violet-900 hover:font-bold">{props.title}</h2>
       </Link>
       { props.subtitle!==''? (
         <p className="text-slate-900">－{props.subtitle}</p>
