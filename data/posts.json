@@ -20,125 +20,6 @@
 },
 {
   "_id": {
-    "$oid": "64d35a9c59446b1db590a4ac"
-  },
-  "title": "Temporary",
-  "subtitle": "Temporary post",
-  "author": "me",
-  "content": "###cookies\n\nThe `cookies` function allows you\n\n- to read the HTTP incoming request cookies from a Server Component or \n\n- write outgoing request cookies in a Server Action or Route Handler.\n\nThis is a temporary post for storing misc data...\n\n# Really slow connection\n\n## After edit and save, please reload... \n\n\n",
-  "deleted": false,
-  "createdAt": {
-    "$date": "2023-08-09T09:21:32.413Z"
-  },
-  "updatedAt": {
-    "$date": "2023-08-10T09:10:29.244Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "64d464fe3cfd3b33868e7fa3"
-  },
-  "title": "Souls",
-  "subtitle": "A story of identity",
-  "author": "me",
-  "content": "How soul outlives the body? This is perhaps the most fascinating question for human being. As a matter of fact, we don't even realize what is \"soul\". \n\nAssuming that body, which is a palpable and perceivable existence, has a invisible connexion with soul. If it is true. Is it possible to *disentangle* them? Or connect the soul with another body? Then what is the **identity** of man? By soul? By body? Or by both? \n\nDoes the soul eat? Does the soul feel? Does the soul sleep? We definitely not know. \n",
-  "deleted": false,
-  "createdAt": {
-    "$date": "2023-08-10T04:18:06.451Z"
-  },
-  "updatedAt": {
-    "$date": "2023-08-10T04:18:45.518Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "64d4653f3cfd3b33868e7fab"
-  },
-  "title": "Stars",
-  "subtitle": "A story of memories",
-  "author": "me",
-  "content": "Stars, staring and shinning on us over centries, can only be seen in dark nights. Those little silvery dots bear memories from the most remote era \ndating from the very creation of universe. \n\nIn secular and religious belief, there exists two kinds of stars. One that bring much fortune while the other fortell bad lucks, or presentiment of disasters. \n",
-  "deleted": false,
-  "createdAt": {
-    "$date": "2023-08-10T04:19:11.879Z"
-  },
-  "updatedAt": {
-    "$date": "2023-08-10T04:19:11.879Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "64d465923cfd3b33868e7faf"
-  },
-  "title": "Life",
-  "subtitle": "A story of life",
-  "author": "me",
-  "content": "Life as a series of causes and consequences. Every day is a thread of knots\nof events, every decision is crucial, every decision is determinative. \n",
-  "deleted": false,
-  "createdAt": {
-    "$date": "2023-08-10T04:20:34.944Z"
-  },
-  "updatedAt": {
-    "$date": "2023-08-10T04:20:34.944Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "64d5a9c68a76845f790c0649"
-  },
-  "title": "Notes from parameters",
-  "subtitle": "",
-  "author": "me",
-  "content": "page.jsx\n\n```\nconst TestPage = ( props ) => {  \n  console.log('props=', props)\n  const { params, searchParams } = props   \n\n  return (\n    <>\n        <div>TestPage</div>\n        <p>params={JSON.stringify(params)}</p>\n        <p>searchParams={JSON.stringify(searchParams)}</p>\n    </>    \n  )\n}\n\nexport default TestPage\n```\n\nroute.js\n\n```\nexport async function GET(req, { params }) {\n  const searchParams = req.nextUrl.searchParams  \n\n  console.log('params=', params)\n  console.log('searchParams=', searchParams)\n\n  return NextResponse.json({success: true}, { status: 200 }) \n}\n```\n\nmiddleware.js\n\n```\nimport { NextResponse } from 'next/server'\n \n// This function can be marked `async` if using `await` inside\nexport function middleware(request) {\n  return NextResponse.redirect(new URL('/home', request.url))\n}\n \n// See \"Matching Paths\" below to learn more\nexport const config = {\n  matcher: '/about/:path*',\n}\n```\nSee [Middleware](https://nextjs.org/docs/app/building-your-application/routing/middleware)\n\n### EOF (2023/08/11)",
-  "deleted": false,
-  "createdAt": {
-    "$date": "2023-08-11T03:23:50.582Z"
-  },
-  "updatedAt": {
-    "$date": "2023-08-11T04:20:19.538Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "64d5b116edcdc3eb7c839068"
-  },
-  "title": "Notes from cookies",
-  "subtitle": "https://nextjs.org/docs/app/api-reference/functions/cookies",
-  "author": "me",
-  "content": "The *cookies* function allows you to read the HTTP incoming request cookies from a **Server Component** or write outgoing request cookies in a **Server Action** or **Route Handler**.\n\npage.jsx\n\n```\nimport { cookies } from 'next/headers'\n \nexport default function Page() {\n  const cookieStore = cookies()\n  return cookieStore.getAll().map((cookie) => (\n    <div key={cookie.name}>\n      <p>Name: {cookie.name}</p>\n      <p>Value: {cookie.value}</p>\n    </div>\n  ))\n}\n```\n\naction.js\n\n```\n'use server'\n \nimport { cookies } from 'next/headers'\n \nasync function create(data) {\n  cookies().set('name', 'lee')\n  // or\n  cookies().set('name', 'lee', { secure: true })\n  // or\n  cookies().set({\n    name: 'name',\n    value: 'lee',\n    httpOnly: true,\n    path: '/',\n  })\n}\n```\n\nmiddleware.js\n\n```\nimport { NextResponse } from \"next/server\"\n\nexport function middleware(req) {\n  const res = NextResponse.redirect(\"/\") // creates an actual instance\n  res.cookie(\"hello\", \"world\") // can be called on an instance\n  return res\n}\n```\n[link](https://github.com/vercel/next.js/issues/32424)\n\n",
-  "deleted": false,
-  "createdAt": {
-    "$date": "2023-08-11T03:55:02.336Z"
-  },
-  "updatedAt": {
-    "$date": "2023-08-11T09:20:17.547Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
-    "$oid": "64d5f383b302e686f50d2556"
-  },
-  "title": "Getting Started",
-  "subtitle": "nextjs",
-  "author": "me",
-  "content": "https://github.com/Albert0i/next-methinks/blob/main/README.md",
-  "deleted": false,
-  "createdAt": {
-    "$date": "2023-08-11T08:38:27.451Z"
-  },
-  "updatedAt": {
-    "$date": "2023-08-11T08:38:27.451Z"
-  },
-  "__v": 0
-},
-{
-  "_id": {
     "$oid": "64d5f3e919cea7ab6546f40b"
   },
   "title": "SSG and ISR",
@@ -491,6 +372,125 @@
   },
   "updatedAt": {
     "$date": "2023-08-12T11:16:48.644Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d838b551b79a4482797902"
+  },
+  "title": "Getting Started",
+  "subtitle": "nextjs",
+  "author": "me",
+  "content": "https://github.com/Albert0i/next-methinks/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-13T01:58:13.121Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-13T01:58:13.121Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d8390c51b79a4482797907"
+  },
+  "title": "Temporary",
+  "subtitle": "Temporary post",
+  "author": "me",
+  "content": "###cookies\nThe `cookies` function allows you\n\n- to read the HTTP incoming request cookies from a Server Component or \n\n- write outgoing request cookies in a Server Action or Route Handler.\n\nThis is a temporary post for storing misc data...\n\n# Really slow connection\n\n## After edit and save, please reload... \n",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-13T01:59:40.262Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-13T02:00:45.817Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d83a87695830c55abc440c"
+  },
+  "title": "Notes from parameters",
+  "subtitle": "",
+  "author": "me",
+  "content": "page.jsx\n\n```\nconst TestPage = ( props ) => {  \\n  console.log('props=', props)\nconst { params, searchParams } = props   \n  return (\n    <>\n        <div>TestPage</div>\n        <p>params={JSON.stringify(params)}</p>\n        <p>searchParams={JSON.stringify(searchParams)}</p>\n    </>    \n  )\n}\n\nexport default TestPage\n```\n\nroute.js\n\n```\nexport async function GET(req, { params }) {\n  const searchParams = req.nextUrl.searchParams  \n\n  console.log('params=', params)\n  console.log('searchParams=', searchParams)\n\n  return NextResponse.json({success: true}, { status: 200 }) \n\n```\n\nmiddleware.js\n\n```\nimport { NextResponse } from 'next/server'\n \n// This function can be marked `async` if using `await` inside\nexport function middleware(request) {\n  return NextResponse.redirect(new URL('/home', request.url))\n}\n \n// See \\\"Matching Paths\\\" below to learn more\nexport const config = {\n  matcher: '/about/:path*',\n}\n```\nSee [Middleware](https://nextjs.org/docs/app/building-your-application/routing/middleware)\n\n### EOF (2023/08/11)\n",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-13T02:05:59.808Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-13T02:05:59.808Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d83bb828f83ab040646c95"
+  },
+  "title": "Notes from cookies",
+  "subtitle": "\"https://nextjs.org/docs/app/api-reference/functions/cookies",
+  "author": "me",
+  "content": "The *cookies* function allows you to read the HTTP incoming request cookies from a **Server Component** or write outgoing request cookies in a **Server Action** or **Route Handler**.\n\npage.jsx\n\n```\nimport { cookies } from 'next/headers'\n \nexport default function Page() {\n  const cookieStore = cookies()\n  return cookieStore.getAll().map((cookie) => (\n    <div key={cookie.name}>\n      <p>Name: {cookie.name}</p>\n      <p>Value: {cookie.value}</p>\n    </div>\n  ))\n}\n```\n\naction.js\n\n```\n'use server'\n \nimport { cookies } from 'next/headers'\n \nasync function create(data) {\n  cookies().set('name', 'lee')\n  // or\n  cookies().set('name', 'lee', { secure: true })\n  // or\n  cookies().set({\n    name: 'name',\n    value: 'lee',\n    httpOnly: true,\n    path: '/',\n  })\n}\n```\n\nmiddleware.js\n\n```\nimport { NextResponse } from \"next/server\"\n\nexport function middleware(req) {\n  const res = NextResponse.redirect(\"/\") // creates an actual instance\n  res.cookie(\"hello\", \"world\") // can be called on an instance\n  return res\n}\n```\n[link](https://github.com/vercel/next.js/issues/32424)\n\n",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-13T02:11:04.911Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-13T02:12:00.176Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d83c4c534c31f40c3eb4d5"
+  },
+  "title": "Souls",
+  "subtitle": "A story of identity",
+  "author": "me",
+  "content": "How soul outlives the body? This is perhaps the most fascinating question for human being. As a matter of fact, we don't even realize what is \"soul\". \n\nAssuming that body, which is a palpable and perceivable existence, has a invisible connexion with soul. If it is true. Is it possible to *disentangle* them? Or connect the soul with another body? Then what is the **identity** of man? By soul? By body? Or by both? \n\nDoes the soul eat? Does the soul feel? Does the soul sleep? We definitely not know. \n",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-13T02:13:32.313Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-13T02:13:32.313Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d83cbec8155853cec477df"
+  },
+  "title": "Stars",
+  "subtitle": "A story of memories",
+  "author": "me",
+  "content": "Stars, staring and shinning on us over centries, can only be seen in dark nights. Those little silvery dots bear memories from the most remote era dating from the very creation of universe. \n\nIn secular and religious beliefs, there exist two kinds of stars. One that bring much fortune while the other foretell bad luck, or presentiment of disasters. \n",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-13T02:15:26.196Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-13T02:15:26.196Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d83cebc8155853cec477e3"
+  },
+  "title": "Life",
+  "subtitle": "A story of life",
+  "author": "me",
+  "content": "Life as a series of causes and consequences. Every day is a thread of knots of events, every decision is crucial, every decision is determinative. \n",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-13T02:16:11.376Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-13T02:16:11.376Z"
   },
   "__v": 0
 }]
