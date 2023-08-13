@@ -32,19 +32,24 @@ export function removeLastDirectory(url) {
    Rebase image url
    WARNING: Work only for github account, by reverse engineering !!!
 
-   original url from github:
+   original image url from github:
     /Albert0i/next-methinks/raw/main/img/building.JPG
 
-   rebased url: 
+   rebased image url: 
     https://raw.githubusercontent.com/Albert0i/next-methinks/main/img/building.JPG
     
 
 */
-export function reBaseImageUrl(content) {
-    const gitName = 'Albert0i'
+export function reBaseImageUrl(content, gitUsername) {
+    //const gitUsername = 'Albert0i'
 
     return content
-        .replaceAll(`\/${gitName}`, `https:\/\/raw.githubusercontent.com\/${gitName}`)
+        .replaceAll(`\/${gitUsername}`, `https:\/\/raw.githubusercontent.com\/${gitUsername}`)
         .replaceAll('\/raw\/', '\/')
-        .replaceAll('class', 'className')
+        .replaceAll('class', 'className')   // this will eliminate any warning message. 
+        .replaceAll('itemprop', 'itemProp')
+        /*
+            Warning: Invalid DOM property `class`. Did you mean `className`?
+            Warning: Invalid DOM property `itemprop`. Did you mean `itemProp`?
+        */
 }

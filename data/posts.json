@@ -476,4 +476,21 @@
     "$date": "2023-08-12T09:21:11.775Z"
   },
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d76a20a70c972cebd72656"
+  },
+  "title": "Deploy ASP.NET 4.5 Webform Application to multi-containers Docker environment",
+  "subtitle": "路漫漫其修遠兮， 吾將上下而求索。",
+  "author": "me",
+  "content": "https://github.com/Albert0i/ta2/blob/main/TA2.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T11:16:48.644Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T11:16:48.644Z"
+  },
+  "__v": 0
 }]
