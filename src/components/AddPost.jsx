@@ -57,9 +57,14 @@ const AddPost = (props) => {
 
       <div className='flex flex-row justify-between mt-2'>
         <div>
-          <button className='px-4 py-2 mr-2 font-bold text-white bg-blue-600 hover:bg-blue-400 rounded disabled:bg-gray-400 disabled:cursor-not-allowed' type='submit' disabled={disabled}>Create</button>
-
-          <Link className='px-4 py-2 ml-2 font-bold text-white bg-green-600 hover:bg-green-400 rounded disabled:bg-gray-400 disabled:cursor-not-allowed' href={'/posts'} disabled={disabled}>Back</Link>
+          <button className='px-4 py-2 mr-2 font-bold text-white bg-blue-600 rounded hover:bg-blue-400 disabled:bg-gray-400 disabled:cursor-not-allowed' type='submit' disabled={disabled}>Create</button>
+          
+          { 
+            disabled !== 'disabled' ? 
+            <Link className='px-4 py-2 ml-2 font-bold text-white bg-green-600 rounded hover:bg-green-400' href={'/posts'}>Back</Link> 
+            : 
+            <Link className='px-4 py-2 ml-2 font-bold text-white bg-gray-400 rounded cursor-not-allowed' href={'/posts'}>Back</Link> 
+          }
         </div>      
       </div>
       <div>
@@ -71,10 +76,5 @@ const AddPost = (props) => {
 
 export default AddPost
 /*
-  <Link className='px-4 py-2 ml-2 font-bold text-white bg-green-600 hover:bg-green-400 rounded disabled:bg-gray-400 disabled:cursor-not-allowed' href={'/posts'} disabled={disabled}>Back</Link>
-
-  <Link className={`px-4 py-2 ml-2 font-bold text-white rounded (${disabled}==='disabled'?'bg-gray-400 cursor-not-allowed':'bg-green-600 hover:bg-green-400')`} href={'/posts'} disabled={disabled}>Back</Link>
-
-  <Link className={ 'px-4 py-2 ml-2 font-bold text-white rounded bg-green-600 hover:bg-green-400' + 
-                            disabled===''?'bg-green-600 hover:bg-green-400':'bg-gray-400 cursor-not-allowed' } href={'/posts'}>Back</Link>
+  <Link className='px-4 py-2 ml-2 font-bold text-white bg-green-600 rounded hover:bg-green-400 disabled:bg-gray-400 disabled:cursor-not-allowed' href={'/posts'} disabled={disabled}>Back</Link>
 */

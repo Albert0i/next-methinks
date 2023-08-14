@@ -79,13 +79,18 @@ const EditPost = (props) => {
 
       <div className='flex flex-row justify-between mt-2'>
         <div>
-          <button type='submit' className='px-4 py-2 mr-2 font-bold text-white bg-blue-600 hover:bg-blue-400 rounded disabled:bg-gray-400 disabled:cursor-not-allowed' disabled={disabled}>Save</button>
+          <button type='submit' className='px-4 py-2 mr-2 font-bold text-white bg-blue-600 rounded hover:bg-blue-400 disabled:bg-gray-400 disabled:cursor-not-allowed' disabled={disabled}>Save</button>
 
-          <Link className='px-4 py-2 ml-2 font-bold text-white bg-green-600 hover:bg-green-400 rounded disabled:bg-gray-400 disabled:cursor-not-allowed' href={`/posts/${props.id}?_rebaseimg=true`} disabled={disabled}>Back</Link>
+          { 
+            disabled !== 'disabled' ? 
+            <Link className='px-4 py-2 ml-2 font-bold text-white bg-green-600 rounded hover:bg-green-400' href={`/posts/${props.id}?_rebaseimg=true`}>Back</Link> 
+            : 
+            <Link className='px-4 py-2 ml-2 font-bold text-white bg-gray-400 rounded cursor-not-allowed' href={`/posts/${props.id}?_rebaseimg=true`}>Back</Link> 
+          }
         </div>
 
         <div>
-          <button type='button' className='px-4 py-2 font-bold text-white bg-red-600 hover:bg-red-400 rounded disabled:bg-gray-400 disabled:cursor-not-allowed' onClick={ handleDelete } disabled={disabled}>Delete</button>
+          <button type='button' className='px-4 py-2 font-bold text-white bg-red-600 rounded hover:bg-red-400 disabled:bg-gray-400 disabled:cursor-not-allowed' onClick={ handleDelete } disabled={disabled}>Delete</button>
         </div>        
       </div>
       <div>
@@ -96,3 +101,6 @@ const EditPost = (props) => {
 }
 
 export default EditPost
+/*
+  <Link className='px-4 py-2 ml-2 font-bold text-white bg-green-600 rounded hover:bg-green-400 disabled:bg-gray-400 disabled:cursor-not-allowed' href={`/posts/${props.id}?_rebaseimg=true`} disabled={disabled}>Back</Link>
+*/
