@@ -1,4 +1,14 @@
 /*
+   JavaScript Email Validation
+   https://www.w3schools.blog/email-validation-javascript-js
+*/
+export function validEmail(str) {
+    const mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    
+    return str.match(mailformat)
+}
+
+/*
    Check if a JavaScript string is a URL
    https://stackoverflow.com/questions/5717093/check-if-a-javascript-string-is-a-url
 */

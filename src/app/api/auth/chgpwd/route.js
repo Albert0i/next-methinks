@@ -3,18 +3,24 @@ import connectMongoDB from "@/config/mongoDB"
 import User from "@/models/user"
 import bcryptjs from 'bcryptjs'
 
-// Login a user
+// Change user password
 export async function POST(req) {
     const reqBody = await req.json()
-    const { username, password } = reqBody
+    const { username, password, newPassword } = reqBody
     await connectMongoDB()
 
-    try {
-        const user = await User.findOne({ username }).select('_id username password isAdmin').lean()
-        
+    try {        
+        const user = await User.findOne({ username }).select('_id username password')
+
         if (user) {
-            if (bcryptjs.compareSync(password, user.password))
-                return NextResponse.json({ success: true, user }, { status: 200 });
+            if (bcryptjs.compareSync(password, user.password)) {
+                const salt = bcryptjs.genSaltSync(10);
+                const hashedPassword = bcryptjs.hashSync(newPassword, salt);
+                //const newUser = await User.findOneAndUpdate({ password: hashedPassword })
+                user.password = hashedPassword
+                const newUser = await user.save()
+                return NextResponse.json({ success: true, user: newUser }, { status: 200 });
+            }                            
             else 
                 return NextResponse.json({ success: false, message: 'username or password not correct' }, { status: 400 });
         } else {

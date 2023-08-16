@@ -14,7 +14,7 @@ Content-Type: application/json
 
 {
   "username": "berto", 
-  "password": "123456",
+  "password": "654321",
   "email": "albert0i@hotmail.com"
 }
 
@@ -26,6 +26,17 @@ Content-Type: application/json
 {
   "username": "albertoi", 
   "password": "123456"
+}
+
+
+### Change user password
+POST http://localhost:3000/api/auth/chgpwd
+Content-Type: application/json
+
+{
+  "username": "albertoi", 
+  "password": "654321",
+  "newPassword":"123456"
 }
 
 # 

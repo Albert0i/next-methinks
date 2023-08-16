@@ -12,6 +12,7 @@ export async function POST(req) {
     try {
         //const user = await User.findOne({ $and:[ { username }, { email } ]}).select('_id').lean()
         const user = await User.findOne({ username }).select('_id').lean()
+        
         if (!user) {
             const salt = bcryptjs.genSaltSync(10);
             const hashedPassword = bcryptjs.hashSync(password, salt);            
@@ -22,7 +23,6 @@ export async function POST(req) {
         }
     }
     catch (error) {
-        console.log('error=', error.message)
         let errors = {}
         if (error.errors) {
             Object.keys(error.errors).forEach((key) => {
