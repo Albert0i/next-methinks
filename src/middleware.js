@@ -24,7 +24,7 @@ export async function middleware(req) {
       */
       // return nextResponse.redirect(new URL('/posts/login', req.url), 
       //       { headers: { 'Set-Cookie': `req-url=${req.nextUrl.href}` }} )
-      const res = nextResponse.redirect(new URL('/posts/login', req.url)) // creates an actual instance
+      const res = nextResponse.redirect(new URL('/auth/login', req.url)) // creates an actual instance
       res.cookies.set("req-url", req.nextUrl.href) // can be called on an instsance
       return res
    }      

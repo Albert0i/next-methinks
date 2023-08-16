@@ -2,6 +2,32 @@
 import { cookies } from 'next/headers'
 import bcryptjs from 'bcryptjs'
 
+export const register = async (username, password) => {  
+  // const cookieStore = cookies()
+
+  // if ((username===process.env.ADMIN_USERNAME) && 
+  //     (password===process.env.ADMIN_PASSWORD)) {
+  //       const salt = bcryptjs.genSaltSync(10);
+  //       const hashedValue = bcryptjs.hashSync(process.env.ADMIN_PASSWORD, salt);
+
+  //     cookieStore.set({
+  //                   name: process.env.AUTH_COOKIE_NAME,
+  //                   value: hashedValue,
+  //                   httpOnly: true,
+  //                   secure: true
+  //                   })
+  //     const reqUrl = cookieStore.get('req-url')
+  //     //console.log('login> req-url', reqUrl)
+  //     cookieStore.delete('req-url')      
+  //     //console.log('server-action> req-url=', reqUrl?.value)
+  //     return { "success": true, message: 'cookie set', url: reqUrl?.value } 
+  // }
+  // else 
+  {
+    return { "success": false, message: 'username or password not correct'} 
+  }
+};
+
 export const login = async (username, password) => {  
   const cookieStore = cookies()
 

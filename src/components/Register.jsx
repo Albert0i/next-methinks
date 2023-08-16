@@ -1,21 +1,21 @@
 "use client"
 import React, { useState } from 'react'
-import { login } from '@/server-actions/authServerAction'
+import { register } from '@/server-actions/authServerAction'
 import toast, { Toaster } from 'react-hot-toast'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
-const Login = () => {
+const Register = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const router = useRouter()
 
     const handleClick = () => {
-        login(username, password)
+        register(username, password)
         .then (res => {
             //console.log(res)
             if (res.success) {
-                toast.success('Login success')      
+                toast.success('Register success')      
                 setTimeout(()=>{router.push( res.url ? res.url :'/posts/' ) }, 1000)
             }
             else 
@@ -32,7 +32,7 @@ const Login = () => {
     return (
         <div className='flex flex-col items-center justify-center'>
             <div className='m-4'>
-                <h1 className='text-2xl font-bold'>Login</h1>
+                <h1 className='text-2xl font-bold'>Register</h1>
             </div>            
             <div className='m-4'>
                 <input className='p-2 border border-black rounded' type='text' placeholder='username' autoFocus
@@ -43,12 +43,12 @@ const Login = () => {
                     value={password} onChange={e => setPassword(e.target.value) } /> 
             </div>
             <div className='m-4'>
-                <button className='px-4 py-2 mr-2 font-bold text-white bg-blue-600 rounded hover:bg-blue-400' onClick={handleClick}>Login</button>
+                <button className='px-4 py-2 mr-2 font-bold text-white bg-blue-600 rounded hover:bg-blue-400' onClick={handleClick}>Register</button>
             </div>
-            
             <div>
-            <Link className="mt-3 text-sm text-right" href={"/auth/register"}>
-                Don&apos;t have an account? <span className="underline">Register</span>
+                
+            <Link className="mt-3 text-sm text-right" href={"/auth/login"}>
+                Already have an account? <span className="underline">Login</span>
             </Link>
             </div>
             <div>
@@ -58,4 +58,4 @@ const Login = () => {
       )
 }
 
-export default Login
+export default Register
