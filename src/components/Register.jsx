@@ -8,6 +8,7 @@ import Link from 'next/link'
 const Register = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+    const [email, setEmail] = useState('')
     const router = useRouter()
 
     const handleClick = () => {
@@ -35,13 +36,18 @@ const Register = () => {
                 <h1 className='text-2xl font-bold'>Register</h1>
             </div>            
             <div className='m-4'>
-                <input className='p-2 border border-black rounded' type='text' placeholder='username' autoFocus
+                <input className='p-2 border border-black rounded' type='text' placeholder='username' autoFocus required
                     value={username} onChange={e => setUsername(e.target.value) } /> 
             </div>
             <div className='m-4'>
-                <input className='p-2 border border-black rounded' type='password' placeholder='password' 
+                <input className='p-2 border border-black rounded' type='password' placeholder='password' required
                     value={password} onChange={e => setPassword(e.target.value) } /> 
             </div>
+            <div className='m-4'>
+                <input className='p-2 border border-black rounded' type='text' placeholder='email (optional)' required
+                    value={email} onChange={e => setEmail(e.target.value) } /> 
+            </div>
+
             <div className='m-4'>
                 <button className='px-4 py-2 mr-2 font-bold text-white bg-blue-600 rounded hover:bg-blue-400' onClick={handleClick}>Register</button>
             </div>

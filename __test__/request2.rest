@@ -1,3 +1,24 @@
+### Register
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "albertoi", 
+  "password": "123456",
+  "email": "albert0i@hotmail.com"
+}
+
+###
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "berto", 
+  "password": "123456",
+  "email": "albert0i@hotmail.com"
+}
+
+
 ### Login
 POST http://localhost:3000/api/auth/login
 Content-Type: application/json
