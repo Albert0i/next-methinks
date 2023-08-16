@@ -16,10 +16,10 @@ export async function POST(req) {
             if (bcryptjs.compareSync(password, user.password)) {
                 const salt = bcryptjs.genSaltSync(10);
                 const hashedPassword = bcryptjs.hashSync(newPassword, salt);
-                //const newUser = await User.findOneAndUpdate({ password: hashedPassword })
+                
                 user.password = hashedPassword
                 const newUser = await user.save()
-                return NextResponse.json({ success: true, user: newUser }, { status: 200 });
+                return NextResponse.json({ success: true, id: newUser._id }, { status: 200 });
             }                            
             else 
                 return NextResponse.json({ success: false, message: 'username or password not correct' }, { status: 400 });
