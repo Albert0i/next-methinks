@@ -13,3 +13,8 @@ export default function Home() {
     </div>
     );
 }
+
+/*
+   NextJS 13 folder structure best practice
+   https://stackoverflow.com/questions/76214501/nextjs-13-folder-structure-best-practice
+*/
