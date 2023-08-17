@@ -46,11 +46,11 @@ const Login = () => {
                 <button className='px-4 py-2 mr-2 font-bold text-white bg-blue-600 rounded hover:bg-blue-400' onClick={handleClick}>Login</button>
             </div>
             
-            <div>
+            {/* <div>
             <Link className="mt-3 text-sm text-right" href={"/auth/register"}>
                 Don&apos;t have an account? <span className="underline">Register</span>
             </Link>
-            </div>
+            </div> */}
             <div>
                 <Toaster position="bottom-center" reverseOrder={true} />
             </div>       
