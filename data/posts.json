@@ -497,4 +497,36 @@
     "$date": "2023-08-17T07:04:56.793Z"
   },
   "__v": 0
+},{
+  "_id": {
+    "$oid": "64debb0cabed0cecacb37c39"
+  },
+  "title": "random token generator",
+  "subtitle": "",
+  "author": "me",
+  "content": "### Random token generator using NodeJS\n\n```\n> node\nWelcome to Node.js v18.16.1.\nType \".help\" for more information.\n> require('crypto').randomBytes(64).toString('hex')\n'f0784fa503edc1832150b8bf6c726f26c44e6788ac6e4752d6d5337727292c39ce3b5911f196f64d7648f76c494d609a7f53904eb957fe4aa9711ae97755d5fa'\n>\n(To exit, press Ctrl+C again or Ctrl+D or type .exit)\n>\n```\n\n### EOF (2023/08/19)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-18T00:27:56.825Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-18T00:39:47.536Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64def4a97dfd40885d3ddb22"
+  },
+  "title": "Next.js Project Structure",
+  "subtitle": "",
+  "author": "me",
+  "content": "This page provides an overview of the file and folder structure of a Next.js project. It covers top-level files and folders, configuration files, and routing conventions within the `app` and `pages` directories.\n\n*Top-level folders*\n\n- app\tApp Router\n\n- pages\tPages Router\n\n- public\tStatic assets to be served\n\n- src\tOptional application source folder\n\n*Dynamic Routes*\n\n- [folder]\tDynamic route segment\n\n- [...folder]\tCatch-all route segment\n\n- [[...folder]]\tOptional catch-all route segment\n\n> Dynamic Segments can be extended to catch-all subsequent segments by adding an ellipsis inside the brackets [...folderName].\n\n> For example, app/shop/[...slug]/page.js will match /shop/clothes, but also /shop/clothes/tops, /shop/clothes/tops/t-shirts, and so on.\n\n\n*Route Groups and Private Folders*\n\n- (folder)\tGroup routes without affecting routing\n\n- _folder\tOpt folder and all child segments out of routing\n\n> Private folders can be created by prefixing a folder with an underscore: _folderName\n\n> This indicates the folder is a private implementation detail and should not be considered by the routing system, thereby opting the folder and all its subfolders out of routing.\n\n---\n\nhttps://nextjs.org/docs/getting-started/project-structure",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-18T04:33:45.743Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-18T04:53:12.195Z"
+  },
+  "__v": 0
 }]
