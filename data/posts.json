@@ -529,4 +529,36 @@
     "$date": "2023-08-18T04:53:12.195Z"
   },
   "__v": 0
+},{
+  "_id": {
+    "$oid": "64e018c777bd49fc82762de3"
+  },
+  "title": "Days",
+  "subtitle": "",
+  "author": "me",
+  "content": "All days are different, all days are the same. No matter who you are, where you live, how you age, you should feel the same.  City, which is the only reason, shapes, restricts and refines the life of everybody. It seems that we live in our own way but, in fact, this is not true. We are *required* to do more or less the same things everyday, not much the good, not much the bad, only to earn a living... \n\n![alt city](https://i.pinimg.com/564x/93/3c/03/933c03a11767a0f78fec41fcbf523483.jpg)\n\n### EOF (2023/08/19)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-19T01:20:07.425Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-19T02:11:54.111Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64e1861e8125829d5adcfcfc"
+  },
+  "title": "A cross-road",
+  "subtitle": "",
+  "author": "me",
+  "content": "Anything, which deviates from initial intention, results in disaster. However pure and virtuous our beginning conception is, once down to earth to exercise and execute, will evolve into a diversity of tempting *fruits*. It's important to get to know that evading and refraining temptation of snakes, which is called *trial of souls*, as much as we can and not yield submission too easily nor too soon. \n\nWhy are devils cleverer than you, simply because they are older than you. They are ingenious and witty, have lived thousands of years (they are on the side of time). As we grow older and weaker both physically and spiritually, I foretell that at length we will all kneel down before **Lucifer**. But, I just don't want to be the first one nor the last one... at least... \n\n![alt a diverted road](https://i.pinimg.com/564x/a2/b1/de/a2b1de2c937f2763fd7cad20141747a1.jpg)\n\n### EOF (2023/08/20)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-20T03:18:54.557Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-20T04:19:17.376Z"
+  },
+  "__v": 0
 }]
