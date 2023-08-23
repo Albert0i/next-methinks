@@ -59,6 +59,23 @@ export async function POST(req) {
   }
 }
 
+// Number of posts 
+export async function OPTIONS(req) {
+  await connectMongoDB();
+
+  try {
+    const count = await Post.find({deleted: false}).count()
+    return NextResponse.json({ success: true, count }, { status: 200 });
+  }
+  catch (error) {
+    let errors = {}
+    Object.keys(error.errors).forEach((key) => {
+      errors[key] = error.errors[key].message;
+    })
+    return NextResponse.json({success: false, errors}, { status: 400 }) 
+  }
+}
+
 /*
    Improve mongoose validation error handling
    https://stackoverflow.com/questions/61056021/improve-mongoose-validation-error-handling
@@ -74,4 +91,7 @@ export async function POST(req) {
 
    How to paginate with Mongoose in Node.js?
    https://stackoverflow.com/questions/5539955/how-to-paginate-with-mongoose-in-node-js
+
+   HTTP request methods
+   https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
 */

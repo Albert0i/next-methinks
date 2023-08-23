@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import { login } from '@/server-actions/authServerAction'
 import toast, { Toaster } from 'react-hot-toast'
 import { useRouter } from 'next/navigation'
-import Link from 'next/link'
 
 const Login = () => {
     const [username, setUsername] = useState('')

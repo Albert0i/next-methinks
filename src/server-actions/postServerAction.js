@@ -91,6 +91,21 @@ export const deletePostById = async (id) => {
     }      
 }
 
+export const getNumberOfPosts = async () => {
+  try {
+    const res = await fetch(`${apiUrl}/posts`, {
+      method: "OPTIONS",
+    });
+    if (!res.ok) {
+      throw new Error("Failed in 'getNumberOfPosts'");
+    } 
+    return res.json()
+  } 
+  catch (error) {
+    console.log("Error in 'getNumberOfPosts': ", error);
+  }
+}
+
 /*
    NextRequest and NextResponse
    https://nextjs.org/docs/pages/api-reference/functions/next-server
