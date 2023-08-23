@@ -6,6 +6,8 @@ import Post from "@/models/post"
 export async function GET(req) {
   const searchParams = req.nextUrl.searchParams 
   const searchText = searchParams.get('_st')
+  const page = searchParams.get('_page') || 0
+  const perPage = searchParams.get('_limit') || 9999
   
   await connectMongoDB()
 
@@ -22,9 +24,10 @@ export async function GET(req) {
     else 
       posts = await Post.find({deleted: false})
                                 .select({content:0, deleted:0, __v:0})
+                                .limit(perPage)
+                                .skip(perPage * page)
                                 .sort({ createdAt: -1 })
                                 .lean()
-
     
     return NextResponse.json({ success: true, posts }, { status: 200 });  
   } 
@@ -68,4 +71,7 @@ export async function POST(req) {
 
    How to get all the values that contains part of a string using mongoose find?
    https://stackoverflow.com/questions/26814456/how-to-get-all-the-values-that-contains-part-of-a-string-using-mongoose-find
+
+   How to paginate with Mongoose in Node.js?
+   https://stackoverflow.com/questions/5539955/how-to-paginate-with-mongoose-in-node-js
 */
