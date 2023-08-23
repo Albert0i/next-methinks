@@ -95,6 +95,9 @@ export const getNumberOfPosts = async () => {
   try {
     const res = await fetch(`${apiUrl}/posts`, {
       method: "OPTIONS",
+      next: { 
+        revalidate: 0  // use 0 to opt out of using cache
+      }
     });
     if (!res.ok) {
       throw new Error("Failed in 'getNumberOfPosts'");

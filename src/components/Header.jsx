@@ -13,7 +13,7 @@ const Header = async () => {
         </Link>
 
         <Link href="/posts">
-          <div className="px-2 mt-2 text-2xl font-bold text-white hover:rounded hover:bg-slate-600">All Posts ( {result.count} )</div>
+          <div className="px-2 mt-2 text-2xl font-bold text-white hover:rounded hover:bg-slate-600">All Posts ( {result?.count} )</div>
         </Link>
 
         <Link href='/posts/create'>
