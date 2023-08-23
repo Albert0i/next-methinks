@@ -593,4 +593,20 @@
     "$date": "2023-08-22T04:37:27.021Z"
   },
   "__v": 0
+},{
+  "_id": {
+    "$oid": "64e55d9a818481db341260a1"
+  },
+  "title": "tailwindcss",
+  "subtitle": "",
+  "author": "me",
+  "content": "> The `theme` section of your `tailwind.config.js` file is where you define your project’s color palette, type scale, fonts, breakpoints, border radius values, and more.\n\ntailwind.config.js \n\n```\n/** @type {import('tailwindcss').Config} */\nmodule.exports = {\n  content: [\n    './pages/**/*.{js,ts,jsx,tsx,mdx}',\n    './components/**/*.{js,ts,jsx,tsx,mdx}',\n    './app/**/*.{js,ts,jsx,tsx,mdx}',\n  ],\n  theme: {\n    extend: {\n      colors: {\n        primary: '#7856ff'\n      }\n    },\n  },\n  plugins: [],\n}\n```\n\nglobal.css \n\n```\n@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\n/* base styles */\nbody {\n  background: #ebf0fa;\n  @apply text-gray-500 m-8;\n}\nh1, h2 {\n  @apply font-bold text-primary text-lg;\n}\nmain {\n  @apply max-w-5xl my-12 mx-auto px-8;\n}\nmain > h2 {\n  @apply mb-4 pb-2 text-base ;\n}\np > a {\n  @apply text-primary underline;\n}\n\n/* nav styles */\nnav {\n  @apply\n    pb-4\n    border-b-2 border-gray-200\n    flex items-center gap-5 \n    my-10 mx-auto \n    max-w-5xl;\n}\nnav a, nav span {\n  @apply text-gray-500;\n}\nnav a:hover {\n  @apply text-black;\n}\nmain nav {\n  @apply border-0;\n}\n\n/* button styles */\nbutton {\n  @apply \n    px-3 py-2 \n    rounded-sm \n    flex justify-between items-center gap-2\n    text-sm;\n}\nbutton:hover {\n  @apply bg-opacity-90;\n}\n.btn-primary {\n  @apply bg-primary text-white;\n}\n.btn-secondary {\n  @apply bg-gray-200 text-gray-900;\n}\n\n/* form styles */\nform {\n  @apply \n    py-4 px-7 \n    bg-primary \n    bg-opacity-5 \n    rounded-md \n    block \n    mx-auto \n    min-w-fit w-1/4;\n}\nform label {\n  @apply block;\n}\nform input,\nform textarea,\nform select {\n  @apply \n    block \n    mt-2 my-4 px-2 py-1 \n    rounded-sm w-full;\n}\nform button {\n  @apply block mx-auto;\n}\n\n/* feedback styles */\n.error {\n  @apply \n    border-2 \n    border-red-500 \n    bg-red-300\n    text-red-800 \n    py-1 px-2 \n    rounded-sm\n    block\n    max-w-fit\n    my-4 mx-auto;\n}\n\n/* card styles */\n.card {\n  @apply \n    bg-white \n    shadow-sm \n    rounded-md \n    py-3 px-4 my-4 \n    relative \n    overflow-hidden;\n}\n.card h3 {\n  @apply \n    font-bold text-gray-700 text-sm \n    mb-0;\n}\n.card p {\n  @apply my-4 text-sm leading-6;\n}\n\n/* pill styles */\n.pill {\n  @apply \n    py-1 px-2 mt-3\n    inline-block \n    text-xs font-semibold;\n}\n.pill.high {\n  @apply bg-red-300 text-red-600;\n}\n.pill.medium {\n  @apply bg-blue-300 text-blue-600;\n}\n.pill.low {\n  @apply bg-emerald-300 text-emerald-600;\n}\n.card .pill {\n  @apply \n    absolute bottom-0 right-0 \n    rounded-tl-md;\n}\n```\n\n[Next.js 13 Crash Course Tutorial #5 - Styles, Fonts & Images](https://youtu.be/oWUQQD97Rz0)\n\n[tailwindcss | Theme Configuration](https://v2.tailwindcss.com/docs/theme)\n\n### EOF (2023/08/23)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-23T01:15:06.539Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-23T02:13:09.077Z"
+  },
+  "__v": 0
 }]

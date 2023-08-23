@@ -38,7 +38,7 @@ const PostDetail = async (props) => {
         ) : '' }
         <p className="text-slate-400">{post.author}@{post.createdAt}</p>
       </div>
-      <article className="max-w-4xl prose">
+      <article className="max-w-6xl prose prose-stone">
         <Markdown>{post.content}</Markdown>
       </article>
 
