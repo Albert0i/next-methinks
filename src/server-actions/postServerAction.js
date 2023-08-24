@@ -91,9 +91,9 @@ export const deletePostById = async (id) => {
     }      
 }
 
-export const getNumberOfPosts = async () => {
+export const getNumberOfPosts = async (filterValue) => {
   try {
-    const res = await fetch(`${apiUrl}/posts`, {
+    const res = await fetch(`${apiUrl}/posts?_st=${filterValue}`, {
       method: "OPTIONS",
       next: { 
         revalidate: 0  // use 0 to opt out of using cache

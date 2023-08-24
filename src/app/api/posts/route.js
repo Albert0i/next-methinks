@@ -61,10 +61,19 @@ export async function POST(req) {
 
 // Number of posts 
 export async function OPTIONS(req) {
+  const searchParams = req.nextUrl.searchParams 
+  const searchText = searchParams.get('_st')
+  let count = 0
+
   await connectMongoDB();
 
   try {
-    const count = await Post.find({deleted: false}).count()
+    if (searchText) 
+      count = await Post.find({deleted: false, 
+                               content: {$regex: searchText, $options: 'i'} }).count()
+    else 
+      count = await Post.find({deleted: false}).count()
+
     return NextResponse.json({ success: true, count }, { status: 200 });
   }
   catch (error) {
