@@ -5,7 +5,8 @@ import { validURL, removeLineBreak, reBaseImageUrl } from '@/lib/helper'
 
 const PostDetail = async (props) => {
     let { post } = await getPostById(props.id) 
-
+    const rebaseImg = props.rebaseimg
+    
     if (validURL(removeLineBreak(post.content))) {
       const res = await fetch(post.content)
 
@@ -43,7 +44,7 @@ const PostDetail = async (props) => {
       </article>
 
       <div className='mt-2'>
-        <Link className='px-4 py-2 font-bold text-white bg-blue-600 rounded hover:bg-blue-400 text-bold' href={`/posts/${props.id}/edit`}>Edit</Link>        
+        <Link className='px-4 py-2 font-bold text-white bg-blue-600 rounded hover:bg-blue-400 text-bold' href={`/posts/${props.id}/edit?_rebaseimg=${rebaseImg}`}>Edit</Link>        
       </div>      
     </div>
   )

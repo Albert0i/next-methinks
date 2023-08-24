@@ -12,6 +12,8 @@ const EditPost = (props) => {
   const [disabled, setDisabled] = useState('')
   const router = useRouter()
   const { register, handleSubmit, formState: { errors } } = useForm( { resolver: zodResolver(postSchema) } )
+  //const rebaseImg = process.env.REBASE_IMAGE
+  const rebaseImg = props.rebaseImg
   
   const onSubmit = (data) => {
     setDisabled('disabled')
@@ -19,7 +21,7 @@ const EditPost = (props) => {
     .then(res => { 
       //console.log(res) 
       toast.success('Saved')
-      setTimeout(()=>{router.push(`/posts/${props._id}?_rebaseimg=true`)}, 1000)
+      setTimeout(()=>{router.push(`/posts/${props._id}?_rebaseimg=${rebaseImg}`)}, 1000)
     })
     .catch(e => {
       console.log(e.message)
@@ -80,9 +82,9 @@ const EditPost = (props) => {
 
           { 
             disabled !== 'disabled' ? 
-            <Link className='px-4 py-2 ml-2 font-bold text-white bg-green-600 rounded hover:bg-green-400' href={`/posts/${props._id}?_rebaseimg=true`}>Back</Link> 
+            <Link className='px-4 py-2 ml-2 font-bold text-white bg-green-600 rounded hover:bg-green-400' href={`/posts/${props._id}?_rebaseimg=${rebaseImg}`}>Back</Link> 
             : 
-            <Link className='px-4 py-2 ml-2 font-bold text-white bg-gray-400 rounded cursor-not-allowed' href={`/posts/${props._id}?_rebaseimg=true`}>Back</Link> 
+            <Link className='px-4 py-2 ml-2 font-bold text-white bg-gray-400 rounded cursor-not-allowed' href={`/posts/${props._id}?_rebaseimg=${rebaseImg}`}>Back</Link> 
           }
         </div>
 
@@ -99,5 +101,9 @@ const EditPost = (props) => {
 
 export default EditPost
 /*
-  <Link className='px-4 py-2 ml-2 font-bold text-white bg-green-600 rounded hover:bg-green-400 disabled:bg-gray-400 disabled:cursor-not-allowed' href={`/posts/${props.id}?_rebaseimg=true`} disabled={disabled}>Back</Link>
+  <Link className='px-4 py-2 ml-2 font-bold text-white bg-green-600 rounded hover:bg-green-400 disabled:bg-gray-400 disabled:cursor-not-allowed' href={`/posts/${props.id}?_rebaseimg=true`} disabled={disabled}>Back</Link>  
+*/
+/*
+   NextJS | revalidatePath
+   https://nextjs.org/docs/app/api-reference/functions/revalidatePath
 */

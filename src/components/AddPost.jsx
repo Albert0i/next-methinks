@@ -8,18 +8,20 @@ import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { postSchema } from '@/viewModels/post'
 
-const AddPost = () => {
+const AddPost = (props) => {
   const [disabled, setDisabled] = useState('')
   const router = useRouter()
   const { register, handleSubmit, formState: { errors } } = useForm( { resolver: zodResolver(postSchema) } )
-
+  //const rebaseImg = process.env.REBASE_IMAGE
+  const rebaseImg = props.rebaseImg
+  
   const onSubmit = ( data ) => {
     setDisabled('disabled')
     addPost(data.title, data.subtitle, data.author, data.content)
     .then(res => { 
       //console.log(res) 
       toast.success('Created')      
-      setTimeout(()=>{router.push(`/posts/${res.id}?_rebaseimg=true`)}, 1000)
+      setTimeout(()=>{router.push(`/posts/${res.id}?_rebaseimg=${rebaseImg}`)}, 1000)
     })
     .catch(e => {
       console.log(e.message)
