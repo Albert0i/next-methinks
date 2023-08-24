@@ -14,7 +14,8 @@ const Login = () => {
         .then (res => {
             //console.log(res)
             if (res.success) {
-                toast.success('Login success')      
+                toast.success('Login success')
+                router.refresh()
                 setTimeout(()=>{router.push( res.url ? res.url :'/posts/' ) }, 1000)
             }
             else 

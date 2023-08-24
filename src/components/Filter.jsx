@@ -29,6 +29,7 @@ const Filter = () => {
   }, [debouncedValue])
 
   const handleClick = () => {
+    router.refresh()
     router.push(`/posts?_st=${filterValue}`)
   }
   

@@ -21,6 +21,7 @@ const EditPost = (props) => {
     .then(res => { 
       //console.log(res) 
       toast.success('Saved')
+      router.refresh()
       setTimeout(()=>{router.push(`/posts/${props._id}?_rebaseimg=${rebaseImg}`)}, 1000)
     })
     .catch(e => {
@@ -36,7 +37,8 @@ const EditPost = (props) => {
       deletePostById(props._id)
       .then(res => { 
         //console.log(res) 
-        toast.success('Deleted')      
+        toast.success('Deleted')
+        router.refresh()   
         setTimeout(()=>{router.push('/posts')}, 1000)
       })
       .catch(e => {

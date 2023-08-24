@@ -16,7 +16,8 @@ const Register = () => {
         .then (res => {
             //console.log(res)
             if (res.success) {
-                toast.success('Register success')      
+                toast.success('Register success')
+                router.refresh()
                 setTimeout(()=>{router.push( res.url ? res.url :'/posts/' ) }, 1000)
             }
             else 

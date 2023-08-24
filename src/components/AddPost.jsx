@@ -20,7 +20,8 @@ const AddPost = (props) => {
     addPost(data.title, data.subtitle, data.author, data.content)
     .then(res => { 
       //console.log(res) 
-      toast.success('Created')      
+      toast.success('Created')
+      router.refresh()
       setTimeout(()=>{router.push(`/posts/${res.id}?_rebaseimg=${rebaseImg}`)}, 1000)
     })
     .catch(e => {
