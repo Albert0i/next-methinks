@@ -3,28 +3,35 @@ import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from "next/link";
 import { isLogin } from '@/server-actions/authServerAction'
+
+import { useDebounce } from 'use-debounce';
 import { getNumberOfPosts } from '@/server-actions/postServerAction'
 
 const Filter = () => {
   const [filterValue, setFilterValue] = useState('')
   const [disabled, setDisabled] = useState('disabled')
   const [showLogout, setShowLogout] = useState(false)
-  const [count, setCount] = useState(0)
   const router = useRouter()
+
+  const [debouncedValue] = useDebounce(filterValue, 1000);
+  const [count, setCount] = useState(0)  
 
   useEffect(() => {
     isLogin().then(res => setShowLogout(res))        
-  })
+  }, [])
 
   useEffect(()=>{
-    setDisabled(filterValue==='')
-    getNumberOfPosts(filterValue).then(res => setCount(res.count)) 
+    setDisabled(filterValue==='')    
   }, [filterValue])
+
+  useEffect(()=>{
+    getNumberOfPosts(debouncedValue).then(res => setCount(res.count)) 
+  }, [debouncedValue])
 
   const handleClick = () => {
     router.push(`/posts?_st=${filterValue}`)
   }
-
+  
   return (
     <div className='flex flex-row justify-between'>
       <div className='pl-2 text-sm font-bold align-bottom'>{ count }</div>
