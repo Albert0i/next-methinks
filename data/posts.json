@@ -478,7 +478,7 @@
     "$date": "2023-08-15T09:08:51.209Z"
   },
   "updatedAt": {
-    "$date": "2023-08-22T07:15:59.236Z"
+    "$date": "2023-08-23T08:56:19.470Z"
   },
   "__v": 0
 },{
@@ -606,7 +606,39 @@
     "$date": "2023-08-23T01:15:06.539Z"
   },
   "updatedAt": {
-    "$date": "2023-08-23T02:13:09.077Z"
+    "$date": "2023-08-23T09:57:19.442Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64e6c298913dd4933daf0d85"
+  },
+  "title": "SSG",
+  "subtitle": "To speed up loading post",
+  "author": "me",
+  "content": "> The [`generateStaticParams`](https://nextjs.org/docs/app/api-reference/functions/generate-static-params) function can be used in combination with dynamic route segments to statically generate routes at build time instead of on-demand at request time.\n\n- You can use the [`dynamicParams`](https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config) segment config option to control what happens when a dynamic segment is visited that was not generated with **generateStaticParams**.\n- During **next dev**, **generateStaticParams** will be called when you navigate to a route.\n- During **next build**, **generateStaticParams** runs before the corresponding Layouts or Pages are generated.\n- During revalidation (ISR), **generateStaticParams** will not be called again.\n- **generateStaticParams** replaces the [`getStaticPaths`](https://nextjs.org/docs/pages/api-reference/functions/get-static-paths) function in the Pages Router.\n\napp/posts/[id]/page.jsx \n\n```\nimport PostDetail from '@/components/PostDetail'\nimport connectMongoDB from \"@/config/mongoDB\";\nimport Post from \"@/models/post\"\n\n// Use SSG to speed up loading post\nexport const dynamicParams = false // default val = true\n\n// Return a list of `params` to populate the [id] dynamic segment\nexport async function generateStaticParams() {  \n    await connectMongoDB()\n    const posts = await Post.find({deleted: false}).select({_id:1}).lean()\n  \n    return posts.map((post) => ({\n      id: post._id.toString()\n    }))\n}\n\n// Multiple versions of this page will be statically generated\n// using the `params` returned by `generateStaticParams`\nconst PostPage = ( { params, searchParams } ) => {\n    return <PostDetail id={ params.id } rebaseimg={ searchParams._rebaseimg } />\n}\n\nexport default PostPage\n```\n> **generateStaticParams** should return an array of objects where each object represents the populated dynamic segments of a single route.\n\n```\nnpm run build\n```\n\n![alt next-build-ssg-1](https://raw.githubusercontent.com/Albert0i/next-methinks/main/img/next-build-ssg-1.JPG)\n\n![alt next-build-ssg-2](https://raw.githubusercontent.com/Albert0i/next-methinks/main/img/next-build-ssg-2.JPG)\n\n[Next.js 13 Crash Course Tutorial #8 - Static Rendering](https://youtu.be/ihmyC4Ei2zY)\n\n[NextJS | generateStaticParams](https://nextjs.org/docs/app/api-reference/functions/generate-static-params)\n\n### EOF (2023/08/24)\n\n\n---\n\n> Upon getting home I found it past four o'clock, and went immediately to bed. It is now ten A.M. I have been up since seven, penning these memoranda for the benefit of my family and of mankind. The former I shall behold no more. My wife is a shrew. The truth is, I am heartily sick of this life and of the nineteenth century in general. I am convinced that every thing is going wrong. Besides, I am anxious to know who will be President in 2045. As soon, therefore, as I shave and swallow a cup of coffee, I shall just step over to Ponnonner's and get embalmed for a couple of hundred years.\n\n[Some Words With a Mummy, by Edgar Allan Poe](https://poestories.com/read/mummy)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-24T02:38:16.926Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-24T09:31:31.660Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64e803b7a0d35ad03021d303"
+  },
+  "title": "likewise",
+  "subtitle": "",
+  "author": "me",
+  "content": "### Case 1: \n```\n// imitate delay \nawait new Promise(resolve => setTimeout(resolve, 3000));\n```\n---\n\n### Case 2: \n> “When bad folks have problems, they do bad things,” \n \n[Biden calls China ‘ticking time bomb’, says ‘bad folks… do bad things’\n](https://nypost.com/2023/08/10/biden-calls-china-ticking-time-bomb-says-bad-folks-do-bad-things/)\n---\n\n### Case 3: \n> 西門豹為鄴令，而辭乎魏文侯。文侯曰：「子往矣，必就子之功，而成子之名。」西門豹曰：「敢問就功成名，亦有術乎？」文侯曰：「有之。夫鄉邑老者而先受坐之士，子入而問其賢良之士而師事之，求其好掩人之美而揚人之醜者，而參驗之。夫物多相類而非也，幽莠之幼也似禾，驪牛之黃也似虎，白骨疑象，武夫類玉，此皆似之而非者也。」\n\n[《戰國策‧魏策一》(西門豹為鄴令)](https://ctext.org/zhan-guo-ce/wei-yi/zh)\n\n### EOF (2023/08/25)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-25T01:28:23.345Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-25T04:10:00.137Z"
   },
   "__v": 0
 }]
