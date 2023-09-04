@@ -630,15 +630,47 @@
     "$oid": "64e803b7a0d35ad03021d303"
   },
   "title": "likewise",
-  "subtitle": "",
+  "subtitle": "but not so",
   "author": "me",
-  "content": "### Case 1: \n```\n// imitate delay \nawait new Promise(resolve => setTimeout(resolve, 3000));\n```\n---\n\n### Case 2: \n> “When bad folks have problems, they do bad things,” \n \n[Biden calls China ‘ticking time bomb’, says ‘bad folks… do bad things’\n](https://nypost.com/2023/08/10/biden-calls-china-ticking-time-bomb-says-bad-folks-do-bad-things/)\n---\n\n### Case 3: \n> 西門豹為鄴令，而辭乎魏文侯。文侯曰：「子往矣，必就子之功，而成子之名。」西門豹曰：「敢問就功成名，亦有術乎？」文侯曰：「有之。夫鄉邑老者而先受坐之士，子入而問其賢良之士而師事之，求其好掩人之美而揚人之醜者，而參驗之。夫物多相類而非也，幽莠之幼也似禾，驪牛之黃也似虎，白骨疑象，武夫類玉，此皆似之而非者也。」\n\n[《戰國策‧魏策一》(西門豹為鄴令)](https://ctext.org/zhan-guo-ce/wei-yi/zh)\n\n### EOF (2023/08/25)",
+  "content": "### Case 1: \n```\n// imitate delay \nawait new Promise(resolve => setTimeout(resolve, 3000));\n```\n---\n\n### Case 2: \n> “When bad folks have problems, they do bad things,” \n \n[Biden calls China ‘ticking time bomb’, says ‘bad folks… do bad things’\n](https://nypost.com/2023/08/10/biden-calls-china-ticking-time-bomb-says-bad-folks-do-bad-things/)\n\n---\n \n### Case 3: \n> 西門豹為鄴令，而辭乎魏文侯。文侯曰：「子往矣，必就子之功，而成子之名。」西門豹曰：「敢問就功成名，亦有術乎？」文侯曰：「有之。夫鄉邑老者而先受坐之士，子入而問其賢良之士而師事之，求其好掩人之美而揚人之醜者，而參驗之。夫物多相類而非也，幽莠之幼也似禾，驪牛之黃也似虎，白骨疑象，武夫類玉，此皆似之而非者也。」\n\n[《戰國策‧魏策一》(西門豹為鄴令)](https://ctext.org/zhan-guo-ce/wei-yi/zh)\n\n### EOF (2023/08/25)",
   "deleted": false,
   "createdAt": {
     "$date": "2023-08-25T01:28:23.345Z"
   },
   "updatedAt": {
-    "$date": "2023-08-25T04:10:00.137Z"
+    "$date": "2023-08-27T02:29:49.967Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64ed7c968f49731d829ea373"
+  },
+  "title": "Primsa x Planetscale",
+  "subtitle": "A starter guide",
+  "author": "me",
+  "content": "https://github.com/Albert0i/prisma-planetscale/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-29T05:05:26.658Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-29T05:05:26.658Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f197d94e4ffd5785a1a5de"
+  },
+  "title": "pscale",
+  "subtitle": "PlanetScale CLI",
+  "author": "me",
+  "content": "https://github.com/planetscale/cli/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-09-01T07:50:49.881Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-01T07:52:05.724Z"
   },
   "__v": 0
 }]
