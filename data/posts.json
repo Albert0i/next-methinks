@@ -673,4 +673,53 @@
     "$date": "2023-09-01T07:52:05.724Z"
   },
   "__v": 0
+},{
+  "_id": {
+    "$oid": "64f815039b6fd70eebdae82f"
+  },
+  "title": "Tagged templates",
+  "subtitle": "",
+  "author": "me",
+  "content": "## Tagged templates\n\nA more advanced form of template literals are tagged templates.\n\nTags allow you to parse template literals with a function. The first argument of a tag function contains an array of string values. The remaining arguments are related to the expressions.\n\nThe tag function can then perform whatever operations on these arguments you wish, and return the manipulated string. (Alternatively, it can return something completely different, as described in one of the following examples.)\n\nThe name of the function used for the tag can be whatever you want.\n\n```\nconst person = \"Mike\";\nconst age = 28;\n\nfunction myTag(strings, personExp, ageExp) {\n  const str0 = strings[0]; // \"That \"\n  const str1 = strings[1]; // \" is a \"\n  const str2 = strings[2]; // \".\"\n\n  const ageStr = ageExp > 99 ? \"centenarian\" : \"youngster\";\n\n  // We can even return a string built using a template literal\n  return `${str0}${personExp}${str1}${ageStr}${str2}`;\n}\n\nconst output = myTag`That ${person} is a ${age}.`;\n\nconsole.log(output);\n// That Mike is a youngster.\n```\nThe tag does not have to be a plain identifier. You can use any expression with precedence greater than 16, which includes property access, function call, new expression, or even another tagged template literal.\n\nMore on [Template literals (Template strings)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates)\n\nAlso on [Prisma Docs | Raw database access](https://www.prisma.io/docs/concepts/components/prisma-client/raw-database-access)\n\n\n### EOF (2023/09/06)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-09-06T05:58:27.433Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-06T06:23:03.457Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64f98363a778d2a237c90162"
+  },
+  "title": "The Myth and Riddle of ORM",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/prisma-planetscale/blob/main/ORM.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-09-07T08:01:39.580Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-07T08:01:39.580Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64fa732ae4c964ecd3e2e4aa"
+  },
+  "title": "@@UPID Field",
+  "subtitle": "",
+  "author": "me",
+  "content": "### 3.8 The @@UPID Column in LANSA Created Tables\n\nWhenever a physical table is created and maintained by LANSA, rather than some OTHER system, it has an additional column placed into it. The column is called @@UPID and is defined as decimal (7,0). It is always the last column in the table.\n\nColumn @@UPID is used by LANSA to automatically check for \"crossed updates\". The logic to do this is very simple:\n\n1.  Read the record and save the @@UPID value.\n\n2.  If update required: re-read record and compare the @@UPID with saved @@UPID value. If different, issue \"crossed update\" error message, else add 1 to @@UPID and update the table record.\n\nWhen writing user application programs in non-LANSA applications, to write new records or update existing records in database tables created by LANSA the following is recommended:\n\n1.  Set @@UPID to 1 when writing new records.\n\n2.  Add 1 to @@UPID when updating an existing record.\n\nThis effectively emulates the logic automatically used in all LANSA functions.\n\n**Note 1**: COBOL programs will not accept the column name @@UPID.\nTo workaround this problem, if it has not already been done, alter the data dictionary definition of field @@UPID so that it has an associated **alias name** acceptable to COBOL.\nForce recreation of all database tables that do not already have the alias name included and then, in the COBOL programs, use the COPY DD option to ensure that where a field has an alias name, it is used in preference to its real name.\n\n**Warning**: The field @@UPID should not be used at 4GL level, except where you have received specific instructions from LANSA on how to use it.\n\n**Note 2**: When a table contains BLOB or CLOB columns, @@UPID may be incremented multiple times for a single UPDATE command. This occurs once for the main table, and once for each BLOB or CLOB column included in the UPDATE command.\n\n[Technical Reference Guide](https://docs.lansa.com/14/en/Lansa015/index.htm#lansa/l4wtgu03_0790.htm?Highlight=@@upid)\n\n### EOF (2023/09/08)",
+  "update_ident": 0,
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-09-08T01:04:42.434Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-08T01:43:49.414Z"
+  },
+  "__v": 0
 }]
