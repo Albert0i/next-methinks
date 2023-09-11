@@ -7,7 +7,7 @@ export async function GET(req) {
   const searchParams = req.nextUrl.searchParams 
   const searchText = searchParams.get('_st')
   const page = searchParams.get('_page') || 0
-  const perPage = searchParams.get('_limit') || 9999
+  const perPage = searchParams.get('_limit') || process.env.PAGE_SIZE
   
   await connectMongoDB()
 

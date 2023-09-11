@@ -2,17 +2,16 @@
 
 const apiUrl = process.env.API_URL
 
-export const getAllPosts = async (searchText) => {    
+export const getAllPosts = async (searchText, page, perPage) => {    
     try {
       let res = null
       if (searchText)
-        res = await fetch(`${apiUrl}/posts?_st=${searchText}`, {
-          cache: "no-store",
-        });
+        res = await fetch(`${apiUrl}/posts?_st=${searchText}`, 
+                    { cache: "no-store" });
       else 
-        res = await fetch(`${apiUrl}/posts`, {
-          cache: "no-store",
-        });  
+        // http://localhost:3000/posts?_page=1&_limit=5
+        res = await fetch(`${apiUrl}/posts?_page=${page}&_limit=${perPage}`, 
+                    { cache: "no-store" }); 
       if (!res.ok) {
         throw new Error("Failed in 'getAllPosts'");
       }

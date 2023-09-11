@@ -1,8 +1,8 @@
 import { getAllPosts } from '@/server-actions/postServerAction'
 import PostPreview from "./PostPreview";
 
-export default async function PostsList({searchText}) {  
-  const { posts } = await getAllPosts(searchText);
+export default async function PostsList({searchText, page, perPage}) {  
+  const { posts } = await getAllPosts(searchText, page, perPage);
 
   if (posts.length===0)
   return (
