@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { postSchema } from '@/viewModels/post'
+import wordsCount from 'words-count'
 
 const EditPost = (props) => {  
   const [disabled, setDisabled] = useState('')
@@ -20,7 +21,8 @@ const EditPost = (props) => {
     updatePostById(props._id, data.title, data.subtitle, data.author, data.content)
     .then(res => { 
       //console.log(res) 
-      toast.success('Saved')
+      const nc = wordsCount(data.content)
+      toast.success(`${nc} word${nc>1? 's':''} saved`)
       router.refresh()
       setTimeout(()=>{router.push(`/posts/${props._id}?_rebaseimg=${rebaseImg}`)}, 1000)
     })
