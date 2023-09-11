@@ -14,19 +14,23 @@ const Filter = ({ page, perPage }) => {
   const router = useRouter()
 
   const [debouncedValue] = useDebounce(filterValue, 1000);
-  const [count, setCount] = useState(0)  
+  const [count, setCount] = useState(0)
 
   useEffect(() => {
     isLogin().then(res => setShowLogout(res))        
   }, [])
 
   useEffect(()=>{
-    setDisabled(filterValue==='')    
+    setDisabled(filterValue==='')
   }, [filterValue])
 
   useEffect(()=>{
     getNumberOfPosts(debouncedValue).then(res => setCount(res.count)) 
   }, [debouncedValue])
+
+  useEffect(() => {    
+    setDisabled(count === 0)
+  }, [count])
 
   const handleClick = () => {
     router.refresh()
