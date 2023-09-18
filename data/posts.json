@@ -446,7 +446,7 @@
     "$date": "2023-08-13T02:16:11.376Z"
   },
   "updatedAt": {
-    "$date": "2023-08-22T07:09:24.411Z"
+    "$date": "2023-09-11T06:45:15.759Z"
   },
   "__v": 0
 },{
@@ -478,7 +478,7 @@
     "$date": "2023-08-15T09:08:51.209Z"
   },
   "updatedAt": {
-    "$date": "2023-08-23T08:56:19.470Z"
+    "$date": "2023-09-11T06:45:42.286Z"
   },
   "__v": 0
 },{
@@ -736,6 +736,38 @@
   },
   "updatedAt": {
     "$date": "2023-09-11T06:29:50.828Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64ffb97e53026b0ed8b552ba"
+  },
+  "title": "insomnia",
+  "subtitle": "",
+  "author": "me",
+  "content": "Being sleeplessness is another thing. Staying up all night, I found myself in a state of mental excitement as well as physical condition of utmost fatigue. Extreme contradiction makes discrepancy of norms. Foolishness is enacted, crimes are  committed simply due to our inability to restore to unanimous state. \n\nBeing sleeplessness also deprives us of dreams, which are the locomotion of work, source of creation and hope of life.\n\n![alt dream](https://cdn.quotesgram.com/img/37/49/1308351690-tumblr_llogr3ihsP1qgxr8qo1_500.jpg)   \n\n### EOF (2023/09/12)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-09-12T01:06:06.831Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-12T05:06:47.901Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6507c9aab9fa4e8e69b02cff"
+  },
+  "title": "test_db",
+  "subtitle": "An Imaginary Journey",
+  "author": "me",
+  "content": "https://github.com/Albert0i/test_db/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-09-18T03:53:14.378Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-18T03:53:14.378Z"
   },
   "__v": 0
 }]
