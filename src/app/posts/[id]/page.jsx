@@ -6,14 +6,14 @@ import Post from "@/models/post"
 export const dynamicParams = false // default val = true
 
 // Return a list of `params` to populate the [id] dynamic segment
-export async function generateStaticParams() {  
-    await connectMongoDB()
-    const posts = await Post.find({deleted: false}).select({_id:1}).lean()
+// export async function generateStaticParams() {  
+//     await connectMongoDB()
+//     const posts = await Post.find({deleted: false}).select({_id:1}).lean()
   
-    return posts.map((post) => ({
-      id: post._id.toString()
-    }))
-}
+//     return posts.map((post) => ({
+//       id: post._id.toString()
+//     }))
+// }
 // Use SSG to speed up loading post
 
 // Multiple versions of this page will be statically generated

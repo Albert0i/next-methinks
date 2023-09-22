@@ -1,0 +1,30 @@
+Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './server.edge' is not defined by "exports" in /var/task/node_modules/react-dom/package.json
+    at new NodeError (node:internal/errors:405:5)
+    at exportsNotFound (node:internal/modules/esm/resolve:364:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:700:9)
+    at resolveExports (node:internal/modules/cjs/loader:567:36)
+    at Module._findPath (node:internal/modules/cjs/loader:636:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1063:27)
+    at /var/task/node_modules/next/dist/server/require-hook.js:110:36
+    at Module._load (node:internal/modules/cjs/loader:922:27)
+    at e.<computed>._module.Module._load (/var/task/___vc/__launcher.js:15:1964)
+    at Module.require (node:internal/modules/cjs/loader:1143:19) {
+  code: 'ERR_PACKAGE_PATH_NOT_EXPORTED',
+  page: '/posts'
+}
+Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './server.edge' is not defined by "exports" in /var/task/node_modules/react-dom/package.json
+    at new NodeError (node:internal/errors:405:5)
+    at exportsNotFound (node:internal/modules/esm/resolve:364:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:700:9)
+    at resolveExports (node:internal/modules/cjs/loader:567:36)
+    at Module._findPath (node:internal/modules/cjs/loader:636:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1063:27)
+    at /var/task/node_modules/next/dist/server/require-hook.js:110:36
+    at Module._load (node:internal/modules/cjs/loader:922:27)
+    at e.<computed>._module.Module._load (/var/task/___vc/__launcher.js:15:1964)
+    at Module.require (node:internal/modules/cjs/loader:1143:19) {
+  code: 'ERR_PACKAGE_PATH_NOT_EXPORTED',
+  page: '/posts'
+}
+RequestId: 6ef220e1-eba1-4155-9de6-a59cd29f7fd6 Error: Runtime exited with error: exit status 1
+Runtime.ExitError
