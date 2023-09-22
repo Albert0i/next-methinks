@@ -770,4 +770,20 @@
     "$date": "2023-09-18T03:53:14.378Z"
   },
   "__v": 0
+},{
+  "_id": {
+    "$oid": "650a94b177b67d69bbe4d66d"
+  },
+  "title": "MM diary",
+  "subtitle": "",
+  "author": "me",
+  "content": "![alt the lighthouse](https://media.gq.com/photos/5da62c0d49acb20008f2501c/16:9/w_1280,c_limit/the-lighthouse-film-review-gq-october-101519.jpg)\n\n### without further ado...\n\nmongo.js \n\n```\nimport { MongoClient } from 'mongodb';\n\n// Database Name\nconst dbName = 'testdb';\n// Connection URL\nconst url=`mongodb://root:root@127.0.0.1:27017/${dbName}?authSource=admin`\nconst client = new MongoClient(url);\n\nasync function main() {\n  // Use connect method to connect to the server\n  await client.connect();\n  console.log('Connected successfully to server');\n  const db = client.db();\n  const collection = db.collection('users');\n  const users = await collection.find({}).toArray()\n\n  return users;\n}\n\nmain()\n  .then(data => console.log(data))\n  .catch(err => console.log(err))\n  .finally(() => client.close());\n\n/*\n   npm | mongodb      \n   https://www.npmjs.com/package/mongodb\n\n   MongoServerSelectionError: connect ECONNREFUSED::1:27017\n   https://blog.devgenius.io/mongoserverselectionerror-connect-econnrefused-1-27017-bee70efd1cac\n*/\n```\n\nmysql.js \n\n```\nimport mysql from 'mysql2/promise';\n\n// Database Name\nconst dbName = 'employees';\n// Use createConnection method to connect to the server\nconst connection = await mysql.createConnection(`mysql://root:root@localhost:3306/${dbName}`)\n\nasync function main() {  \n    // query database\n    const results = await connection.query('SELECT * FROM titles');\n    return results\n  }\n\nmain()\n  .then(data => console.log(data))\n  .catch(err => console.log(err))\n  .finally(()=> connection.close())\n\n/*\n   npm | mysql2\n   https://www.npmjs.com/package/mysql2\n*/\n```\n\n### Reference \n\n1. [The Light-House](https://poemuseum.org/the-light-house/)\n2. [The Lighthouse Is One of 2019’s Wildest Movies](https://www.gq.com/story/the-lighthouse-review)\n\n### EOF (2023/09/20)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-09-20T06:44:01.349Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-21T12:43:57.400Z"
+  },
+  "__v": 0
 }]
