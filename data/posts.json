@@ -786,4 +786,20 @@
     "$date": "2023-09-21T12:43:57.400Z"
   },
   "__v": 0
+},{
+  "_id": {
+    "$oid": "6512753703db362ef1d3ed9d"
+  },
+  "title": "An elegy",
+  "subtitle": "memorial to LANSA",
+  "author": "me",
+  "content": "```\nGoodbye my dear friend, \nit's high time my friend, \nthree decades since we met, \none decade since we parted, \ntime and tide only rust on spike, \nnight and day erode line and shape, \nI am so glad to be on your side, \nlife is not about wrong or right, \nso, let go my friend, \nhenceforth, stay in grave, rest in peace, \ndon't creep out from your crypt, \ndon't crawl into my mind, \nI entertain the joy of our re-meet, \nsoon but not today, not now... \n```\n![alt tomb](https://www.ephotozine.com/resize/2010/25/xlrg/130837_1277499259.jpg?RTUdGk5cXyJFBQgJVANtcQlnYF8JERFaGwJRNQh6SlYUAEw1cmsCdg1hAWoxXFNGLSI=)\n\n[Charting a Course for Success: LANSA’s Product Roadmap 2023-2024](https://lansa.com/blog/general/lansa-roadmap-2023-2024/?utm_source=Eloqua&utm_medium=Email&utm_content=Promo-230926-Reengagement&utm_campaign=LNS-Victor&nowprocket=1)\n\n\n### EOF (2023/09/26)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-09-26T06:07:51.379Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-27T01:59:00.250Z"
+  },
+  "__v": 0
 }]
