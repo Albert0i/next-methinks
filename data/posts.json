@@ -504,13 +504,13 @@
   "title": "random token generator",
   "subtitle": "",
   "author": "me",
-  "content": "### Random token generator using NodeJS\n\n```\n> node\nWelcome to Node.js v18.16.1.\nType \".help\" for more information.\n> require('crypto').randomBytes(64).toString('hex')\n'f0784fa503edc1832150b8bf6c726f26c44e6788ac6e4752d6d5337727292c39ce3b5911f196f64d7648f76c494d609a7f53904eb957fe4aa9711ae97755d5fa'\n>\n(To exit, press Ctrl+C again or Ctrl+D or type .exit)\n>\n```\n\n### EOF (2023/08/19)",
+  "content": "### 1. Random token generator using NodeJS\n\n```\n> node\nWelcome to Node.js v18.16.1.\nType \".help\" for more information.\n> require('crypto').randomBytes(64).toString('hex')\n'f0784fa503edc1832150b8bf6c726f26c44e6788ac6e4752d6d5337727292c39ce3b5911f196f64d7648f76c494d609a7f53904eb957fe4aa9711ae97755d5fa'\n>\n(To exit, press Ctrl+C again or Ctrl+D or type .exit)\n>\n```\n\n### 2. Random token generator using OpenSSL \n \n```\nC:\\> openssl rand -base64 32 \ncLzd7cvepuZPigGsvGvEzFr20+ctgzisE79IMY6Iitk=\nC:\\> \n```\n\n### EOF (2023/10/18)\n### EOF (2023/08/19)",
   "deleted": false,
   "createdAt": {
     "$date": "2023-08-18T00:27:56.825Z"
   },
   "updatedAt": {
-    "$date": "2023-08-18T00:39:47.536Z"
+    "$date": "2023-10-18T02:31:16.892Z"
   },
   "__v": 0
 },{
@@ -825,13 +825,13 @@
   "title": "flagstone",
   "subtitle": "",
   "author": "me",
-  "content": "Treading on an old and uneven path to nowhere, an unknown sound of sharpness invalidated my faculty of hearing. I stooped and masked off my left ear with my hand but in vain, the sound is not from outside but inside.  With headache and faintness ensued, [tinnitus](https://dictionary.cambridge.org/dictionary/english-chinese-traditional/tinnitus?q=Tinnitus) was my constant nerve problem. Stumbling slowly onward as I was, frowning to hope the sound would vanish as I was... I perceived strange ruptures of a flagstone located right beneath me, much like wrinkles of an old man. Gradually, those lines dissolved and deformed into a hideous countenance, with a grin of smile... \n\nA low and hoarse whispering penetrated my head... \"W...h...ere... do you go...?\". \"Not know... \" I replied listlessly. Tightly closed my eyes, I kept on pacing and murmuring \"that's not real... that's not real... \". Suddenly, a whirlpool clapped my face... Upon opening my eyes, an omnibus running at full speed has passed by... A gang of infuriated rabbles crying and shouting at me but nothing was heard. I found myself standing on the very verge of the pavement and was almost run down by a huge vehicle. My whole body was dragged backward by the hair with the strong wind... \n\nAfter that, my hearing restored, my conscious restored. It was both a game of life and trial faith.\n\n![alt flagstone](https://as1.ftcdn.net/v2/jpg/01/66/23/68/1000_F_166236803_DbGCku3YQn2DZGONUHb1Y7SBW0gvXM5b.jpg)\n\n### EOF (2023/10/17)",
+  "content": "Treading on an old and uneven path to nowhere, an unknown sound of sharpness invalidated my faculty of hearing. I stooped and masked off my left ear with my hand but in vain, the sound is not from outside but inside.  With headache and faintness ensued, [tinnitus](https://dictionary.cambridge.org/dictionary/english-chinese-traditional/tinnitus?q=Tinnitus) was my constant nerve problem. Stumbling slowly onward as I was, frowning to hope the sound would vanish as I was... I perceived strange ruptures of a flagstone located right beneath me, much like wrinkles of an old man. Gradually, those lines dissolved and deformed into a hideous countenance, with a grin of smile... \n\nA low and hoarse whispering penetrated my head... \"W...h...ere... do you go...?\". \"...Not know... \" I replied listlessly. Tightly closed my eyes, I kept on pacing and murmuring \"that's not real... that's not real... \". Suddenly, a whirlpool clapped my face... Upon opening my eyes, an omnibus running at full speed has passed by... A gang of infuriated rabbles crying and shouting at me but nothing was heard. I found myself standing on the very verge of the pavement and was almost run down by a huge vehicle. My whole body was dragged backward by the hair with the strong wind... \n\nAfter that, my hearing restored, my conscious restored. It was both a game of life and trial of faith.\n\n![alt flagstone](https://as1.ftcdn.net/v2/jpg/01/66/23/68/1000_F_166236803_DbGCku3YQn2DZGONUHb1Y7SBW0gvXM5b.jpg)\n\n### EOF (2023/10/17)",
   "deleted": false,
   "createdAt": {
     "$date": "2023-10-17T04:43:41.130Z"
   },
   "updatedAt": {
-    "$date": "2023-10-17T09:32:43.509Z"
+    "$date": "2023-10-18T02:21:53.286Z"
   },
   "__v": 0
 }]
