@@ -802,4 +802,36 @@
     "$date": "2023-09-27T01:59:00.250Z"
   },
   "__v": 0
+},{
+  "_id": {
+    "$oid": "652504dd4045233b23994c73"
+  },
+  "title": "Incompatibility is our business",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/next-gate/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-10-10T08:01:33.449Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-10T08:01:33.449Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "652e10fd1057be0ee21690ed"
+  },
+  "title": "flagstone",
+  "subtitle": "",
+  "author": "me",
+  "content": "Treading on an old and uneven path to nowhere, an unknown sound of sharpness invalidated my faculty of hearing. I stooped and masked off my left ear with my hand but in vain, the sound is not from outside but inside.  With headache and faintness ensued, [tinnitus](https://dictionary.cambridge.org/dictionary/english-chinese-traditional/tinnitus?q=Tinnitus) was my constant nerve problem. Stumbling slowly onward as I was, frowning to hope the sound would vanish as I was... I perceived strange ruptures of a flagstone located right beneath me, much like wrinkles of an old man. Gradually, those lines dissolved and deformed into a hideous countenance, with a grin of smile... \n\nA low and hoarse whispering penetrated my head... \"W...h...ere... do you go...?\". \"Not know... \" I replied listlessly. Tightly closed my eyes, I kept on pacing and murmuring \"that's not real... that's not real... \". Suddenly, a whirlpool clapped my face... Upon opening my eyes, an omnibus running at full speed has passed by... A gang of infuriated rabbles crying and shouting at me but nothing was heard. I found myself standing on the very verge of the pavement and was almost run down by a huge vehicle. My whole body was dragged backward by the hair with the strong wind... \n\nAfter that, my hearing restored, my conscious restored. It was both a game of life and trial faith.\n\n![alt flagstone](https://as1.ftcdn.net/v2/jpg/01/66/23/68/1000_F_166236803_DbGCku3YQn2DZGONUHb1Y7SBW0gvXM5b.jpg)\n\n### EOF (2023/10/17)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-10-17T04:43:41.130Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-17T09:32:43.509Z"
+  },
+  "__v": 0
 }]
