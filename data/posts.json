@@ -850,4 +850,36 @@
     "$date": "2023-10-26T02:12:57.194Z"
   },
   "__v": 0
+},{
+  "_id": {
+    "$oid": "653b49bad9ba5871b288c074"
+  },
+  "title": "Tips and Tricks",
+  "subtitle": "lessons I learned from GTCoding",
+  "author": "me",
+  "content": "https://github.com/Albert0i/next-technews/blob/main/tips-and-tricks.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-10-27T05:25:14.311Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-27T05:25:14.311Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "653f34a1f542d0ecb8f2771b"
+  },
+  "title": "Monday",
+  "subtitle": "",
+  "author": "me",
+  "content": "```\nRolling left and right, \ndon't want to wake up,\nFor dream is soft and sweet,\nFor dream is vague and blurred,\nFor it is a blue Monday. \n\nWalking up and down the streets, \ndon't know where will go,\nFor life is hard and sour, \nFor life is rumour and hatred, \nFor it is a sullen Monday. \n```\n![alt blue monday](https://media.istockphoto.com/id/1290675679/photo/stock-image-of-a-blue-monday-text.jpg?s=612x612&w=0&k=20&c=PLcbudU3GixVvATFb5k9yBm0C4LssU9d28_uJJK2_Qc=)\n### EOF (2023/10/30) ###",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-10-30T04:44:17.917Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-30T04:47:16.494Z"
+  },
+  "__v": 0
 }]
