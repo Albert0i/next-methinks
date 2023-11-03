@@ -882,4 +882,20 @@
     "$date": "2023-10-30T04:47:16.494Z"
   },
   "__v": 0
+},{
+  "_id": {
+    "$oid": "65444b425f28c972a166f1d9"
+  },
+  "title": "《秋》",
+  "subtitle": "",
+  "author": "me",
+  "content": "《秋》\n\n宜人的風，微涼的秋，踏着腳步，走過長街，\n\n朝陽為欄柵漆上金箔，夏天的身影己經歸家，\n\n路上行人，不是頭耷耷玩着手機，便是神色凝重，\n\n思考着2023年度總結，思考着人生總結，\n\n人，只要相信一個故事，便會不停做不停做，\n\n這是一種執着，也是一種信念。\n\n![alt 秋](https://images.fineartamerica.com/images-medium-large-5/autumn-leaves-lying-on-the-street-preappy.jpg)\n\n### EOF (2023/11/03)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-11-03T01:22:10.109Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-03T01:30:12.809Z"
+  },
+  "__v": 0
 }]
