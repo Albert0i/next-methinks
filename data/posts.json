@@ -898,4 +898,36 @@
     "$date": "2023-11-03T01:30:12.809Z"
   },
   "__v": 0
+},{
+  "_id": {
+    "$oid": "659f3445590bb6c043ae55f1"
+  },
+  "title": "trilogy of thoughts",
+  "subtitle": "",
+  "author": "me",
+  "content": "### 1\n```\nThinking every day of my life,\nThinking how men could exist,\nThinking how men may vanish,\nThinking every possible ways do good to the whole,\nThinking how bad people ruin and bring to an end. \nI think, yes I am. \n```\n### 2\n```\n\"pore over subtle caprice of countenance and \njudge by minute finger movement vibration.\"\n\n「仔細觀察臉部細微的變化，並透過手指的微小運動振動來判斷。」\n```\n### 3\n```\nI was so accustomed to turning right. \nStanding on the corner and thinking attentively.\nTraffic light flashes and moves my pace.\nNot knowing where to go but walk and walk.\nSeveral minutes passed, I realize that I am on the wrong way.\nI SHOULD have turned left but obviously I am not.\nThe wrong way, more precisely, the farther way, has a better view.\nI compromise with myself... \n```\n\n![alt think](https://www.shutterstock.com/image-photo/young-man-white-shirt-having-260nw-1267307863.jpg)\n\n### EOF (2024/01/11)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-01-11T00:20:21.480Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-11T00:28:46.307Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "65adb7501a49037e6adebddd"
+  },
+  "title": "Win XP resolution change to 1600 x 900 after system crash",
+  "subtitle": "",
+  "author": "me",
+  "content": "1. Login to *VMware vSpere* with **local account**: \n\n```\nusername: albertoi\npassword: <blank>\n```\n\n** SCREEN IS A MESS! BETTER GO TO FULL SCREEN MODE. **\n\n2. Right click on screen and change resolution back to **1024 x 768**\n   either with mouse or right-arrow key and press enter. \n\n3 .Screen becomes clear immediately. \n\n4. **DON'T QUIT FULL SCREEN YET... ** Shutdown and restart. \n\n### EOF(2024/01/22)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-01-22T00:31:12.296Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-22T00:34:05.954Z"
+  },
+  "__v": 0
 }]
