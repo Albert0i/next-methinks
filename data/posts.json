@@ -930,4 +930,20 @@
     "$date": "2024-01-22T00:34:05.954Z"
   },
   "__v": 0
+},{
+  "_id": {
+    "$oid": "65d3061bb4f62253e21eaa9d"
+  },
+  "title": "MongoDB-aggregation-pipeline",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/MongoDB-aggregation-pipeline/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-02-19T07:41:15.846Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-19T07:41:50.392Z"
+  },
+  "__v": 0
 }]
