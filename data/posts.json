@@ -946,4 +946,36 @@
     "$date": "2024-02-19T07:41:50.392Z"
   },
   "__v": 0
+},{
+  "_id": {
+    "$oid": "65f955de34c54fa5d65def14"
+  },
+  "title": "Redis-Stack-aggregation-pipeline",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/Redis-Stack-Tutorial/blob/212e3ae9b358ab0e725bd02b6ecf1e00792de5be/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-03-19T09:07:42.860Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-19T09:11:26.818Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "66062de7948f03e751291330"
+  },
+  "title": "Thinking in Redis",
+  "subtitle": "The way to document database",
+  "author": "me",
+  "content": "https://github.com/Albert0i/Redis-Stack-Tutorial/blob/main/docdb.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-03-29T02:56:39.862Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-29T02:56:39.862Z"
+  },
+  "__v": 0
 }]
