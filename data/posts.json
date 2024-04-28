@@ -978,4 +978,20 @@
     "$date": "2024-03-29T02:56:39.862Z"
   },
   "__v": 0
+},{
+  "_id": {
+    "$oid": "661f58f9f6b3d430c91074da"
+  },
+  "title": "Data 101",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/RU204/blob/main/Data101.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-04-17T05:07:05.272Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-17T05:07:05.272Z"
+  },
+  "__v": 0
 }]
