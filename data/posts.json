@@ -994,4 +994,20 @@
     "$date": "2024-04-17T05:07:05.272Z"
   },
   "__v": 0
+},{
+  "_id": {
+    "$oid": "6630bad74327c8dd35d1b48a"
+  },
+  "title": "OM vs ORM",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/RU204/blob/main/om-orm.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-04-30T09:33:11.849Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-30T09:33:11.849Z"
+  },
+  "__v": 0
 }]
