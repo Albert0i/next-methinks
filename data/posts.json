@@ -1010,4 +1010,52 @@
     "$date": "2024-04-30T09:33:11.849Z"
   },
   "__v": 0
+},{
+  "_id": {
+    "$oid": "663da9c7b7ff1eee892a0842"
+  },
+  "title": "Confusing English Vocabs",
+  "subtitle": "",
+  "author": "me",
+  "content": "```\nwrithe v. 扭動;蠕動\nwither v. （使）枯萎，（使）乾枯\nwreath n. 花環；花圈\nwether n. 閹羊，去勢公羊\nweather n. 天氣；氣象\nwhether conj. （尤用於轉述問題或表達疑問）是否\nwhither adv. (古) to where, 去哪裡，去何處\n```\n### EOF (2024/05/10)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-05-10T04:59:51.302Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-10T05:01:17.500Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "663daa0fb7ff1eee892a0848"
+  },
+  "title": "Old style of english",
+  "subtitle": "",
+  "author": "me",
+  "content": "```\nHere is a list of some common Old English words that are no longer in common use in modern English:\n\n1. Doth - third-person singular present indicative of \"do\"\n2. Hath - third-person singular present indicative of \"have\"\n3. O'er - over\n4. Thine - your, yours (used before a vowel sound)\n5. Thee - you (object form)\n6. Thou - you (subject form)\n7. Hither - to or toward this place\n8. Whence - from where\n9. Thither - to or toward that place\n10. Wither - to what place or state\n11. Ere - before\n12. Verily - truly, certainly\n13. Yon - that or those (referring to something distant)\n14. Anon - soon, shortly\n15. 'Tis - it is\n16. Nay - no\n17. Yea - yes\n18. Fain - gladly, willingly\n19. Haply - perhaps, maybe\n20. Ne'er - never\n\nthere are certain patterns and characteristics that are commonly associated with Old English or old-fashioned styles of English. Here are some key features:\n\n1. Vocabulary: Old English had a different vocabulary compared to modern English. It included words that are no longer in common use today. Old English also had a more extensive system of declensions and a richer variety of word forms.\n\n2. Pronouns: Old English had a distinct set of pronouns, including \"thou\" (singular informal), \"thee\" (singular object form), \"ye\" (plural), and \"you\" (formal or plural). These pronouns have largely been replaced by the modern singular \"you\" for both formal and informal contexts.\n\n3. Verb Endings: Old English verbs had distinct endings based on person, number, and tense. For example, the verb \"to love\" in Old English would have different forms like \"lufian\" (to love), \"lufast\" (you love), \"lufað\" (he/she/it loves), \"lufiaþ\" (they love), etc.\n\n4. Conjugation: Old English verbs were conjugated differently based on their class or strong/weak verb type. These conjugation patterns involved changes in the verb stem and endings to indicate tense, mood, and person.\n\n5. Word Order: Old English had a more flexible word order compared to modern English. It often followed a subject-verb-object pattern but allowed for variations and relied heavily on inflections to indicate grammatical relationships.\n\n6. Vocabulary Variation: Old English had multiple synonyms and variations for many words, allowing for different shades of meaning. This variation was more common in poetry and literature of that time.\n\n```\n### EOF (2024/05/10)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-05-10T05:01:03.505Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-10T05:01:03.505Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6641ce0a06865d64e3eca83a"
+  },
+  "title": "Fun with Cache",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/RU204/blob/main/cache.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-05-13T08:23:38.780Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-13T08:23:38.780Z"
+  },
+  "__v": 0
 }]
