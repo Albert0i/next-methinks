@@ -1058,4 +1058,36 @@
     "$date": "2024-05-13T08:23:38.780Z"
   },
   "__v": 0
+},{
+  "_id": {
+    "$oid": "6645bdfcc1374d9679e5cdf3"
+  },
+  "title": "Far side of the Moon",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/RU204/blob/main/moon.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-05-16T08:04:12.062Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-16T08:04:12.062Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "66591e6e833394d546a5d3f7"
+  },
+  "title": "Windows container static ip",
+  "subtitle": "",
+  "author": "me",
+  "content": "### Windows container static ip \n\n### 1. Docker run\n```\ndocker network create -d transparent --subnet=192.168.1.0/24 --gateway=192.168.1.254 tnet\n\ndocker run -it --name fixedhost --network tnet --ip 192.168.1.111 mcr.microsoft.com/windows/nanoserver:20H2\n```\n\n### 2. Docker-compose\n```\nversion: \"3\"\n\nnetworks:\n  tnet:\n    driver: transparent\n    ipam:\n      driver: default\n      config:\n        - subnet: \"192.168.1.0/24\"\n          gateway: \"192.168.1.254\"\n\nservices:\n  # cmd1\n  cmd1:\n    image: mcr.microsoft.com/windows/nanoserver:20H2\n    container_name: cmd1\n    command: ipconfig\n    networks:\n      tnet:\n        ipv4_address: 192.168.1.11\n\n  # cmd2\n  cmd2:\n    image: mcr.microsoft.com/windows/nanoserver:20H2\n    container_name: cmd2\n    command: ipconfig\n    networks:\n      tnet:\n        ipv4_address: 192.168.1.12\n\n# cmd3\n  cmd3:\n    image: mcr.microsoft.com/windows/nanoserver:20H2\n    container_name: cmd3\n    command: ipconfig\n    networks:\n      tnet:\n        ipv4_address: 192.168.1.13\n\n# cmd4\n  cmd4:\n    image: mcr.microsoft.com/windows/nanoserver:20H2\n    container_name: cmd4\n    command: ipconfig\n    networks:\n      tnet:\n        ipv4_address: 192.168.1.14\n\n# cmd5\n  cmd5:\n    image: mcr.microsoft.com/windows/nanoserver:20H2\n    container_name: cmd5\n    command: ipconfig\n    networks:\n      tnet:\n        ipv4_address: 192.168.1.15\n\n# cmd6\n  cmd6:\n    image: mcr.microsoft.com/windows/nanoserver:20H2\n    container_name: cmd6\n    command: ipconfig\n    networks:\n      tnet:\n        ipv4_address: 192.168.1.16\n```\n\nOutput: \n\n```\ndocker-compose up\n[+] Running 6/0\n ✔ Container cmd5  Created                                                                                         0.0s\n ✔ Container cmd6  Created                                                                                         0.0s\n ✔ Container cmd3  Created                                                                                         0.0s\n ✔ Container cmd4  Created                                                                                         0.0s\n ✔ Container cmd2  Created                                                                                         0.0s\n ✔ Container cmd1  Created                                                                                         0.0s\nAttaching to cmd1, cmd2, cmd3, cmd4, cmd5, cmd6\ncmd4  |\ncmd4  | Windows IP Configuration\ncmd4  |\ncmd4  |\ncmd4  | Ethernet adapter Ethernet:\ncmd4  |\ncmd4  |    Connection-specific DNS Suffix  . :\ncmd4  |    Link-local IPv6 Address . . . . . : fe80::f45c:5332:eac4:d8f4%4\ncmd4  |    IPv4 Address. . . . . . . . . . . : 192.168.1.14\ncmd4  |    Subnet Mask . . . . . . . . . . . : 255.255.255.0\ncmd4  |    Default Gateway . . . . . . . . . : 192.168.1.254\ncmd2  |\ncmd2  | Windows IP Configuration\ncmd2  |\ncmd2  |\ncmd2  | Ethernet adapter Ethernet:\ncmd2  |\ncmd2  |    Connection-specific DNS Suffix  . :\ncmd2  |    Link-local IPv6 Address . . . . . : fe80::4d0f:94b6:82d6:df8e%4\ncmd2  |    IPv4 Address. . . . . . . . . . . : 192.168.1.12\ncmd2  |    Subnet Mask . . . . . . . . . . . : 255.255.255.0\ncmd2  |    Default Gateway . . . . . . . . . : 192.168.1.254\ncmd5  |\ncmd5  | Windows IP Configuration\ncmd5  |\ncmd5  |\ncmd5  | Ethernet adapter Ethernet:\ncmd5  |\ncmd5  |    Connection-specific DNS Suffix  . :\ncmd5  |    Link-local IPv6 Address . . . . . : fe80::80c5:e1ed:e8c2:2a14%4\ncmd5  |    IPv4 Address. . . . . . . . . . . : 192.168.1.15\ncmd5  |    Subnet Mask . . . . . . . . . . . : 255.255.255.0\ncmd5  |    Default Gateway . . . . . . . . . : 192.168.1.254\ncmd6  |\ncmd6  | Windows IP Configuration\ncmd6  |\ncmd6  |\ncmd6  | Ethernet adapter Ethernet:\ncmd6  |\ncmd6  |    Connection-specific DNS Suffix  . :\ncmd6  |    Link-local IPv6 Address . . . . . : fe80::5dbe:80ea:9424:652%4\ncmd6  |    IPv4 Address. . . . . . . . . . . : 192.168.1.16\ncmd6  |    Subnet Mask . . . . . . . . . . . : 255.255.255.0\ncmd6  |    Default Gateway . . . . . . . . . : 192.168.1.254\ncmd1  |\ncmd1  | Windows IP Configuration\ncmd1  |\ncmd1  |\ncmd1  | Ethernet adapter Ethernet:\ncmd1  |\ncmd1  |    Connection-specific DNS Suffix  . : ih.gov.mo\ncmd1  |    Link-local IPv6 Address . . . . . : fe80::118c:8030:9d4d:7d4e%4\ncmd1  |    IPv4 Address. . . . . . . . . . . : 192.168.1.11\ncmd1  |    Subnet Mask . . . . . . . . . . . : 255.255.255.0\ncmd1  |    Default Gateway . . . . . . . . . : 192.168.1.254\ncmd3  |\ncmd3  | Windows IP Configuration\ncmd3  |\ncmd3  |\ncmd3  | Ethernet adapter Ethernet:\ncmd3  |\ncmd3  |    Connection-specific DNS Suffix  . : ih.gov.mo\ncmd3  |    Link-local IPv6 Address . . . . . : fe80::740a:3b1b:89e5:c5b%4\ncmd3  |    IPv4 Address. . . . . . . . . . . : 192.168.1.13\ncmd3  |    Subnet Mask . . . . . . . . . . . : 255.255.255.0\ncmd3  |    Default Gateway . . . . . . . . . : 192.168.1.254\ncmd2 exited with code 0\ncmd6 exited with code 0\ncmd5 exited with code 0\ncmd4 exited with code 0\ncmd3 exited with code 0\ncmd1 exited with code 0\n```\n\n### 3. Reference\n1. [Windows container and static ip](https://forums.docker.com/t/windows-container-and-static-ip/70204)\n2. [Windows container networking](https://learn.microsoft.com/en-us/virtualization/windowscontainers/container-networking/architecture) \n\n### EOF (2024/05/31)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-05-31T00:48:46.894Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-31T01:03:09.478Z"
+  },
+  "__v": 0
 }]
