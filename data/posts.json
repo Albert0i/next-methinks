@@ -1033,13 +1033,13 @@
   "title": "Old style of english",
   "subtitle": "",
   "author": "me",
-  "content": "```\nHere is a list of some common Old English words that are no longer in common use in modern English:\n\n1. Doth - third-person singular present indicative of \"do\"\n2. Hath - third-person singular present indicative of \"have\"\n3. O'er - over\n4. Thine - your, yours (used before a vowel sound)\n5. Thee - you (object form)\n6. Thou - you (subject form)\n7. Hither - to or toward this place\n8. Whence - from where\n9. Thither - to or toward that place\n10. Wither - to what place or state\n11. Ere - before\n12. Verily - truly, certainly\n13. Yon - that or those (referring to something distant)\n14. Anon - soon, shortly\n15. 'Tis - it is\n16. Nay - no\n17. Yea - yes\n18. Fain - gladly, willingly\n19. Haply - perhaps, maybe\n20. Ne'er - never\n\nthere are certain patterns and characteristics that are commonly associated with Old English or old-fashioned styles of English. Here are some key features:\n\n1. Vocabulary: Old English had a different vocabulary compared to modern English. It included words that are no longer in common use today. Old English also had a more extensive system of declensions and a richer variety of word forms.\n\n2. Pronouns: Old English had a distinct set of pronouns, including \"thou\" (singular informal), \"thee\" (singular object form), \"ye\" (plural), and \"you\" (formal or plural). These pronouns have largely been replaced by the modern singular \"you\" for both formal and informal contexts.\n\n3. Verb Endings: Old English verbs had distinct endings based on person, number, and tense. For example, the verb \"to love\" in Old English would have different forms like \"lufian\" (to love), \"lufast\" (you love), \"lufað\" (he/she/it loves), \"lufiaþ\" (they love), etc.\n\n4. Conjugation: Old English verbs were conjugated differently based on their class or strong/weak verb type. These conjugation patterns involved changes in the verb stem and endings to indicate tense, mood, and person.\n\n5. Word Order: Old English had a more flexible word order compared to modern English. It often followed a subject-verb-object pattern but allowed for variations and relied heavily on inflections to indicate grammatical relationships.\n\n6. Vocabulary Variation: Old English had multiple synonyms and variations for many words, allowing for different shades of meaning. This variation was more common in poetry and literature of that time.\n\n```\n### EOF (2024/05/10)",
+  "content": "```\nHere is a list of some common Old English words that are no longer in common use in modern English:\n\n1. Doth - third-person singular present indicative of \"do\"\n2. Hath - third-person singular present indicative of \"have\"\n3. O'er - over\n4. Thine - your, yours (used before a vowel sound)\n5. Thee - you (object form)\n6. Thou - you (subject form)\n7. Hither - to or toward this place\n8. Whence - from where\n9. Thither - to or toward that place\n10. Wither - to what place or state\n11. Ere - before\n12. Verily - truly, certainly\n13. Yon - that or those (referring to something distant)\n14. Anon - soon, shortly\n15. 'Tis - it is\n16. Nay - no\n17. Yea - yes\n18. Fain - gladly, willingly\n19. Haply - perhaps, maybe\n20. Ne'er - never\n\nthere are certain patterns and characteristics that are commonly associated with Old English or old-fashioned styles of English. Here are some key features:\n\n1. Vocabulary: Old English had a different vocabulary compared to modern English. It included words that are no longer in common use today. Old English also had a more extensive system of declensions and a richer variety of word forms.\n2. Pronouns: Old English had a distinct set of pronouns, including \"thou\" (singular informal), \"thee\" (singular object form), \"ye\" (plural), and \"you\" (formal or plural). These pronouns have largely been replaced by the modern singular \"you\" for both formal and informal contexts.\n3. Verb Endings: Old English verbs had distinct endings based on person, number, and tense. For example, the verb \"to love\" in Old English would have different forms like \"lufian\" (to love), \"lufast\" (you love), \"lufað\" (he/she/it loves), \"lufiaþ\" (they love), etc.\n4. Conjugation: Old English verbs were conjugated differently based on their class or strong/weak verb type. These conjugation patterns involved changes in the verb stem and endings to indicate tense, mood, and person.\n5. Word Order: Old English had a more flexible word order compared to modern English. It often followed a subject-verb-object pattern but allowed for variations and relied heavily on inflections to indicate grammatical relationships.\n6. Vocabulary Variation: Old English had multiple synonyms and variations for many words, allowing for different shades of meaning. This variation was more common in poetry and literature of that time.\n\n```\n### EOF (2024/05/10)",
   "deleted": false,
   "createdAt": {
     "$date": "2024-05-10T05:01:03.505Z"
   },
   "updatedAt": {
-    "$date": "2024-05-10T05:01:03.505Z"
+    "$date": "2024-06-11T01:51:27.922Z"
   },
   "__v": 0
 },{
@@ -1088,6 +1088,86 @@
   },
   "updatedAt": {
     "$date": "2024-05-31T01:03:09.478Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "665ec57a17dca019a205a8c2"
+  },
+  "title": "The Road So Far",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/RU301/blob/main/topology1.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-06-04T07:42:50.451Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-04T07:42:50.451Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "665feb499b049c79455de204"
+  },
+  "title": "Tune beore you scale",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/RU301/blob/main/topology1.5.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-06-05T04:36:25.661Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-05T04:36:25.661Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6661769c6e05a90fe37dd2f0"
+  },
+  "title": "On Topology",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/RU301/blob/main/topology2.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-06-06T08:43:08.848Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-06T08:43:08.848Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6667aca75aab7c58d846f091"
+  },
+  "title": "On Topology (cont)",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/RU301/blob/main/topology3.md#on-topology-cont",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-06-11T01:47:19.941Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-11T01:47:19.941Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6667ad085aab7c58d846f096"
+  },
+  "title": "My Redis Collection",
+  "subtitle": "",
+  "author": "me",
+  "content": "And this pretty much concludes my Redis collection: \n\n1. [Redis Stack aggregation pipeline, 2024/03/20](https://github.com/Albert0i/Redis-Stack-Tutorial/blob/main/README.md)\n2. [Thinking in Redis, 2024/04/01](https://github.com/Albert0i/Redis-Stack-Tutorial/blob/main/docdb.md)\n3. [Data 101, 2024/04/19](https://github.com/Albert0i/RU204/blob/main/Data101.md)\n4. [OM vs ORM, 2024/04/30](https://github.com/Albert0i/RU204/blob/main/om-orm.md)\n5. [Fun With Cache, 2024/05/17](https://github.com/Albert0i/RU204/blob/main/cache.md)\n6. [Far side of the Moon, 2024/05/17](https://github.com/Albert0i/RU204/blob/main/moon.md)\n7. [The Road So Far, 2024/06/04](https://github.com/Albert0i/RU301/blob/main/topology1.md)\n8. [Tune before you scale, 2024/06/05](https://github.com/Albert0i/RU301/blob/main/topology1.5.md)\n9. [On Topology, 2024/06/07](https://github.com/Albert0i/RU301/blob/main/topology2.md)\n10. [On Topology (cont), 2024/06/14](https://github.com/Albert0i/RU301/blob/main/topology3.md)\n\nUnless... unless somwthing fanciful emerges in my brain... \n\n### EOF (2024/06/14)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-06-11T01:48:56.021Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-11T01:50:02.720Z"
   },
   "__v": 0
 }]
