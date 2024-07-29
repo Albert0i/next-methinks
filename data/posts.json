@@ -1161,13 +1161,13 @@
   "title": "My Redis Collection",
   "subtitle": "",
   "author": "me",
-  "content": "And this pretty much concludes my Redis collection: \n\n1. [Redis Stack aggregation pipeline, 2024/03/20](https://github.com/Albert0i/Redis-Stack-Tutorial/blob/main/README.md)\n2. [Thinking in Redis, 2024/04/01](https://github.com/Albert0i/Redis-Stack-Tutorial/blob/main/docdb.md)\n3. [Data 101, 2024/04/19](https://github.com/Albert0i/RU204/blob/main/Data101.md)\n4. [OM vs ORM, 2024/04/30](https://github.com/Albert0i/RU204/blob/main/om-orm.md)\n5. [Fun With Cache, 2024/05/17](https://github.com/Albert0i/RU204/blob/main/cache.md)\n6. [Far side of the Moon, 2024/05/17](https://github.com/Albert0i/RU204/blob/main/moon.md)\n7. [The Road So Far, 2024/06/04](https://github.com/Albert0i/RU301/blob/main/topology1.md)\n8. [Tune before you scale, 2024/06/05](https://github.com/Albert0i/RU301/blob/main/topology1.5.md)\n9. [On Topology, 2024/06/07](https://github.com/Albert0i/RU301/blob/main/topology2.md)\n10. [On Topology (cont), 2024/06/14](https://github.com/Albert0i/RU301/blob/main/topology3.md)\n11. [On Security, 2024/06/17](https://github.com/Albert0i/RU330/blob/main/security1.md)\n12. [On Security (cont.), 2024/06/21](https://github.com/Albert0i/RU330/blob/main/security2.md)\n13. [On Security (cont.), 2024/06/28](https://github.com/Albert0i/RU330/blob/main/security3.md)\n\nUnless... unless somwthing fanciful emerges in my brain... \n\nBonus \n1. [Case study: A self-declaration system](https://github.com/Albert0i/RU301/blob/main/cluster-case-1.md)\n2. [Always view from the other end of our solutions, 2024/06/14](https://github.com/Albert0i/RU330/blob/main/draft.md)\n3. [ADT, 2024/06/28](https://github.com/Albert0i/RU330/blob/main/adt.md)\n4. [The Strange Case Of Sentinel And ACL, 2024/07/08](https://next-methinks.vercel.app/posts/668b7996b2b9bf2359606801?_rebaseimg=true)\n5. [The Road Not Taken, 2024/07/12](https://next-methinks.vercel.app/posts/668cf30f3d6ae7ab4505ae5b?_rebaseimg=true)\n6. [exemplar, 2024/07/19](https://github.com/Albert0i/Redis7.2.4-Homebrew-ShardCluster/blob/main/exemplar.md)\n\n### EOF (2024/07/19)\n### EOF (2024/07/12)\n### EOF (2024/06/28)\n### EOF (2024/06/14)",
+  "content": "And this pretty much concludes my Redis collection: \n\n1. [Redis Stack aggregation pipeline, 2024/03/20](https://github.com/Albert0i/Redis-Stack-Tutorial/blob/main/README.md)\n2. [Thinking in Redis, 2024/04/01](https://github.com/Albert0i/Redis-Stack-Tutorial/blob/main/docdb.md)\n3. [Data 101, 2024/04/19](https://github.com/Albert0i/RU204/blob/main/Data101.md)\n4. [OM vs ORM, 2024/04/30](https://github.com/Albert0i/RU204/blob/main/om-orm.md)\n5. [Fun With Cache, 2024/05/17](https://github.com/Albert0i/RU204/blob/main/cache.md)\n6. [Far side of the Moon, 2024/05/17](https://github.com/Albert0i/RU204/blob/main/moon.md)\n7. [The Road So Far, 2024/06/04](https://github.com/Albert0i/RU301/blob/main/topology1.md)\n8. [Tune before you scale, 2024/06/05](https://github.com/Albert0i/RU301/blob/main/topology1.5.md)\n9. [On Topology, 2024/06/07](https://github.com/Albert0i/RU301/blob/main/topology2.md)\n10. [On Topology (cont), 2024/06/14](https://github.com/Albert0i/RU301/blob/main/topology3.md)\n11. [On Security, 2024/06/17](https://github.com/Albert0i/RU330/blob/main/security1.md)\n12. [On Security (cont.), 2024/06/21](https://github.com/Albert0i/RU330/blob/main/security2.md)\n13. [On Security (cont.), 2024/06/28](https://github.com/Albert0i/RU330/blob/main/security3.md)\n\nUnless... unless somwthing fanciful emerges in my brain... \n\nBonus \n1. [Case study: A self-declaration system](https://github.com/Albert0i/RU301/blob/main/cluster-case-1.md)\n2. [Always view from the other end of our solutions, 2024/06/14](https://github.com/Albert0i/RU330/blob/main/draft.md)\n3. [ADT, 2024/06/28](https://github.com/Albert0i/RU330/blob/main/adt.md)\n4. [The Strange Case Of Sentinel And ACL, 2024/07/08](https://next-methinks.vercel.app/posts/668b7996b2b9bf2359606801?_rebaseimg=true)\n5. [The Road Not Taken, 2024/07/12](https://next-methinks.vercel.app/posts/668cf30f3d6ae7ab4505ae5b?_rebaseimg=true)\n6. [exemplar, 2024/07/19](https://github.com/Albert0i/Redis7.2.4-Homebrew-ShardCluster/blob/main/exemplar.md)\n7. [JJSR, 2024/08/02](https://github.com/Albert0i/jest-course/blob/main/JJSR.md)\n\n\n### EOF (2024/08/02)\n### EOF (2024/07/19)\n### EOF (2024/07/12)\n### EOF (2024/06/28)\n### EOF (2024/06/14)",
   "deleted": false,
   "createdAt": {
     "$date": "2024-06-11T01:48:56.021Z"
   },
   "updatedAt": {
-    "$date": "2024-07-19T06:20:51.409Z"
+    "$date": "2024-07-29T06:48:42.776Z"
   },
   "__v": 0
 },{
@@ -1216,6 +1216,22 @@
   },
   "updatedAt": {
     "$date": "2024-07-19T06:19:27.997Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "66a73b2569a1a352cb57559c"
+  },
+  "title": "JJSR",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/jest-course/blob/main/JJSR.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-29T06:48:05.353Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-29T06:48:14.463Z"
   },
   "__v": 0
 }]
