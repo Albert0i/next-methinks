@@ -1318,7 +1318,7 @@
   "_id": {
     "$oid": "66eb82605f77497689a9ab30"
   },
-  "title": "ummary from RU204",
+  "title": "Summary from RU204",
   "subtitle": "(unfinished)",
   "author": "me",
   "content": "https://github.com/Albert0i/RU204/blob/main/summary.md",
@@ -1327,7 +1327,23 @@
     "$date": "2024-09-19T01:46:08.168Z"
   },
   "updatedAt": {
-    "$date": "2024-09-19T01:46:08.168Z"
+    "$date": "2024-09-27T04:11:07.092Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "66f6303e7c46746b12949148"
+  },
+  "title": "Index 二三事",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/albert0i.github.io/blob/main/articleOnIndex.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-09-27T04:10:38.750Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-27T04:10:38.750Z"
   },
   "__v": 0
 }]
