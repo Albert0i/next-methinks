@@ -1,0 +1,1568 @@
+[{
+  "_id": {
+    "$oid": "64d1efdbc0a774df1d662432"
+  },
+  "title": "Debut",
+  "subtitle": "start to write md here",
+  "author": "me",
+  "content": "![This is just the beginning](https://tsuzukusekai.files.wordpress.com/2010/05/f91_end.jpg)\n\n[Source code](https://github.com/Albert0i/next-methinks.git)\n\n.env\n\n```\nMONGODB_URI=<your mongodb uri>\n\nAPI_URL=http://localhost:3000/api\n\nAPP_ENV=localhost\n\nADMIN_USERNAME=myuser\n\nADMIN_PASSWORD=mypwd\n\nAUTH_COOKIE_NAME=my-auth-token \n```\n\nRemove deleted records: \n\n```\nuse methinks_db\nshow collections\ndb.posts.find({deleted: true}).count()\ndb.posts.deleteMany({deleted: true})\n```\n[Step-by-Step Guide: Create a Next.js 13 CRUD App with MongoDB from Scratch](https://youtu.be/wNWyMsrpbz0)\n\n[Next.js 13 Authentication: Custom Email/Password with NextAuth.js & MongoDB](https://youtu.be/PEMfsqZ2-As)\n\n[Fullstack nextjs course with mongodb and appwrite](https://youtu.be/7ahDnxnXheU)\n\n[NextJS 13 Tutorial: Create a Static Blog from Markdown Files](https://youtu.be/Hiabp1GY8fA)\n\n---\n\n### EOF (2023/08/18)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-08T07:33:47.331Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-16T00:32:59.691Z"
+  },
+  "__v": 0,
+  "deletedAt": {
+    "$date": "2023-08-08T09:24:09.341Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "64d5f3e919cea7ab6546f40b"
+  },
+  "title": "SSG and ISR",
+  "subtitle": "NextJS SSG demo",
+  "author": "me",
+  "content": "https://github.com/Albert0i/next-ssg/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-11T08:40:09.766Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:14:00.695Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d7405350d0f62cb795a601"
+  },
+  "title": "NEXT to Node",
+  "subtitle": "‘If you are right, I must be wrong!’",
+  "author": "me",
+  "content": "https://github.com/Albert0i/crud-mongodb/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:18:27.142Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:18:27.142Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d741ff20d2bb2d6a39b5d6"
+  },
+  "title": "NextJS",
+  "subtitle": "Dockerization on Windows container",
+  "author": "me",
+  "content": "https://github.com/Albert0i/crud-mongodb/blob/main/README.V2.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:25:35.880Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:37:33.093Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d7455842a7559bbf864512"
+  },
+  "title": "YRunner on Node",
+  "subtitle": "A generic API gateway to Oralce Database",
+  "author": "me",
+  "content": "https://github.com/Albert0i/yrunner-on-node/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:39:52.581Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:39:52.581Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d7461d2d2c85598a6093bc"
+  },
+  "title": "The sequel to YON",
+  "subtitle": "Caching code tables",
+  "author": "me",
+  "content": "https://github.com/Albert0i/yrunner-on-node/blob/main/README.V2.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:43:09.059Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:43:09.059Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d746762d2c85598a6093c2"
+  },
+  "title": "Another sequel to YON ",
+  "subtitle": "Dockerization",
+  "author": "me",
+  "content": "https://github.com/Albert0i/yrunner-on-node/blob/main/README.V3.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:44:38.769Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:44:38.769Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d74709c2b320f18f6851db"
+  },
+  "title": "SQLite Server ",
+  "subtitle": "JSON Server facsimile backed by SQLite.",
+  "author": "me",
+  "content": "https://github.com/Albert0i/sqlite-server/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:47:05.752Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:47:05.752Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d74806c2b320f18f6851df"
+  },
+  "title": "MERN stack course",
+  "subtitle": "To be a programmer is not easy; to be a full stack programmer is uneasy.",
+  "author": "me",
+  "content": "https://github.com/Albert0i/mern_stack_course/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:51:18.159Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:51:18.159Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d74852c2b320f18f6851e2"
+  },
+  "title": "React Redux",
+  "subtitle": "An extract from React Redux Quick Start for idiot",
+  "author": "me",
+  "content": "https://github.com/Albert0i/react_redux_tutorial/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:52:34.522Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:52:34.522Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d748a94b145122127501ef"
+  },
+  "title": "react-js-blog",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/react-js-blog/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:54:01.720Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:54:01.720Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d7490b4b145122127501f2"
+  },
+  "title": "json-server-tutorial",
+  "subtitle": "Simplicity but not simple",
+  "author": "me",
+  "content": "https://github.com/Albert0i/json-server-tutorial/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:55:39.535Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:55:39.535Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d749414b48c59375f63e0e"
+  },
+  "title": "The way of JWT",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/json-server-tutorial/blob/main/JWT.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:56:33.106Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:56:33.106Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d7498e4b145122127501f8"
+  },
+  "title": "node-express-jwt-auth",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/node-express-jwt-auth/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:57:50.382Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:57:50.382Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d749c34b145122127501fb"
+  },
+  "title": "dojo-blog",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/dojo-blog/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T08:58:43.578Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T08:58:43.578Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d74b9d4b14512212750200"
+  },
+  "title": "Node-tify TA project",
+  "subtitle": "Old soldiers never die--they just fade away.",
+  "author": "me",
+  "content": "https://github.com/Albert0i/na/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T09:06:37.229Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T09:06:37.229Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d74d277fbd78ee0f58f624"
+  },
+  "title": "node-docker",
+  "subtitle": "Notes from Underground",
+  "author": "me",
+  "content": "https://github.com/Albert0i/node-docker/blob/main/NFUD.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T09:13:11.789Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T09:13:11.789Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d74d9a7fbd78ee0f58f62d"
+  },
+  "title": "Docker swarm on Oracle Cloud (Free Tier)",
+  "subtitle": "窮L的後現代生活",
+  "author": "me",
+  "content": "https://github.com/Albert0i/node-docker/blob/main/swarm.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T09:15:06.153Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T09:15:06.153Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d74eafada3b35414a72a92"
+  },
+  "title": "Dockerize WebForm Application",
+  "subtitle": "最後一公里」之「行百里者半於九十」",
+  "author": "me",
+  "content": "https://github.com/Albert0i/misdoc/blob/main/DWFA.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T09:19:43.911Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T09:19:43.911Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d74ed4ada3b35414a72a95"
+  },
+  "title": "Caching SQL results with Redis, a strategic approach.",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/misdoc/blob/main/CSRWR.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T09:20:20.949Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T09:20:20.949Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d74f07ada3b35414a72a99"
+  },
+  "title": "YRunner",
+  "subtitle": "The Accidental HA",
+  "author": "me",
+  "content": "https://github.com/Albert0i/misdoc/blob/main/YRTAHA.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-12T09:21:11.775Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-12T09:21:11.775Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d838b551b79a4482797902"
+  },
+  "title": "Getting Started",
+  "subtitle": "nextjs",
+  "author": "me",
+  "content": "https://github.com/Albert0i/next-methinks/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-13T01:58:13.121Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-13T01:58:13.121Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d8390c51b79a4482797907"
+  },
+  "title": "Temporary",
+  "subtitle": "Temporary post",
+  "author": "me",
+  "content": "###cookies\nThe `cookies` function allows you\n\n- to read the HTTP incoming request cookies from a Server Component or \n\n- write outgoing request cookies in a Server Action or Route Handler.\n\nThis is a temporary post for storing misc data...\n\n# Really slow connection\n\n## After edit and save, please reload... \n",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-13T01:59:40.262Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-13T02:00:45.817Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d83a87695830c55abc440c"
+  },
+  "title": "Notes from parameters",
+  "subtitle": "",
+  "author": "me",
+  "content": "page.jsx\n\n```\nconst TestPage = ( props ) => {  \\n  console.log('props=', props)\nconst { params, searchParams } = props   \n  return (\n    <>\n        <div>TestPage</div>\n        <p>params={JSON.stringify(params)}</p>\n        <p>searchParams={JSON.stringify(searchParams)}</p>\n    </>    \n  )\n}\n\nexport default TestPage\n```\n\nroute.js\n\n```\nexport async function GET(req, { params }) {\n  const searchParams = req.nextUrl.searchParams  \n\n  console.log('params=', params)\n  console.log('searchParams=', searchParams)\n\n  return NextResponse.json({success: true}, { status: 200 }) \n\n```\n\nmiddleware.js\n\n```\nimport { NextResponse } from 'next/server'\n \n// This function can be marked `async` if using `await` inside\nexport function middleware(request) {\n  return NextResponse.redirect(new URL('/home', request.url))\n}\n \n// See \\\"Matching Paths\\\" below to learn more\nexport const config = {\n  matcher: '/about/:path*',\n}\n```\nSee [Middleware](https://nextjs.org/docs/app/building-your-application/routing/middleware)\n\n### EOF (2023/08/11)\n",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-13T02:05:59.808Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-13T02:05:59.808Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d83bb828f83ab040646c95"
+  },
+  "title": "Notes from cookies",
+  "subtitle": "\"https://nextjs.org/docs/app/api-reference/functions/cookies",
+  "author": "me",
+  "content": "The *cookies* function allows you to read the HTTP incoming request cookies from a **Server Component** or write outgoing request cookies in a **Server Action** or **Route Handler**.\n\npage.jsx\n\n```\nimport { cookies } from 'next/headers'\n \nexport default function Page() {\n  const cookieStore = cookies()\n  return cookieStore.getAll().map((cookie) => (\n    <div key={cookie.name}>\n      <p>Name: {cookie.name}</p>\n      <p>Value: {cookie.value}</p>\n    </div>\n  ))\n}\n```\n\naction.js\n\n```\n'use server'\n \nimport { cookies } from 'next/headers'\n \nasync function create(data) {\n  cookies().set('name', 'lee')\n  // or\n  cookies().set('name', 'lee', { secure: true })\n  // or\n  cookies().set({\n    name: 'name',\n    value: 'lee',\n    httpOnly: true,\n    path: '/',\n  })\n}\n```\n\nmiddleware.js\n\n```\nimport { NextResponse } from \"next/server\"\n\nexport function middleware(req) {\n  const res = NextResponse.redirect(\"/\") // creates an actual instance\n  res.cookie(\"hello\", \"world\") // can be called on an instance\n  return res\n}\n```\n[link](https://github.com/vercel/next.js/issues/32424)\n\n",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-13T02:11:04.911Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-13T02:12:00.176Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d83c4c534c31f40c3eb4d5"
+  },
+  "title": "Souls",
+  "subtitle": "A story of identity",
+  "author": "me",
+  "content": "How soul outlives the body? This is perhaps the most fascinating question for human being. As a matter of fact, we don't even realize what is \"soul\". \n\nAssuming that body, which is a palpable and perceivable existence, has a invisible connexion with soul. If it is true. Is it possible to *disentangle* them? Or connect the soul with another body? Then what is the **identity** of man? By soul? By body? Or by both? \n\nDoes the soul eat? Does the soul feel? Does the soul sleep? We definitely not know. \n\n![alt souls](https://w0.peakpx.com/wallpaper/281/470/HD-wallpaper-black-white-soul-white-black-soul-reflective.jpg)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-13T02:13:32.313Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T07:07:02.703Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d83cbec8155853cec477df"
+  },
+  "title": "Stars",
+  "subtitle": "A story of memories",
+  "author": "me",
+  "content": "Stars, staring and shinning on us over centries, can only be seen in dark nights. Those little silvery dots bear memories from the most remote era dating from the very creation of universe. \n\nIn secular and religious beliefs, there exist two kinds of stars. One that bring much fortune while the other foretell bad luck, or presentiment of disasters. \n\n![alt stars](https://media.istockphoto.com/id/1203341624/vector/black-and-white-night-stars-seamless-pattern.jpg?s=612x612&w=0&k=20&c=Gxr9qeefLbjhcVk2Yh2Y6SWOgdAoq43qPsy9zERzZSU=)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-13T02:15:26.196Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T07:08:10.924Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d83cebc8155853cec477e3"
+  },
+  "title": "Life",
+  "subtitle": "A story of life",
+  "author": "me",
+  "content": "Life as a series of causes and consequences. Every day is a thread of knots of events, every decision is crucial, every decision is determinative. \n\n![alt life](https://media.istockphoto.com/id/1324683532/photo/black-and-white-ripe-fruit-healthy-nutrition.jpg?s=612x612&w=0&k=20&c=LgckR78I2oMJ90Zmjtrv7t7RUb0DRqAZpbfkg73B85Y=)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-13T02:16:11.376Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-11T06:45:15.759Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64d88ed3543676ccc4aaf8d4"
+  },
+  "title": "Test Image",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/next-methinks/blob/main/Test.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-13T08:05:39.793Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-14T01:26:18.427Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64db40a355a3cdf7825529c2"
+  },
+  "title": "Something",
+  "subtitle": "",
+  "author": "me",
+  "content": "Stepping out of my sweet home, where I lived for more than thirty years, I feel a sudden faint and ensued by headache. Continue to walk down the alley, I just can't remember what has happened last night. Standing on the junction to the main street, I saw peculiar faces gesticulating in a way I can't make out their meaning. Looking up to the sky to evade the scene, I started to think about the the difference between *to live* and *to survive*.\n\nTo live is to have your own style of life. To survive is to struggle for a living.\n\nDoes this makes any difference to you ?\n\n![alt you](https://static3.bigstockphoto.com/7/2/4/large2/427517912.jpg)\n\n--- \n\n- impalpable\n- unperceivable\n- inconceivable\n- unconscious\n-",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-15T09:08:51.209Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-11T06:45:42.286Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64dd663b21f233f566a42b81"
+  },
+  "title": "myst",
+  "subtitle": "a maze of diagnostic",
+  "author": "me",
+  "content": "Besides crafting useful utilities, my daily job is to diagnose and solve integration issues in main. Software systems have a propensity to intermingle with some other systems. Data flowing from table to table across system boundaries while unperceivable by ordinary users but programmers. \n\nWhen a pipeline broke, you have to find out which piece of puzzle is missing in which system, which table, which record etc. However, hints from users are always inaccurate, incorrect or even misleading... This is because people tend to be subjective and see things only from their own point of view. \n\nAt last, you have to devise quick fix or workaround so as to the same problems won't happen *at least* in the near future. \n \nSeriously, at the very verge of any systems, some kinds of **API end point** should be setup so that other systems can be invoked in a controlled manner. No trespass is allowed. \n\n![alt maze](https://media.istockphoto.com/id/484698646/vector/labyrinth-puzzle-game-drawing.jpg?s=612x612&w=0&k=20&c=0VOgw2whNwT8ZTmSzyFZLBsCHMJJ2LWUjKhK5f4EAj4=)\n\n---\n\n[![alt 《Casablanca》《卡薩布蘭卡》英文歌中文譯](https://img.youtube.com/vi/uh-_lT4CMDs/0.jpg)](https://youtu.be/uh-_lT4CMDs)\n\n### EOF (2023/08/17)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-17T00:13:47.195Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T07:11:06.195Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64debb0cabed0cecacb37c39"
+  },
+  "title": "random token generator",
+  "subtitle": "",
+  "author": "me",
+  "content": "### 1. Random token generator using NodeJS\n\n```\n> node\nWelcome to Node.js v18.16.1.\nType \".help\" for more information.\n> require('crypto').randomBytes(64).toString('hex')\n'f0784fa503edc1832150b8bf6c726f26c44e6788ac6e4752d6d5337727292c39ce3b5911f196f64d7648f76c494d609a7f53904eb957fe4aa9711ae97755d5fa'\n>\n(To exit, press Ctrl+C again or Ctrl+D or type .exit)\n>\n```\n\n### 2. Random token generator using OpenSSL \n \n```\nC:\\> openssl rand -base64 32 \ncLzd7cvepuZPigGsvGvEzFr20+ctgzisE79IMY6Iitk=\nC:\\> \n```\n\n### EOF (2023/10/18)\n### EOF (2023/08/19)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-18T00:27:56.825Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-18T02:31:16.892Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64def4a97dfd40885d3ddb22"
+  },
+  "title": "Next.js Project Structure",
+  "subtitle": "",
+  "author": "me",
+  "content": "This page provides an overview of the file and folder structure of a Next.js project. It covers top-level files and folders, configuration files, and routing conventions within the `app` and `pages` directories.\n\n*Top-level folders*\n\n- app\tApp Router\n\n- pages\tPages Router\n\n- public\tStatic assets to be served\n\n- src\tOptional application source folder\n\n*Dynamic Routes*\n\n- [folder]\tDynamic route segment\n\n- [...folder]\tCatch-all route segment\n\n- [[...folder]]\tOptional catch-all route segment\n\n> Dynamic Segments can be extended to catch-all subsequent segments by adding an ellipsis inside the brackets [...folderName].\n\n> For example, app/shop/[...slug]/page.js will match /shop/clothes, but also /shop/clothes/tops, /shop/clothes/tops/t-shirts, and so on.\n\n\n*Route Groups and Private Folders*\n\n- (folder)\tGroup routes without affecting routing\n\n- _folder\tOpt folder and all child segments out of routing\n\n> Private folders can be created by prefixing a folder with an underscore: _folderName\n\n> This indicates the folder is a private implementation detail and should not be considered by the routing system, thereby opting the folder and all its subfolders out of routing.\n\n---\n\nhttps://nextjs.org/docs/getting-started/project-structure",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-18T04:33:45.743Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-18T04:53:12.195Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e018c777bd49fc82762de3"
+  },
+  "title": "Days",
+  "subtitle": "",
+  "author": "me",
+  "content": "All days are different, all days are the same. No matter who you are, where you live, how you age, you should feel the same.  City, which is the only reason, shapes, restricts and refines the life of everybody. It seems that we live in our own way but, in fact, this is not true. We are *required* to do more or less the same things everyday, not much the good, not much the bad, only to earn a living... \n\n![alt city](https://i.pinimg.com/564x/93/3c/03/933c03a11767a0f78fec41fcbf523483.jpg)\n\n### EOF (2023/08/19)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-19T01:20:07.425Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-19T02:11:54.111Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e1861e8125829d5adcfcfc"
+  },
+  "title": "A cross-road",
+  "subtitle": "",
+  "author": "me",
+  "content": "Anything, which deviates from initial intention, results in disaster. However pure and virtuous our beginning conception is, once down to earth to exercise and execute, will evolve into a diversity of tempting *fruits*. It's important to get to know that evading and refraining temptation of snakes, which is called *trial of souls*, as much as we can and not yield submission too easily nor too soon. \n\nWhy are devils cleverer than you, simply because they are older than you. They are ingenious and witty, have lived thousands of years (they are on the side of time). As we grow older and weaker both physically and spiritually, I foretell that at length we will all kneel down before **Lucifer**. But, I just don't want to be the first one nor the last one... at least... \n\n![alt a diverted road](https://i.pinimg.com/564x/a2/b1/de/a2b1de2c937f2763fd7cad20141747a1.jpg)\n\n### EOF (2023/08/20)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-20T03:18:54.557Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-20T04:19:17.376Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e32bfc095334d2d3eab24d"
+  },
+  "title": "NextAuth.js",
+  "subtitle": "a recipe",
+  "author": "me",
+  "content": "### 0. [Introduction](https://next-auth.js.org/getting-started/introduction)\n\n> NextAuth.js is a complete open-source authentication solution for Next.js applications. It is designed from the ground up to support Next.js and Serverless. \n\n\n### I. Add API route\n> To add NextAuth.js to a project create a file called `[...nextauth].js` in `app/api/auth` folder. This contains the dynamic route handler for NextAuth.js which will also contain all of your global NextAuth.js configurations.\n\napp/api/auth/[...nextauth].js\n\n```\nimport NextAuth from \"next-auth/next\";\nimport CredentialsProvider from \"next-auth/providers/credentials\";\n\nexport const authOptions = {\n  providers: \n  [\n    CredentialsProvider({\n      // The name to display on the sign in form (e.g. \"Sign in with...\")\n      name: \"Credentials\",\n      // `credentials` is used to generate a form on the sign in page.\n      // You can specify which fields should be submitted, by adding keys to the `credentials` object.\n      // e.g. domain, username, password, 2FA token, etc.\n      // You can pass any HTML attribute to the <input> tag through the object.\n      credentials: {\n        username: { label: \"Username\", type: \"text\", placeholder: \"jsmith\" },\n        password: { label: \"Password\", type: \"password\" },\n        email: { label: \"Email\", type: \"text\", placeholder: \"jsmith@example.com\"}\n      },\n      async authorize(credentials, req) {\n        // Add logic here to look up the user from the credentials supplied\n        const user = { id: \"1\", name: credentials.username, email: credentials.email }\n\n        if (user) {\n          // Any object returned will be saved in `user` property of the JWT\n          return user          \n        } else {\n          // If you return null then an error will be displayed advising the user to check their details.\n          return null\n  \n          // You can also Reject this callback with an Error thus the user will be sent to the error page with the error message as a query parameter\n        }\n      }\n    })\n  ],\n  session: {\n    strategy: \"jwt\",\n  },\n  secret: process.env.NEXTAUTH_SECRET  \n};\n\nconst handler = NextAuth(authOptions);\n\nexport { handler as GET, handler as POST };\n```\n> All requests to /api/auth/* (signIn, callback, signOut, etc.) will automatically be handled by NextAuth.js.\n\n```\nhttp://localhost:3000/api/auth/signin\n```\n![alt next-auth-signin](https://raw.githubusercontent.com/Albert0i/next-methinks/main/img/next-auth-signin.JPG)\n\n```\nhttp://localhost:3000/api/auth/signout\n```\n![alt next-auth-signout](https://raw.githubusercontent.com/Albert0i/next-methinks/main/img/next-auth-signout.JPG)\n\n\n### II. Protect your routes \n> You can use a Next.js [Middleware](https://next-auth.js.org/configuration/nextjs#middleware) with NextAuth.js to protect your site. \n\nmiddleware.js\n\n```\nexport { default } from \"next-auth/middleware\";\n\n/*\n   Add all the pages we want to protect. \n   Not accessable when we are logout-ed.\n*/\nexport const config = { matcher: \n    [ \"/main\" ] \n};\n```\n\n\n### III. Frontend - Add React Hook \n> The [`useSession()`](https://next-auth.js.org/getting-started/client#usesession) React Hook in the NextAuth.js client is the easiest way to check if someone is signed in.\n\napp/Providers.js\n\n```\n\"use client\";\n\nimport { SessionProvider } from \"next-auth/react\";\n\nexport const AuthProvider = ({ children }) => {\n  return <SessionProvider>{children}</SessionProvider>;\n};\n```\n\ncomponents/Navbar.jsx\n\n```\n\"use client\"\n\nimport React from 'react'\nimport { useSession } from \"next-auth/react\"\n\nconst Navbar = () => {\n  const { data: session, status } = useSession()\n\n  console.log('session=', session)\n  return (\n    <div>Navbar</div>\n  )\n}\n\nexport default Navbar\n```\n\napp/layout.jsx \n\n```\nimport './globals.css'\nimport { Inter } from 'next/font/google'\nimport { AuthProvider } from \"./Providers\";\nimport Navbar from '@/components/Navbar'\n\nconst inter = Inter({ subsets: ['latin'] })\n\nexport const metadata = {\n  title: 'Create Next App',\n  description: 'Generated by create next app',\n}\n\nexport default function RootLayout({ children }) {\n  return (\n    <html lang=\"en\">\n      <body className={inter.className}>\n        <AuthProvider>\n          <Navbar />\n          {children}\n        </AuthProvider>\n      </body>\n    </html>\n  )\n}\n```\n\n\n### IV. Backend - API Route\n> To protect an API Route, you can use the [`getServerSession()`](https://next-auth.js.org/configuration/nextjs#unstable_getserversession) method.\n\napp/main/page.jsx \n\n```\nimport { getServerSession } from \"next-auth/next\"\nimport { authOptions } from \"../api/auth/[...nextauth]/route\"\nimport Link from 'next/link'\n\nexport default async function Main() {\n  const session = await getServerSession(authOptions)\n\n  console.log('session=', session)\n  return (\n      <div>\n        Main Page\n        <p>\n          {JSON.stringify(session, null, 2)}\n        </p>\n        <Link href='/api/auth/signout'>Signout</Link>\n      </div>\n    )\n  }  \n```\n\n\n### V. Summary \n\n>and God calleth to the light 'Day,' and to the darkness He hath called 'Night;' and there is an evening, and there is a morning — day one.\n\n—  [Genesis 1:5, Young's Literal Translation (1862)](https://en.wikipedia.org/wiki/Reverential_capitalization)\n\n\n### VI. Reference\n1. [Next.js 13 Authentication: Custom Email/Password with NextAuth.js & MongoDB](https://youtu.be/PEMfsqZ2-As)\n\n2. [How to Manage Backend JWT Access Tokens in Next Auth and Next.js 13](https://youtu.be/fYObrr3jf0w)\n\n3. [Getting Started](https://next-auth.js.org/getting-started/example)\n\n4. [Credentials Provider](https://next-auth.js.org/providers/credentials)\n\n\n### EOF (2023/08/21)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-21T09:18:52.717Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T04:43:04.199Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e427fe46758f71a5d970ee"
+  },
+  "title": "The incoming",
+  "subtitle": "",
+  "author": "me",
+  "content": "One day in the near future, [He](https://en.wikipedia.org/wiki/Reverential_capitalization) comes and says to me \"time to go my son...\".  \"With pleasure\" I reply with a smiley face. I wonder where I go but I won't even bargain a minute to bid farewell with my lovable wife for I assure that she will come to me a few decades later. I do not have great wealth neither important properties left behind in secular society. \n\nI commit sin from time to time but not crime. I remorse and repent for both what I have done and what I haven't. I mourn and condole for oneself and thyself... I am an atheist and will retire and repose in this bleak land of prosperity and raging sea of tranquillity forever. \n\n\n![alt He](https://cdn.imgbin.com/22/0/12/imgbin-bible-god-the-father-god-in-christianity-jesus-christ-zfLpgw6eUYyMit5dPZEyMYiAi.jpg)\n\n### EOF (2023/08/22)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-22T03:14:06.495Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-22T04:37:27.021Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e55d9a818481db341260a1"
+  },
+  "title": "tailwindcss",
+  "subtitle": "",
+  "author": "me",
+  "content": "> The `theme` section of your `tailwind.config.js` file is where you define your project’s color palette, type scale, fonts, breakpoints, border radius values, and more.\n\ntailwind.config.js \n\n```\n/** @type {import('tailwindcss').Config} */\nmodule.exports = {\n  content: [\n    './pages/**/*.{js,ts,jsx,tsx,mdx}',\n    './components/**/*.{js,ts,jsx,tsx,mdx}',\n    './app/**/*.{js,ts,jsx,tsx,mdx}',\n  ],\n  theme: {\n    extend: {\n      colors: {\n        primary: '#7856ff'\n      }\n    },\n  },\n  plugins: [],\n}\n```\n\nglobal.css \n\n```\n@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\n/* base styles */\nbody {\n  background: #ebf0fa;\n  @apply text-gray-500 m-8;\n}\nh1, h2 {\n  @apply font-bold text-primary text-lg;\n}\nmain {\n  @apply max-w-5xl my-12 mx-auto px-8;\n}\nmain > h2 {\n  @apply mb-4 pb-2 text-base ;\n}\np > a {\n  @apply text-primary underline;\n}\n\n/* nav styles */\nnav {\n  @apply\n    pb-4\n    border-b-2 border-gray-200\n    flex items-center gap-5 \n    my-10 mx-auto \n    max-w-5xl;\n}\nnav a, nav span {\n  @apply text-gray-500;\n}\nnav a:hover {\n  @apply text-black;\n}\nmain nav {\n  @apply border-0;\n}\n\n/* button styles */\nbutton {\n  @apply \n    px-3 py-2 \n    rounded-sm \n    flex justify-between items-center gap-2\n    text-sm;\n}\nbutton:hover {\n  @apply bg-opacity-90;\n}\n.btn-primary {\n  @apply bg-primary text-white;\n}\n.btn-secondary {\n  @apply bg-gray-200 text-gray-900;\n}\n\n/* form styles */\nform {\n  @apply \n    py-4 px-7 \n    bg-primary \n    bg-opacity-5 \n    rounded-md \n    block \n    mx-auto \n    min-w-fit w-1/4;\n}\nform label {\n  @apply block;\n}\nform input,\nform textarea,\nform select {\n  @apply \n    block \n    mt-2 my-4 px-2 py-1 \n    rounded-sm w-full;\n}\nform button {\n  @apply block mx-auto;\n}\n\n/* feedback styles */\n.error {\n  @apply \n    border-2 \n    border-red-500 \n    bg-red-300\n    text-red-800 \n    py-1 px-2 \n    rounded-sm\n    block\n    max-w-fit\n    my-4 mx-auto;\n}\n\n/* card styles */\n.card {\n  @apply \n    bg-white \n    shadow-sm \n    rounded-md \n    py-3 px-4 my-4 \n    relative \n    overflow-hidden;\n}\n.card h3 {\n  @apply \n    font-bold text-gray-700 text-sm \n    mb-0;\n}\n.card p {\n  @apply my-4 text-sm leading-6;\n}\n\n/* pill styles */\n.pill {\n  @apply \n    py-1 px-2 mt-3\n    inline-block \n    text-xs font-semibold;\n}\n.pill.high {\n  @apply bg-red-300 text-red-600;\n}\n.pill.medium {\n  @apply bg-blue-300 text-blue-600;\n}\n.pill.low {\n  @apply bg-emerald-300 text-emerald-600;\n}\n.card .pill {\n  @apply \n    absolute bottom-0 right-0 \n    rounded-tl-md;\n}\n```\n\n[Next.js 13 Crash Course Tutorial #5 - Styles, Fonts & Images](https://youtu.be/oWUQQD97Rz0)\n\n[tailwindcss | Theme Configuration](https://v2.tailwindcss.com/docs/theme)\n\n### EOF (2023/08/23)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-23T01:15:06.539Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-23T09:57:19.442Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e6c298913dd4933daf0d85"
+  },
+  "title": "SSG",
+  "subtitle": "To speed up loading post",
+  "author": "me",
+  "content": "> The [`generateStaticParams`](https://nextjs.org/docs/app/api-reference/functions/generate-static-params) function can be used in combination with dynamic route segments to statically generate routes at build time instead of on-demand at request time.\n\n- You can use the [`dynamicParams`](https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config) segment config option to control what happens when a dynamic segment is visited that was not generated with **generateStaticParams**.\n- During **next dev**, **generateStaticParams** will be called when you navigate to a route.\n- During **next build**, **generateStaticParams** runs before the corresponding Layouts or Pages are generated.\n- During revalidation (ISR), **generateStaticParams** will not be called again.\n- **generateStaticParams** replaces the [`getStaticPaths`](https://nextjs.org/docs/pages/api-reference/functions/get-static-paths) function in the Pages Router.\n\napp/posts/[id]/page.jsx \n\n```\nimport PostDetail from '@/components/PostDetail'\nimport connectMongoDB from \"@/config/mongoDB\";\nimport Post from \"@/models/post\"\n\n// Use SSG to speed up loading post\nexport const dynamicParams = false // default val = true\n\n// Return a list of `params` to populate the [id] dynamic segment\nexport async function generateStaticParams() {  \n    await connectMongoDB()\n    const posts = await Post.find({deleted: false}).select({_id:1}).lean()\n  \n    return posts.map((post) => ({\n      id: post._id.toString()\n    }))\n}\n\n// Multiple versions of this page will be statically generated\n// using the `params` returned by `generateStaticParams`\nconst PostPage = ( { params, searchParams } ) => {\n    return <PostDetail id={ params.id } rebaseimg={ searchParams._rebaseimg } />\n}\n\nexport default PostPage\n```\n> **generateStaticParams** should return an array of objects where each object represents the populated dynamic segments of a single route.\n\n```\nnpm run build\n```\n\n![alt next-build-ssg-1](https://raw.githubusercontent.com/Albert0i/next-methinks/main/img/next-build-ssg-1.JPG)\n\n![alt next-build-ssg-2](https://raw.githubusercontent.com/Albert0i/next-methinks/main/img/next-build-ssg-2.JPG)\n\n[Next.js 13 Crash Course Tutorial #8 - Static Rendering](https://youtu.be/ihmyC4Ei2zY)\n\n[NextJS | generateStaticParams](https://nextjs.org/docs/app/api-reference/functions/generate-static-params)\n\n### EOF (2023/08/24)\n\n\n---\n\n> Upon getting home I found it past four o'clock, and went immediately to bed. It is now ten A.M. I have been up since seven, penning these memoranda for the benefit of my family and of mankind. The former I shall behold no more. My wife is a shrew. The truth is, I am heartily sick of this life and of the nineteenth century in general. I am convinced that every thing is going wrong. Besides, I am anxious to know who will be President in 2045. As soon, therefore, as I shave and swallow a cup of coffee, I shall just step over to Ponnonner's and get embalmed for a couple of hundred years.\n\n[Some Words With a Mummy, by Edgar Allan Poe](https://poestories.com/read/mummy)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-24T02:38:16.926Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-24T09:31:31.660Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e803b7a0d35ad03021d303"
+  },
+  "title": "likewise",
+  "subtitle": "but not so",
+  "author": "me",
+  "content": "### Case 1: \n```\n// imitate delay \nawait new Promise(resolve => setTimeout(resolve, 3000));\n```\n---\n\n### Case 2: \n> “When bad folks have problems, they do bad things,” \n \n[Biden calls China ‘ticking time bomb’, says ‘bad folks… do bad things’\n](https://nypost.com/2023/08/10/biden-calls-china-ticking-time-bomb-says-bad-folks-do-bad-things/)\n\n---\n \n### Case 3: \n> 西門豹為鄴令，而辭乎魏文侯。文侯曰：「子往矣，必就子之功，而成子之名。」西門豹曰：「敢問就功成名，亦有術乎？」文侯曰：「有之。夫鄉邑老者而先受坐之士，子入而問其賢良之士而師事之，求其好掩人之美而揚人之醜者，而參驗之。夫物多相類而非也，幽莠之幼也似禾，驪牛之黃也似虎，白骨疑象，武夫類玉，此皆似之而非者也。」\n\n[《戰國策‧魏策一》(西門豹為鄴令)](https://ctext.org/zhan-guo-ce/wei-yi/zh)\n\n### EOF (2023/08/25)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-25T01:28:23.345Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-27T02:29:49.967Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ed7c968f49731d829ea373"
+  },
+  "title": "Primsa x Planetscale",
+  "subtitle": "A starter guide",
+  "author": "me",
+  "content": "https://github.com/Albert0i/prisma-planetscale/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-08-29T05:05:26.658Z"
+  },
+  "updatedAt": {
+    "$date": "2023-08-29T05:05:26.658Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f197d94e4ffd5785a1a5de"
+  },
+  "title": "pscale",
+  "subtitle": "PlanetScale CLI",
+  "author": "me",
+  "content": "https://github.com/planetscale/cli/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-09-01T07:50:49.881Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-11T06:30:32.775Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f815039b6fd70eebdae82f"
+  },
+  "title": "Tagged templates",
+  "subtitle": "",
+  "author": "me",
+  "content": "## Tagged templates\n\nA more advanced form of template literals are tagged templates.\n\nTags allow you to parse template literals with a function. The first argument of a tag function contains an array of string values. The remaining arguments are related to the expressions.\n\nThe tag function can then perform whatever operations on these arguments you wish, and return the manipulated string. (Alternatively, it can return something completely different, as described in one of the following examples.)\n\nThe name of the function used for the tag can be whatever you want.\n\n```\nconst person = \"Mike\";\nconst age = 28;\n\nfunction myTag(strings, personExp, ageExp) {\n  const str0 = strings[0]; // \"That \"\n  const str1 = strings[1]; // \" is a \"\n  const str2 = strings[2]; // \".\"\n\n  const ageStr = ageExp > 99 ? \"centenarian\" : \"youngster\";\n\n  // We can even return a string built using a template literal\n  return `${str0}${personExp}${str1}${ageStr}${str2}`;\n}\n\nconst output = myTag`That ${person} is a ${age}.`;\n\nconsole.log(output);\n// That Mike is a youngster.\n```\nThe tag does not have to be a plain identifier. You can use any expression with precedence greater than 16, which includes property access, function call, new expression, or even another tagged template literal.\n\nMore on [Template literals (Template strings)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates)\n\nAlso on [Prisma Docs | Raw database access](https://www.prisma.io/docs/concepts/components/prisma-client/raw-database-access)\n\n\n### EOF (2023/09/06)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-09-06T05:58:27.433Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-11T06:35:38.752Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64f98363a778d2a237c90162"
+  },
+  "title": "The Myth and Riddle of ORM",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/prisma-planetscale/blob/main/ORM.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-09-07T08:01:39.580Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-07T08:01:39.580Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64fa732ae4c964ecd3e2e4aa"
+  },
+  "title": "@@UPID Field",
+  "subtitle": "",
+  "author": "me",
+  "content": "### 3.8 The @@UPID Column in LANSA Created Tables\n\nWhenever a physical table is created and maintained by LANSA, rather than some OTHER system, it has an additional column placed into it. The column is called @@UPID and is defined as decimal (7,0). It is always the last column in the table.\n\nColumn @@UPID is used by LANSA to automatically check for \"crossed updates\". The logic to do this is very simple:\n\n1.  Read the record and save the @@UPID value.\n\n2.  If update required: re-read record and compare the @@UPID with saved @@UPID value. If different, issue \"crossed update\" error message, else add 1 to @@UPID and update the table record.\n\nWhen writing user application programs in non-LANSA applications, to write new records or update existing records in database tables created by LANSA the following is recommended:\n\n1.  Set @@UPID to 1 when writing new records.\n\n2.  Add 1 to @@UPID when updating an existing record.\n\nThis effectively emulates the logic automatically used in all LANSA functions.\n\n**Note 1**: COBOL programs will not accept the column name @@UPID.\nTo workaround this problem, if it has not already been done, alter the data dictionary definition of field @@UPID so that it has an associated **alias name** acceptable to COBOL.\nForce recreation of all database tables that do not already have the alias name included and then, in the COBOL programs, use the COPY DD option to ensure that where a field has an alias name, it is used in preference to its real name.\n\n**Warning**: The field @@UPID should not be used at 4GL level, except where you have received specific instructions from LANSA on how to use it.\n\n**Note 2**: When a table contains BLOB or CLOB columns, @@UPID may be incremented multiple times for a single UPDATE command. This occurs once for the main table, and once for each BLOB or CLOB column included in the UPDATE command.\n\n[Technical Reference Guide](https://docs.lansa.com/14/en/Lansa015/index.htm#lansa/l4wtgu03_0790.htm?Highlight=@@upid)\n\n### EOF (2023/09/08)",
+  "update_ident": 0,
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-09-08T01:04:42.434Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-11T06:35:19.531Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64fd24811fff5d480caf3826"
+  },
+  "title": "coma",
+  "subtitle": "",
+  "author": "me",
+  "content": "I was laying down somehow I not know...  Sober as I was, alive as I was for I could *feel* my slow breathing. Endeavored to exert my fingers but in vain, what profoundly astounded me was the sense of unavailability of body and limbs. Perceiving white mist before eyes but couldn't hear any noise. Being timeless is a horrific thing, confused memories surged within and without. What I clearly recalled was my way home.  \n\nGradually, I felt slight cadence of rolling from side to side, rumbling wheels, running hoofs treading on moisturized soil and making muddy splash over side way brushes. Being awaken from a queer dream, if it were not for the uneven country road, I could have been strangled by my bow tie and high collar overcoat. Unfastened to relieve my neck and took a deep breath, an odor of wet and salted throng my nostrils. The carriage kept on running for more than thirty minutes. My endurance was on the verge of making me a nervous breakdown, at length I stretched my head through the window and shouted to the coachman... \n\nTo my extreme amazement. there is none other than myself, no horses, no trees even no road whatsoever. I was alone floating in the naught of pitch-dark. I talked to myself \"It's a dream, it's a dream... I am on the way home...\". Suddenly, strange deformed visages appeared and I couldn't make out what they were. Voices resounded inside my brain... \"Relax! My companion, we  are on the ship of light, sailing to the realm of God\". \n\n![alt paper boat](https://media.istockphoto.com/id/179268082/zh/%E7%85%A7%E7%89%87/paper-boat-sailing.jpg?s=612x612&w=0&k=20&c=116qNM7cSEd-NsPnoFvzeLW6YQFqxJ_MZQuI93woYAE=)\n\n\n### EOF (2023/09/10)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-09-10T02:05:53.633Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-21T08:07:09.354Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64ffb97e53026b0ed8b552ba"
+  },
+  "title": "insomnia",
+  "subtitle": "",
+  "author": "me",
+  "content": "Being sleeplessness is another thing. Staying up all night, I found myself in a state of mental excitement as well as physical condition of utmost fatigue. Extreme contradiction makes discrepancy of norms. Foolishness is enacted, crimes are  committed simply due to our inability to restore to unanimous state. \n\nBeing sleeplessness also deprives us of dreams, which are the locomotion of work, source of creation and hope of life.\n\n![alt dream](https://cdn.quotesgram.com/img/37/49/1308351690-tumblr_llogr3ihsP1qgxr8qo1_500.jpg)   \n\n### EOF (2023/09/12)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-09-12T01:06:06.831Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-12T05:06:47.901Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6507c9aab9fa4e8e69b02cff"
+  },
+  "title": "test_db",
+  "subtitle": "An Imaginary Journey",
+  "author": "me",
+  "content": "https://github.com/Albert0i/test_db/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-09-18T03:53:14.378Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-18T03:53:14.378Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "650a94b177b67d69bbe4d66d"
+  },
+  "title": "MM diary",
+  "subtitle": "",
+  "author": "me",
+  "content": "![alt the lighthouse](https://media.gq.com/photos/5da62c0d49acb20008f2501c/16:9/w_1280,c_limit/the-lighthouse-film-review-gq-october-101519.jpg)\n\n### without further ado...\n\nmongo.js \n\n```\nimport { MongoClient } from 'mongodb';\n\n// Database Name\nconst dbName = 'testdb';\n// Connection URL\nconst url=`mongodb://root:root@127.0.0.1:27017/${dbName}?authSource=admin`\nconst client = new MongoClient(url);\n\nasync function main() {\n  // Use connect method to connect to the server\n  await client.connect();\n  console.log('Connected successfully to server');\n  const db = client.db();\n  const collection = db.collection('users');\n  const users = await collection.find({}).toArray()\n\n  return users;\n}\n\nmain()\n  .then(data => console.log(data))\n  .catch(err => console.log(err))\n  .finally(() => client.close());\n\n/*\n   npm | mongodb      \n   https://www.npmjs.com/package/mongodb\n\n   MongoServerSelectionError: connect ECONNREFUSED::1:27017\n   https://blog.devgenius.io/mongoserverselectionerror-connect-econnrefused-1-27017-bee70efd1cac\n*/\n```\n\nmysql.js \n\n```\nimport mysql from 'mysql2/promise';\n\n// Database Name\nconst dbName = 'employees';\n// Use createConnection method to connect to the server\nconst connection = await mysql.createConnection(`mysql://root:root@localhost:3306/${dbName}`)\n\nasync function main() {  \n    // query database\n    const results = await connection.query('SELECT * FROM titles');\n    return results\n  }\n\nmain()\n  .then(data => console.log(data))\n  .catch(err => console.log(err))\n  .finally(()=> connection.close())\n\n/*\n   npm | mysql2\n   https://www.npmjs.com/package/mysql2\n*/\n```\n\n### Reference \n\n1. [The Light-House](https://poemuseum.org/the-light-house/)\n2. [The Lighthouse Is One of 2019’s Wildest Movies](https://www.gq.com/story/the-lighthouse-review)\n\n### EOF (2023/09/20)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-09-20T06:44:01.349Z"
+  },
+  "updatedAt": {
+    "$date": "2023-09-21T12:43:57.400Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6512753703db362ef1d3ed9d"
+  },
+  "title": "An elegy",
+  "subtitle": "memorial to LANSA",
+  "author": "me",
+  "content": "```\nGoodbye my dear friend, \nit's high time my friend, \nthree decades since we met, \none decade since we parted, \ntime and tide only rust on spike, \nnight and day erode line and shape, \nI am so glad to be on your side, \nlife is not about wrong or right, \nso, let go my friend, \nhenceforth, stay in grave, rest in peace, \ndon't creep out from your crypt, \ndon't crawl into my mind, \nI entertain the joy of our re-meet, \nsoon but not now, not today... \n```\n![alt tomb](https://www.ephotozine.com/resize/2010/25/xlrg/130837_1277499259.jpg?RTUdGk5cXyJFBQgJVANtcQlnYF8JERFaGwJRNQh6SlYUAEw1cmsCdg1hAWoxXFNGLSI=)\n\n[Charting a Course for Success: LANSA’s Product Roadmap 2023-2024](https://lansa.com/blog/general/lansa-roadmap-2023-2024/?utm_source=Eloqua&utm_medium=Email&utm_content=Promo-230926-Reengagement&utm_campaign=LNS-Victor&nowprocket=1)\n\n\n### EOF (2023/09/26)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-09-26T06:07:51.379Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-22T01:42:08.771Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "652504dd4045233b23994c73"
+  },
+  "title": "Incompatibility is our business",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/next-gate/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-10-10T08:01:33.449Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-10T08:01:33.449Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "652e10fd1057be0ee21690ed"
+  },
+  "title": "flagstone",
+  "subtitle": "",
+  "author": "me",
+  "content": "Treading on an old and uneven path to nowhere, an unknown sound of sharpness invalidated my faculty of hearing. I stooped and masked off my left ear with my hand but in vain, the sound is not from outside but inside.  With headache and faintness ensued, [tinnitus](https://dictionary.cambridge.org/dictionary/english-chinese-traditional/tinnitus?q=Tinnitus) was my constant nerve problem. Stumbling slowly onward as I was, frowning to hope the sound would vanish as I was... I perceived strange ruptures of a flagstone located right beneath me, much like wrinkles of an old man. Gradually, those lines dissolved and deformed into a hideous countenance, with a grin of smile... \n\nA low and hoarse whispering penetrated my head... \"W...h...ere... do you go...?\". \"...Not know... \" I replied listlessly. Tightly closed my eyes, I kept on pacing and murmuring \"that's not real... that's not real... \". Suddenly, a whirlpool clapped on my face... Upon opening my eyes, an omnibus running at full speed has passed by... A gang of infuriated rabbles crying and shouting at me but nothing was heard. I found myself standing on the very verge of the pavement and was almost run down by a huge vehicle. My whole body was dragged backward by the hair with the strong wind... \n\nAfter that, my hearing restored, my conscious restored. It was both a game of life and trial of faith.\n\n![alt flagstone](https://as1.ftcdn.net/v2/jpg/01/66/23/68/1000_F_166236803_DbGCku3YQn2DZGONUHb1Y7SBW0gvXM5b.jpg)\n\n### EOF (2023/10/17)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-10-17T04:43:41.130Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-21T02:45:39.494Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65388ca3bd586c1a53b90b57"
+  },
+  "title": "School bus",
+  "subtitle": "",
+  "author": "me",
+  "content": "### TREPIDATION\n```\nI was so absorbed in observing targets afar, \nNone dejected creatures could be perceived so far, \nSentiments of agitation and loathsome surged within and without,\nFerocity overshadowed serenity of fatigued and haggard, \n\"Hurrah for Karamazov!\" 23,23,23... \nWith ecstasy spread over and upon a jaded journeyman. \n```\n![alt school bus](https://t3.ftcdn.net/jpg/03/21/97/62/360_F_321976236_hQRAi7hDrC1nrQgGUcYSFB8j6ACklVyI.jpg)\n\n### EOF (2023/10/25)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-10-25T03:33:55.410Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-26T02:12:57.194Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "653b49bad9ba5871b288c074"
+  },
+  "title": "Tips and Tricks",
+  "subtitle": "lessons I learned from GTCoding",
+  "author": "me",
+  "content": "https://github.com/Albert0i/next-technews/blob/main/tips-and-tricks.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-10-27T05:25:14.311Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-27T05:25:14.311Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "653f34a1f542d0ecb8f2771b"
+  },
+  "title": "Monday",
+  "subtitle": "",
+  "author": "me",
+  "content": "```\nRolling left and right, \ndon't want to wake up,\nFor dream is soft and sweet,\nFor dream is vague and blurred,\nFor it is a blue Monday. \n\nWalking up and down the streets, \ndon't know where will go,\nFor life is hard and sour, \nFor life is rumour and hatred, \nFor it is a sullen Monday. \n```\n![alt blue monday](https://media.istockphoto.com/id/1290675679/photo/stock-image-of-a-blue-monday-text.jpg?s=612x612&w=0&k=20&c=PLcbudU3GixVvATFb5k9yBm0C4LssU9d28_uJJK2_Qc=)\n### EOF (2023/10/30) ###",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-10-30T04:44:17.917Z"
+  },
+  "updatedAt": {
+    "$date": "2023-10-30T04:47:16.494Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65444b425f28c972a166f1d9"
+  },
+  "title": "《秋》",
+  "subtitle": "",
+  "author": "me",
+  "content": "《秋》\n\n宜人的風，微涼的秋，踏着腳步，走過長街，\n\n朝陽為欄柵漆上金箔，夏天的身影己經歸家，\n\n路上行人，不是頭耷耷玩着手機，便是神色凝重，\n\n思考着2023年度總結，思考着人生總結，\n\n人，只要相信一個故事，便會不停做不停做，\n\n這是一種執着，也是一種信念。\n\n![alt 秋](https://images.fineartamerica.com/images-medium-large-5/autumn-leaves-lying-on-the-street-preappy.jpg)\n\n### EOF (2023/11/03)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2023-11-03T01:22:10.109Z"
+  },
+  "updatedAt": {
+    "$date": "2023-11-03T01:30:12.809Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "659f3445590bb6c043ae55f1"
+  },
+  "title": "trilogy of thoughts",
+  "subtitle": "",
+  "author": "me",
+  "content": "### 1\n```\nThinking every day of my life,\nThinking how men could exist,\nThinking how men may vanish,\nThinking every possible ways do good to the whole,\nThinking how bad people ruin and bring to an end. \nI think, yes I am. \n```\n### 2\n```\n\"pore over subtle caprice of countenance and \njudge by minute finger movement vibration.\"\n\n「仔細觀察臉部細微的變化，並透過手指的微小運動振動來判斷。」\n```\n### 3\n```\nI was so accustomed to turning right. \nStanding on the corner and thinking attentively.\nTraffic light flashes and moves my pace.\nNot knowing where to go but walk and walk.\nSeveral minutes passed, I realize that I am on the wrong way.\nI SHOULD have turned left but obviously I am not.\nThe wrong way, more precisely, the farther way, has a better view.\nI compromise with myself... \n```\n\n![alt think](https://www.shutterstock.com/image-photo/young-man-white-shirt-having-260nw-1267307863.jpg)\n\n### EOF (2024/01/11)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-01-11T00:20:21.480Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-11T00:28:46.307Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65adb7501a49037e6adebddd"
+  },
+  "title": "Win XP resolution change to 1600 x 900 after system crash",
+  "subtitle": "",
+  "author": "me",
+  "content": "1. Login to *VMware vSpere* with **local account**: \n\n```\nusername: albertoi\npassword: <blank>\n```\n\n** SCREEN IS A MESS! BETTER GO TO FULL SCREEN MODE. **\n\n2. Right click on screen and change resolution back to **1024 x 768**\n   either with mouse or right-arrow key and press enter. \n\n3 .Screen becomes clear immediately. \n\n4. **DON'T QUIT FULL SCREEN YET... ** Shutdown and restart. \n\n### EOF(2024/01/22)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-01-22T00:31:12.296Z"
+  },
+  "updatedAt": {
+    "$date": "2024-01-22T00:34:05.954Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65d3061bb4f62253e21eaa9d"
+  },
+  "title": "MongoDB-aggregation-pipeline",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/MongoDB-aggregation-pipeline/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-02-19T07:41:15.846Z"
+  },
+  "updatedAt": {
+    "$date": "2024-02-19T07:41:50.392Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65f955de34c54fa5d65def14"
+  },
+  "title": "Redis-Stack-aggregation-pipeline",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/Redis-Stack-Tutorial/blob/212e3ae9b358ab0e725bd02b6ecf1e00792de5be/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-03-19T09:07:42.860Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-19T09:11:26.818Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66062de7948f03e751291330"
+  },
+  "title": "Thinking in Redis",
+  "subtitle": "The way to document database",
+  "author": "me",
+  "content": "https://github.com/Albert0i/Redis-Stack-Tutorial/blob/main/docdb.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-03-29T02:56:39.862Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-29T02:56:39.862Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "661f58f9f6b3d430c91074da"
+  },
+  "title": "Data 101",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/RU204/blob/main/Data101.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-04-17T05:07:05.272Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-17T05:07:05.272Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6630bad74327c8dd35d1b48a"
+  },
+  "title": "OM vs ORM",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/RU204/blob/main/om-orm.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-04-30T09:33:11.849Z"
+  },
+  "updatedAt": {
+    "$date": "2024-04-30T09:33:11.849Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663da9c7b7ff1eee892a0842"
+  },
+  "title": "Confusing English Vocabs",
+  "subtitle": "",
+  "author": "me",
+  "content": "```\nwrithe v. 扭動;蠕動\nwither v. （使）枯萎，（使）乾枯\nwreath n. 花環；花圈\nwether n. 閹羊，去勢公羊\nweather n. 天氣；氣象\nwhether conj. （尤用於轉述問題或表達疑問）是否\nwhither adv. (古) to where, 去哪裡，去何處\n```\n### EOF (2024/05/10)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-05-10T04:59:51.302Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-10T05:01:17.500Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "663daa0fb7ff1eee892a0848"
+  },
+  "title": "Old style of english",
+  "subtitle": "",
+  "author": "me",
+  "content": "```\nHere is a list of some common Old English words that are no longer in common use in modern English:\n\n1. Doth - third-person singular present indicative of \"do\"\n2. Hath - third-person singular present indicative of \"have\"\n3. O'er - over\n4. Thine - your, yours (used before a vowel sound)\n5. Thee - you (object form)\n6. Thou - you (subject form)\n7. Hither - to or toward this place\n8. Whence - from where\n9. Thither - to or toward that place\n10. Wither - to what place or state\n11. Ere - before\n12. Verily - truly, certainly\n13. Yon - that or those (referring to something distant)\n14. Anon - soon, shortly\n15. 'Tis - it is\n16. Nay - no\n17. Yea - yes\n18. Fain - gladly, willingly\n19. Haply - perhaps, maybe\n20. Ne'er - never\n\nthere are certain patterns and characteristics that are commonly associated with Old English or old-fashioned styles of English. Here are some key features:\n\n1. Vocabulary: Old English had a different vocabulary compared to modern English. It included words that are no longer in common use today. Old English also had a more extensive system of declensions and a richer variety of word forms.\n2. Pronouns: Old English had a distinct set of pronouns, including \"thou\" (singular informal), \"thee\" (singular object form), \"ye\" (plural), and \"you\" (formal or plural). These pronouns have largely been replaced by the modern singular \"you\" for both formal and informal contexts.\n3. Verb Endings: Old English verbs had distinct endings based on person, number, and tense. For example, the verb \"to love\" in Old English would have different forms like \"lufian\" (to love), \"lufast\" (you love), \"lufað\" (he/she/it loves), \"lufiaþ\" (they love), etc.\n4. Conjugation: Old English verbs were conjugated differently based on their class or strong/weak verb type. These conjugation patterns involved changes in the verb stem and endings to indicate tense, mood, and person.\n5. Word Order: Old English had a more flexible word order compared to modern English. It often followed a subject-verb-object pattern but allowed for variations and relied heavily on inflections to indicate grammatical relationships.\n6. Vocabulary Variation: Old English had multiple synonyms and variations for many words, allowing for different shades of meaning. This variation was more common in poetry and literature of that time.\n\n```\n### EOF (2024/05/10)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-05-10T05:01:03.505Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-11T01:51:27.922Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6641ce0a06865d64e3eca83a"
+  },
+  "title": "Fun with Cache",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/RU204/blob/main/cache.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-05-13T08:23:38.780Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-13T08:23:38.780Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6645bdfcc1374d9679e5cdf3"
+  },
+  "title": "Far side of the Moon",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/RU204/blob/main/moon.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-05-16T08:04:12.062Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-16T08:04:12.062Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66591e6e833394d546a5d3f7"
+  },
+  "title": "Windows container static ip",
+  "subtitle": "",
+  "author": "me",
+  "content": "### Windows container static ip \n\n### 1. Docker run\n```\ndocker network create -d transparent --subnet=192.168.1.0/24 --gateway=192.168.1.254 tnet\n\ndocker run -it --name fixedhost --network tnet --ip 192.168.1.111 mcr.microsoft.com/windows/nanoserver:20H2\n```\n\n### 2. Docker-compose\n```\nversion: \"3\"\n\nnetworks:\n  tnet:\n    driver: transparent\n    ipam:\n      driver: default\n      config:\n        - subnet: \"192.168.1.0/24\"\n          gateway: \"192.168.1.254\"\n\nservices:\n  # cmd1\n  cmd1:\n    image: mcr.microsoft.com/windows/nanoserver:20H2\n    container_name: cmd1\n    command: ipconfig\n    networks:\n      tnet:\n        ipv4_address: 192.168.1.11\n\n  # cmd2\n  cmd2:\n    image: mcr.microsoft.com/windows/nanoserver:20H2\n    container_name: cmd2\n    command: ipconfig\n    networks:\n      tnet:\n        ipv4_address: 192.168.1.12\n\n# cmd3\n  cmd3:\n    image: mcr.microsoft.com/windows/nanoserver:20H2\n    container_name: cmd3\n    command: ipconfig\n    networks:\n      tnet:\n        ipv4_address: 192.168.1.13\n\n# cmd4\n  cmd4:\n    image: mcr.microsoft.com/windows/nanoserver:20H2\n    container_name: cmd4\n    command: ipconfig\n    networks:\n      tnet:\n        ipv4_address: 192.168.1.14\n\n# cmd5\n  cmd5:\n    image: mcr.microsoft.com/windows/nanoserver:20H2\n    container_name: cmd5\n    command: ipconfig\n    networks:\n      tnet:\n        ipv4_address: 192.168.1.15\n\n# cmd6\n  cmd6:\n    image: mcr.microsoft.com/windows/nanoserver:20H2\n    container_name: cmd6\n    command: ipconfig\n    networks:\n      tnet:\n        ipv4_address: 192.168.1.16\n```\n\nOutput: \n\n```\ndocker-compose up\n[+] Running 6/0\n ✔ Container cmd5  Created                                                                                         0.0s\n ✔ Container cmd6  Created                                                                                         0.0s\n ✔ Container cmd3  Created                                                                                         0.0s\n ✔ Container cmd4  Created                                                                                         0.0s\n ✔ Container cmd2  Created                                                                                         0.0s\n ✔ Container cmd1  Created                                                                                         0.0s\nAttaching to cmd1, cmd2, cmd3, cmd4, cmd5, cmd6\ncmd4  |\ncmd4  | Windows IP Configuration\ncmd4  |\ncmd4  |\ncmd4  | Ethernet adapter Ethernet:\ncmd4  |\ncmd4  |    Connection-specific DNS Suffix  . :\ncmd4  |    Link-local IPv6 Address . . . . . : fe80::f45c:5332:eac4:d8f4%4\ncmd4  |    IPv4 Address. . . . . . . . . . . : 192.168.1.14\ncmd4  |    Subnet Mask . . . . . . . . . . . : 255.255.255.0\ncmd4  |    Default Gateway . . . . . . . . . : 192.168.1.254\ncmd2  |\ncmd2  | Windows IP Configuration\ncmd2  |\ncmd2  |\ncmd2  | Ethernet adapter Ethernet:\ncmd2  |\ncmd2  |    Connection-specific DNS Suffix  . :\ncmd2  |    Link-local IPv6 Address . . . . . : fe80::4d0f:94b6:82d6:df8e%4\ncmd2  |    IPv4 Address. . . . . . . . . . . : 192.168.1.12\ncmd2  |    Subnet Mask . . . . . . . . . . . : 255.255.255.0\ncmd2  |    Default Gateway . . . . . . . . . : 192.168.1.254\ncmd5  |\ncmd5  | Windows IP Configuration\ncmd5  |\ncmd5  |\ncmd5  | Ethernet adapter Ethernet:\ncmd5  |\ncmd5  |    Connection-specific DNS Suffix  . :\ncmd5  |    Link-local IPv6 Address . . . . . : fe80::80c5:e1ed:e8c2:2a14%4\ncmd5  |    IPv4 Address. . . . . . . . . . . : 192.168.1.15\ncmd5  |    Subnet Mask . . . . . . . . . . . : 255.255.255.0\ncmd5  |    Default Gateway . . . . . . . . . : 192.168.1.254\ncmd6  |\ncmd6  | Windows IP Configuration\ncmd6  |\ncmd6  |\ncmd6  | Ethernet adapter Ethernet:\ncmd6  |\ncmd6  |    Connection-specific DNS Suffix  . :\ncmd6  |    Link-local IPv6 Address . . . . . : fe80::5dbe:80ea:9424:652%4\ncmd6  |    IPv4 Address. . . . . . . . . . . : 192.168.1.16\ncmd6  |    Subnet Mask . . . . . . . . . . . : 255.255.255.0\ncmd6  |    Default Gateway . . . . . . . . . : 192.168.1.254\ncmd1  |\ncmd1  | Windows IP Configuration\ncmd1  |\ncmd1  |\ncmd1  | Ethernet adapter Ethernet:\ncmd1  |\ncmd1  |    Connection-specific DNS Suffix  . : ih.gov.mo\ncmd1  |    Link-local IPv6 Address . . . . . : fe80::118c:8030:9d4d:7d4e%4\ncmd1  |    IPv4 Address. . . . . . . . . . . : 192.168.1.11\ncmd1  |    Subnet Mask . . . . . . . . . . . : 255.255.255.0\ncmd1  |    Default Gateway . . . . . . . . . : 192.168.1.254\ncmd3  |\ncmd3  | Windows IP Configuration\ncmd3  |\ncmd3  |\ncmd3  | Ethernet adapter Ethernet:\ncmd3  |\ncmd3  |    Connection-specific DNS Suffix  . : ih.gov.mo\ncmd3  |    Link-local IPv6 Address . . . . . : fe80::740a:3b1b:89e5:c5b%4\ncmd3  |    IPv4 Address. . . . . . . . . . . : 192.168.1.13\ncmd3  |    Subnet Mask . . . . . . . . . . . : 255.255.255.0\ncmd3  |    Default Gateway . . . . . . . . . : 192.168.1.254\ncmd2 exited with code 0\ncmd6 exited with code 0\ncmd5 exited with code 0\ncmd4 exited with code 0\ncmd3 exited with code 0\ncmd1 exited with code 0\n```\n\n### 3. Reference\n1. [Windows container and static ip](https://forums.docker.com/t/windows-container-and-static-ip/70204)\n2. [Windows container networking](https://learn.microsoft.com/en-us/virtualization/windowscontainers/container-networking/architecture) \n\n### EOF (2024/05/31)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-05-31T00:48:46.894Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-31T01:03:09.478Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665ec57a17dca019a205a8c2"
+  },
+  "title": "The Road So Far",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/RU301/blob/main/topology1.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-06-04T07:42:50.451Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-04T07:42:50.451Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "665feb499b049c79455de204"
+  },
+  "title": "Tune beore you scale",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/RU301/blob/main/topology1.5.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-06-05T04:36:25.661Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-05T04:36:25.661Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6661769c6e05a90fe37dd2f0"
+  },
+  "title": "On Topology",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/RU301/blob/main/topology2.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-06-06T08:43:08.848Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-06T08:43:08.848Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6667aca75aab7c58d846f091"
+  },
+  "title": "On Topology (cont)",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/RU301/blob/main/topology3.md#on-topology-cont",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-06-11T01:47:19.941Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-11T01:47:19.941Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6667ad085aab7c58d846f096"
+  },
+  "title": "My Redis Collection",
+  "subtitle": "",
+  "author": "me",
+  "content": "And this pretty much concludes my Redis collection: \n\n1. [Redis Stack aggregation pipeline, 2024/03/20](https://github.com/Albert0i/Redis-Stack-Tutorial/blob/main/README.md)\n2. [Thinking in Redis, 2024/04/01](https://github.com/Albert0i/Redis-Stack-Tutorial/blob/main/docdb.md)\n3. [Data 101, 2024/04/19](https://github.com/Albert0i/RU204/blob/main/Data101.md)\n4. [OM vs ORM, 2024/04/30](https://github.com/Albert0i/RU204/blob/main/om-orm.md)\n5. [Fun With Cache, 2024/05/17](https://github.com/Albert0i/RU204/blob/main/cache.md)\n6. [Far side of the Moon, 2024/05/17](https://github.com/Albert0i/RU204/blob/main/moon.md)\n7. [The Road So Far, 2024/06/04](https://github.com/Albert0i/RU301/blob/main/topology1.md)\n8. [Tune before you scale, 2024/06/05](https://github.com/Albert0i/RU301/blob/main/topology1.5.md)\n9. [On Topology, 2024/06/07](https://github.com/Albert0i/RU301/blob/main/topology2.md)\n10. [On Topology (cont), 2024/06/14](https://github.com/Albert0i/RU301/blob/main/topology3.md)\n11. [On Security, 2024/06/17](https://github.com/Albert0i/RU330/blob/main/security1.md)\n12. [On Security (cont.), 2024/06/21](https://github.com/Albert0i/RU330/blob/main/security2.md)\n13. [On Security (cont.), 2024/06/28](https://github.com/Albert0i/RU330/blob/main/security3.md)\n14. [Redis 二三事, 2024/08/30](https://github.com/Albert0i/DAO/blob/main/RU102JS-Week-4.md)\n15. [Summary from RU203, 2024/09/13](https://github.com/Albert0i/RU203/blob/master/summary.md)\n16. [Summary from RU204, 2024/09/27](https://github.com/Albert0i/RU204/blob/main/summary.md)\n17. [Summary from RU202, 2025/01/06](https://github.com/Albert0i/RU202/blob/main/RU202.md)\n\nUnless... unless somwthing fanciful emerges in my brain... \n\nBonus \n1. [Case study: A self-declaration system](https://github.com/Albert0i/RU301/blob/main/cluster-case-1.md)\n2. [Always view from the other end of our solutions, 2024/06/14](https://github.com/Albert0i/RU330/blob/main/draft.md)\n3. [ADT, 2024/06/28](https://github.com/Albert0i/RU330/blob/main/adt.md)\n4. [The Strange Case Of Sentinel And ACL, 2024/07/08](https://next-methinks.vercel.app/posts/668b7996b2b9bf2359606801?_rebaseimg=true)\n5. [The Road Not Taken, 2024/07/12](https://next-methinks.vercel.app/posts/668cf30f3d6ae7ab4505ae5b?_rebaseimg=true)\n6. [exemplar, 2024/07/19](https://github.com/Albert0i/Redis7.2.4-Homebrew-ShardCluster/blob/main/exemplar.md)\n7. [JJSR, 2024/08/02](https://github.com/Albert0i/jest-course/blob/main/JJSR.md)\n8. [MySQL vs Redis ─── A Match in a Million!, 2024/08/09](https://github.com/Albert0i/mysql-vs-redis/blob/main/README.md)\n9. [DAO 兜, 2024/08/16](https://github.com/Albert0i/DAO/blob/main/README.md)\n10. [Dong Dict, 2024/10/18](https://github.com/Albert0i/DONGDICT/blob/main/README.md)\n11. [Redis Vector Search, 2025/02/15](https://github.com/Albert0i/RedisVectorSearch/blob/main/README.md)\n12. [Notes from \"Finding Bigfoot with JavaScript + vector search\", 2025/03/07](https://github.com/Albert0i/Finding-Bigfoot-with-JavaScript-Vector-Search/blob/main/README.md)\n13. [ChatBot, 2025/03/28](https://github.com/Albert0i/ChatBot/blob/main/README.md)\n14. [Vector Semantic Search using MariaDB, 2025/04/11](https://github.com/Albert0i/mariadb-vss/blob/main/README.md)\n15. [Probabilistic Data Structure, 2025/05/23](https://github.com/Albert0i/probabilistic-data-structure/blob/main/README.md)\n\n\n### EOF (2025/05/23)\n### EOF (2025/04/11)\n### EOF (2025/03/28)\n### EOF (2025/03/07)\n### EOF (2025/02/15)\n### EOF (2025/01/06)\n### EOF (2024/10/18)\n### EOF (2024/09/29)\n### EOF (2024/09/13)\n### EOF (2024/08/30)\n### EOF (2024/08/16)\n### EOF (2024/08/09)\n### EOF (2024/08/02)\n### EOF (2024/07/19)\n### EOF (2024/07/12)\n### EOF (2024/06/28)\n### EOF (2024/06/14)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "3024-06-11T01:48:56.021Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T05:44:58.640Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668b7996b2b9bf2359606801"
+  },
+  "title": "The Strange Case Of Sentinel And ACL",
+  "subtitle": "",
+  "author": "me",
+  "content": "### [The Strange Case Of Sentinel And ACL](https://www.gutenberg.org/files/43/43-h/43-h.htm)\n\n**Argument**\n\nStrange enough! *Sentinel* has intriguing bearing on `ACL`... \n\n\n#### I. System setup\nAccording to instructions on [RU330](https://redis.io/university/courses/ru330/), to disable `default` user in `acl.conf` \n\n```\nuser default off \n```\n\nHave a glimpse of [documentation](https://redis.io/docs/latest/operate/oss_and_stack/management/config/): \n\n```\n# If the master is password protected (using the \"requirepass\" configuration\n# directive below) it is possible to tell the replica to authenticate before\n# starting the replication synchronization process, otherwise the master will\n# refuse the replica request.\n#\n# masterauth <master-password>\n#\n# However this is not enough if you are using Redis ACLs (for Redis version\n# 6 or greater), and the default user is not capable of running the PSYNC\n# command and/or other commands needed for replication. In this case it's\n# better to configure a special user to use with replication, and specify the\n# masteruser configuration as such:\n#\n# masteruser <username>\n#\n# When masteruser is specified, the replica will authenticate against its\n# master using the new AUTH form: AUTH <username> <password>.\n```\n\nThenceforth, `admin` user is setup in `acl.conf` and add `masteruser` directive to `redis.conf` of *Replica1* and *Replica2*. It's just fine in basic replication. \n\nHowever, this is not the case when *sentinels* come in sight... According to instructions on [RU301](https://redis.io/university/courses/ru301/) \n\n```\n# In order for Sentinels to connect to Redis server instances when they are configured with requirepass, the Sentinel configuration must include the sentinel auth-pass directive.\nsentinel auth-pass <myprimary> <master-password>\n```\n\nBut there no such thing as `sentinel auth-user` subcommand. \n\n![alt sentinel subcommand auth-user](https://raw.githubusercontent.com/Albert0i/Redis7.2.4-Homebrew-Replication/main/img/sentinel-auth-user.JPG)\n\nWhich means it is forbidden to tamper `default` user or else failover mechanism would simply fail. Stranger than strange! As a matter fact, when using `default` user with `ACL` together, it would left the system unprotected...\n\n\n**Corollary**\n\nDon't use `ACL`, secure `default` user with strong password. \n```\nACL GENPASS \n```\n\n\n#### II. Check to see if failover success \n```\nmake up \nmake master \ndocker-compose stop primary\nmake ps \nmake master \n```\n\n\n#### III. Check to see if `default` user is password protected\n```\nredis-cli -p 6381\nping\nauth <master-password>\ninfo replication\nexit\n```\n\n\n#### IV. Check to see if we can manually failover a server\n```\nmake sentinel\nSENTINEL SENTINELS myprimary\nSENTINEL REPLICAS myprimary\nSENTINEL GET-MASTER-ADDR-BY-NAME myprimary\nSENTINEL FAILOVER myprimary\nSENTINEL GET-MASTER-ADDR-BY-NAME myprimary\nexit\n``` \n\n\n#### V. Re-check ex-primary status \n```\nmake up \nmake replication\nmake role\n```\nWhen our primary was put to death, replica2 is promoted as new primary, replica1 points to new primary flatteringly. As soon as ex-primary revives, for a very short of time, he still *believes* that he is on the throne of primary even though sentinels report that new primary is elected. Wandering and lingering for a while, he comes to realize the existence of new primary... Daunted by the situation, he joins the new primary as slave without a murmur... \n\n![alt new primary](https://raw.githubusercontent.com/Albert0i/Redis7.2.4-Homebrew-Replication/main/img/new-primary.JPG)\n\nWel-a-day!, [life is capricious](https://www.goodreads.com/quotes/10624029-life-is-capricious-one-moment-you-re-high-on-a-mountain)... \n\n\n#### VI. Restore config\n```\nmake down \nmake reset\n```\n\n\n### EOF (2024/07/08)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-08T05:31:02.431Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-09T03:09:14.094Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "668cf30f3d6ae7ab4505ae5b"
+  },
+  "title": "The Road Not Taken",
+  "subtitle": "",
+  "author": "me",
+  "content": "### [The Road Not Taken](https://www.poetryfoundation.org/poems/44272/the-road-not-taken)\n\n\n#### I. System Setup \nCombining instructions on [RU301](https://redis.io/university/courses/ru301/) and experience from [Redis7.2.4-Homebrew-Replication](https://github.com/Albert0i/Redis7.2.4-Homebrew-Replication), a version of `redis.conf` is devised for each node, nine in total. \n\n```\n# redis.conf file\nport 6379\ncluster-enabled yes\ncluster-config-file nodes6379.conf\ncluster-node-timeout 5000\n\n# Create a strong password here\nrequirepass 1841e88255c4b855a570dc540d9d02a1c491f94f7c8e4696be9a7f6fc1c12f82\n\n# AUTH password of the primary instance in case this instance becomes a replica\nmasterauth 1841e88255c4b855a570dc540d9d02a1c491f94f7c8e4696be9a7f6fc1c12f82\n. . . \n```  \n\nIt is *recommended* to have a minimum of 3 master nodes and each with 2 replicas. \n\n![alt 3 nodes](https://raw.githubusercontent.com/Albert0i/Redis7.2.4-Homebrew-ShardCluster/main/img/3-nodes.JPG)\n\nIt is completely *possible* to create cluster with 3 master nodes... ONLY! That means no replica is involved and works as expected, fails as expected... \n\n![alt 3 nodes slots](https://raw.githubusercontent.com/Albert0i/Redis7.2.4-Homebrew-ShardCluster/main/img/3-nodes-slots.JPG)\n\nWe are going to create a 3x3 redis shard cluster with: \n\n```\nredis-cli --user default --pass 1841e88255c4b855a570dc540d9d02a1c491f94f7c8e4696be9a7f6fc1c12f82 --cluster create re1:6379 re2:6380 re3:6381 re4:6382 re5:6383 re6:6384 re7:6385 re8:6386 re9:6387 --cluster-replicas 2\n```\n\n\n#### II. Stress test\nIn terminal 1\n\n```\nnpm test\n\ncounter=1\ncounter=2\ncounter=3\n. . . \n```\n\nIn terminal 2\n\n```\nmake cli\n\n127.0.0.1:6379> get counter\n-> Redirected to slot [6680] located at 192.168.1.12:6380\n\"62\"\n192.168.1.12:6380>\n```\n\nAccording to our network setting, the `counter` key is stored in node number two. \n\n```\ndocker-compose stop re2\n```\n\nTerminal stop for a while and then restarts counting. To repeat the previous step and continue to stop node number 8 \n\n```\ndocker-compose stop re8\n```\n\nAnd then node number 7\n\n```\ndocker-compose stop re7\n```\n\nAnd then node number 4\n\n```\ndocker-compose stop re4\n```\n\nAnd then node number 5\n\n```\ndocker-compose stop re5\n```\n\nFinally, the counter stopped!. Have look of the node status \n\n```\nmake nodes\n\nredis-cli --user default --pass 1841e88255c4b855a570dc540d9d02a1c491f94f7c8e4696be9a7f6fc1c12f82 --no-auth-warning cluster nodes\na7facd62757cda728a1f07d5beb388fe8a2d17f3 192.168.1.15:6383@16383 master,fail - 1720509111957 1720509109454 13 connected 5461-10922\nbaed8301870ca201aec0df9f69ea58b827dfee90 192.168.1.19:6387@16387 slave c3157080281b5cd36bfde04ef1c915d886e614ae 0 1720509155510 3 connected\nc3157080281b5cd36bfde04ef1c915d886e614ae 192.168.1.13:6381@16381 master - 0 1720509156618 3 connected 10923-16383\nbed32b9b2247b0f5f5027d083622ec5ab59d5f55 192.168.1.18:6386@16386 master,fail - 1720508881571 1720508879000 10 connected\ne7b65b6fb615ed6752a43445a4b2670cb573a73a 192.168.1.17:6385@16385 master,fail - 1720508985501 1720508983000 11 connected\n50022b8b39ef191bca8ffaa85adf2b6fa9ed71f2 192.168.1.11:6379@16379 myself,master - 0 0 1 connected 0-5460\nee28a52b3c4ac1a601a3565562991c42c23fd80d 192.168.1.16:6384@16384 slave 50022b8b39ef191bca8ffaa85adf2b6fa9ed71f2 0 1720509155000 1 connected\n987161d548578b5e33587494440a50c78862ae2e 192.168.1.14:6382@16382 master,fail - 1720509058673 1720509056084 12 connected\nefc3c9e32fa740464eb26317bbaa526a9fa0c0bd 192.168.1.12:6380@16380 master,fail - 1720508652613 1720508650000 2 connected\n```\n\nFive master nodes failed, two master nodes and one slave node remain. Which means for a 3x3 cluster, at most four nodes can fail. \n\n\n#### III. [Cluster Manager Command](https://github.com/Albert0i/Redis7.2.4-Homebrew-ShardCluster/blob/main/redis-cli-cluster.txt)\n\n\n#### IV. [Cluster subcommands](https://github.com/Albert0i/Redis7.2.4-Homebrew-ShardCluster/blob/main/cluster-subcommand.txt)\n\n\n#### V. Bibliography\n1. [Redis cluster specification](https://redis.io/docs/latest/operate/oss_and_stack/reference/cluster-spec/)\n2. [Redis configuration](https://redis.io/docs/latest/operate/oss_and_stack/management/config/)\n3. [Question: What are the limitations of a Redis cluster?](https://www.dragonflydb.io/faq/limitations-of-redis-cluster)\n\n\n#### VI. Postscript\n[\"With great power comes great responsibility.\"](https://en.wikipedia.org/wiki/With_great_power_comes_great_responsibility)\n\n\n| Topology | Node | Read/Write Splitting | Failover | ACL | Level |\n| -------- | ----- | -------------------- | -------- | --- | ----- |\n| Standalone | 1 | no | no | yes | beginner |\n|  Basic Replication | 3 | yes | no | yes | intermediate |\n| Replication | 6 | yes | yes | no | intermediate |\n| Shard Cluster | 9 | yes | yes | no | advanced |\n\n\n### EOF (2024/07/12)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-09T08:21:35.340Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-11T01:18:45.410Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "669a056f13f42e5b74027d81"
+  },
+  "title": "exemplar",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/Redis7.2.4-Homebrew-ShardCluster/blob/main/exemplar.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-19T06:19:27.997Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-19T06:19:27.997Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66a73b2569a1a352cb57559c"
+  },
+  "title": "JJSR",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/jest-course/blob/main/JJSR.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-07-29T06:48:05.353Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-29T06:48:14.463Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66b1ac39cb382eaa784a5235"
+  },
+  "title": "MySQL vs Redis ─── A Match in a Million!",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/mysql-vs-redis/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-08-06T04:53:13.663Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-06T04:53:13.663Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66bef8a5de469589d4b18415"
+  },
+  "title": "DAO 兜",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/DAO/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-08-16T06:58:45.379Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-16T06:58:45.379Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66cfea7d344fa1fae795a16e"
+  },
+  "title": "Redis 二三事",
+  "subtitle": "Notes from Redis",
+  "author": "me",
+  "content": "https://github.com/Albert0i/DAO/blob/main/RU102JS-Week-4.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-08-29T03:26:53.360Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-29T03:26:53.360Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d903684c9a8db9b0b22179"
+  },
+  "title": "reflux",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/albert0i.github.io/blob/main/reflux.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-09-05T01:03:36.495Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-05T01:03:36.495Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e0f197dc6ef35b1bbf4927"
+  },
+  "title": "Summary from RU203",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/RU203/blob/master/summary.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-09-11T01:25:43.174Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-11T01:25:43.174Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66eb82605f77497689a9ab30"
+  },
+  "title": "Summary from RU204",
+  "subtitle": "(unfinished)",
+  "author": "me",
+  "content": "https://github.com/Albert0i/RU204/blob/main/summary.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-09-19T01:46:08.168Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-27T04:11:07.092Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f6303e7c46746b12949148"
+  },
+  "title": "Index 二三事",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/albert0i.github.io/blob/main/articleOnIndex.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-09-27T04:10:38.750Z"
+  },
+  "updatedAt": {
+    "$date": "2024-09-27T04:10:38.750Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6708ddbfa8017005edc673fe"
+  },
+  "title": "Online Dictionary",
+  "subtitle": "render.com",
+  "author": "me",
+  "content": "###  [Online Dictionary](https://dongdict.onrender.com/) \n\n### [My Github Repo](https://github.com/Albert0i/albert0i.github.io/blob/main/README.md) \n\n### EOF (2024/10/11)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-10-11T08:11:43.966Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-11T08:12:12.709Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "670f67df205e5b23b46ecc97"
+  },
+  "title": "Dong Dict",
+  "subtitle": "─ the Online Dictionary",
+  "author": "me",
+  "content": "https://github.com/Albert0i/DONGDICT/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2024-10-16T07:14:39.097Z"
+  },
+  "updatedAt": {
+    "$date": "2024-10-16T07:14:39.097Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "677b96a8b93dc986694eeae6"
+  },
+  "title": "Summary from RU202",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/RU202/blob/main/RU202.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2025-01-06T08:39:04.519Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-06T08:39:04.519Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ad7707223d5240c72fed55"
+  },
+  "title": "Redis Vector Search",
+  "subtitle": "A preliminary study on semantic search using Redis.",
+  "author": "me",
+  "content": "https://github.com/Albert0i/RedisVectorSearch/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2025-02-13T04:37:27.665Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-13T04:37:27.665Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67c6b0edb5031a4387f70201"
+  },
+  "title": "Notes from \"Finding Bigfoot with JavaScript + vector search\"",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/Finding-Bigfoot-with-JavaScript-Vector-Search/blob/main/README.md#vi-bibliography",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2025-03-04T07:51:09.670Z"
+  },
+  "updatedAt": {
+    "$date": "2025-03-04T07:56:26.861Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67edeb6d0e279d997e6c757d"
+  },
+  "title": "ChatBot",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/ChatBot/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2025-04-03T01:59:09.194Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-03T01:59:09.194Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67ff0a1c6e01bba788356177"
+  },
+  "title": "Vector Semantic Search using MariaDB",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/mariadb-vss/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2025-04-16T01:38:36.619Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-16T01:38:36.619Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "682c1647a5d237093e091e66"
+  },
+  "title": "Probabilistic Data Structure",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/probabilistic-data-structure/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2025-05-20T05:42:31.179Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T05:42:31.179Z"
+  },
+  "__v": 0
+}]
