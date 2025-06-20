@@ -1565,4 +1565,38 @@
     "$date": "2025-05-20T05:42:31.179Z"
   },
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "683fed3044bc41e50f87db00"
+  },
+  "title": "Tips on using Prisma",
+  "subtitle": "",
+  "author": "me",
+  "content": "### Tips on using Prisma \n\n1. Install `prisma` and `@prisma/client` differently: \n\n```\nnpm install prisma --save-dev\nnpm install @prisma/client\n```\n\n2. Set up a new Prisma project and specify `MySQL` as the datasource provider: \n\n```\nnpx prisma init --datasource-provider mysql\n```\n\n3. For some unknow reason, this won't work: \n\n```\nimport { PrismaClient } from '@prisma/client';\n```\n\nBut this works for me: \n\n```\nimport { PrismaClient } from '../src/generated/prisma/index.js'; \n```\n\n4. Add this fragment to `package.json`: \n\n```\n  \"prisma\": {\n    \"seed\": \"node prisma/seed.js\"\n  },\n```\n\n5. To further speed up models creation, paste in JSON object and ask AI. For example: `user` from [{JSON} Placeholder](https://jsonplaceholder.typicode.com/)\n\n```\n{\n    \"id\": 1,\n    \"name\": \"Leanne Graham\",\n    \"username\": \"Bret\",\n    \"email\": \"Sincere@april.biz\",\n    \"address\": {\n      \"street\": \"Kulas Light\",\n      \"suite\": \"Apt. 556\",\n      \"city\": \"Gwenborough\",\n      \"zipcode\": \"92998-3874\",\n      \"geo\": {\n        \"lat\": \"-37.3159\",\n        \"lng\": \"81.1496\"\n      }\n    },\n    \"phone\": \"1-770-736-8031 x56442\",\n    \"website\": \"hildegard.org\",\n    \"company\": {\n      \"name\": \"Romaguera-Crona\",\n      \"catchPhrase\": \"Multi-layered client-server neural-net\",\n      \"bs\": \"harness real-time e-markets\"\n    }\n  }\n```\n\nAnd in return: \n\n```\nmodel User {\n  id       Int    @id @default(autoincrement())\n  name     String\n  username String\n  email    String  @unique\n  phone    String\n  website  String\n  address  Address? @relation(fields: [addressId], references: [id])\n  addressId Int?\n  company  Company? @relation(fields: [companyId], references: [id])\n  companyId Int?\n}\n\nmodel Address {\n  id      Int    @id @default(autoincrement())\n  street  String\n  suite   String\n  city    String\n  zipcode String\n  geo     Geo?   @relation(fields: [geoId], references: [id])\n  geoId   Int?\n}\n\nmodel Geo {\n  id  Int    @id @default(autoincrement())\n  lat String\n  lng String\n}\n\nmodel Company {\n  id         Int    @id @default(autoincrement())\n  name       String\n  catchPhrase String\n  bs         String\n}\n```\n\nPaste in `schema.prisma` and run commands: \n\n```\nnpx prisma format \nnpx prisma validate\n```\n\nStrange Enough! For some unknown reason `npx prisma format` can fix foreign key reference errors and turn out to be a perfectly valid schema. \n\n6. To create tables in target database with: \n\n```\nnpx prisma db push \n```\n\n\nOr in more sophisticated way:\n\n```\nnpx prisma migrate dev --name initial_import \n```\n\n### Epilogue\n> \"the ridiculous confusion which, in some circumstances, can determine the course of a man’s life.\"<br />The Trial by Franz Kafka\n\nAs you can see, [Prisma](https://www.prisma.io/) is on my [tech stack](https://en.wikipedia.org/?title=Technology_stack&redirect=no) not because I am in favor of ORM, to be honest, I craft and run SQL statements more. The underplaying reason is to secure our investment, ie. the code. It is catastrophic to migrate backend database for any non-trivial projects. How can one change the horse but stay on saddle? Prisma alleviates to some extent, I believe... \n\n\n### EOF (2025/06/04)",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2025-06-04T06:52:32.734Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-04T06:54:31.861Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6855066365c44a3f27255d1a"
+  },
+  "title": "Vector Semantic Search in Chinese using MariaDB",
+  "subtitle": "",
+  "author": "me",
+  "content": "https://github.com/Albert0i/mariadb-vss-chinese/blob/main/README.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2025-06-20T06:57:39.470Z"
+  },
+  "updatedAt": {
+    "$date": "2025-06-20T06:57:39.470Z"
+  },
+  "__v": 0
 }]
