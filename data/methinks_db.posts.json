@@ -1803,4 +1803,38 @@
     "$date": "2026-03-30T03:42:06.034Z"
   },
   "__v": 0
+},
+{
+  "_id": {
+    "$oid": "69df2c638d6291174e8aee73"
+  },
+  "title": "一個人的戰爭",
+  "subtitle": "Sequel to “The Feather of Chromebook”",
+  "author": "me",
+  "content": "https://github.com/Albert0i/The-Road-Not-Taken/blob/main/README-Cont.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2026-04-15T06:12:51.329Z"
+  },
+  "updatedAt": {
+    "$date": "2026-04-15T06:12:51.329Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a180f1ad839b8c3cccfc8f1"
+  },
+  "title": "726 Investigation Report",
+  "subtitle": "Sequel to “The Touch of Vintage”",
+  "author": "me",
+  "content": "https://github.com/Albert0i/The-Road-Not-Taken/blob/main/README-Cont2.md",
+  "deleted": false,
+  "createdAt": {
+    "$date": "2026-05-28T09:47:06.477Z"
+  },
+  "updatedAt": {
+    "$date": "2026-05-28T09:47:06.477Z"
+  },
+  "__v": 0
 }]
